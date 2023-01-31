@@ -1,12 +1,16 @@
 import { useState } from 'react'
 import ReactDOM from 'react-dom'
 import './App.css'
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls, useGLTF, useTexture } from '@react-three/drei'
 import { useControls } from 'leva'
+ 
+ 
 
 import { Canvas } from '@react-three/fiber'
 
 function App() {
+  const model = useGLTF('./lunch.glb')
+  console.log(model)
   return (
     <div id="canvas-container">
       

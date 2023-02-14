@@ -2,7 +2,7 @@ html,
 body,
 #root
 {
-     position: fixed;
+     
     top: 0;
     left: 0;
     width: 100%;
@@ -11,9 +11,7 @@ body,
     
 }
 
-.Experience{
-    width: 50%;
-}
+.Experience{display: flex;}
 
 .work{
     

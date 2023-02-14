@@ -7,7 +7,7 @@ import Form from './Form';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Canvas
+    <Canvas className='Experience'
      flat
      camera={ {
          fov: 45,

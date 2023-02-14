@@ -7,9 +7,9 @@ export default function Form() {
   console.log(errors);
   
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input type="text" placeholder="Name" {...register("Name", {})} />
-      <input type="email" placeholder="Email" {...register("Email", {})} />
+    <form className='form' onSubmit={handleSubmit(onSubmit)}>
+      <input className='input' type="text" placeholder="Name" {...register("Name", {})} />
+      <input className='input' type="email" placeholder="Email" {...register("Email", {})} />
       <textarea {...register("Short Message", {})} />
 
       <input type="submit" />

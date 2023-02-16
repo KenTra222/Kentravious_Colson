@@ -1,10 +1,10 @@
 import React from 'react';
-
+import {Canvas} from '@react-three/fiber'
 import { Perf } from 'r3f-perf';
 import { useControls } from 'leva'
 import { Sparkles, Center, useTexture, useGLTF, OrbitControls  } from '@react-three/drei'
 
-function Experience() {
+export const Experience = () => {
   
   const {nodes} = useGLTF("/lunch.glb")
   
@@ -13,22 +13,19 @@ function Experience() {
 
 
   return (
-    <>
+    <Canvas>
         <color  args={ [ '#201919' ] } attach="background"/>
         <OrbitControls makeDefault />
 
         
-      <Center>
-       
-       
-      
-            <mesh geometry={nodes.baked.geometry}>
-              <meshBasicMaterial map={texture}/>
+      <Center>     
+            <mesh >
+              <boxGeometry/>
+              <meshBasicMaterial />
             </mesh>
       </Center>
         
-    </>
+    </Canvas>
   )
 }
 
-export default Experience

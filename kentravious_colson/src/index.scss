@@ -1,0 +1,41 @@
+
+html,
+body,
+#root
+{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: ivory;
+    
+    
+    .App-Wrapper{
+        background: blue; 
+        width: 100%;
+        height: 100%;
+
+        .header{
+
+            background: yellow; 
+            display: flex;
+            height: 20px;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0;
+
+            .header-left{
+                background: red;
+            }
+
+            .header-center{
+                background: orange;
+            }
+
+            .header-right{
+                background: purple;
+            }
+        }
+    }
+}

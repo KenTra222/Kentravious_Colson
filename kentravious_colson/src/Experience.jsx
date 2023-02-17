@@ -18,7 +18,7 @@ const Experience = () => {
         <color args={['#010101']} attach='background'/>
         <Center>
 
-        <mesh scale={1} geometry={nodes.baked.geometry}>
+        <mesh scale={2.5} geometry={nodes.baked.geometry}>
           <meshBasicMaterial />
         </mesh>
         </Center>

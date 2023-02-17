@@ -6,7 +6,7 @@ import {OrbitControls, Center, useGLTF, useTexture} from '@react-three/drei'
 
 
 const Experience = () => {
-  const {nodes} = useGLTF("/lunch.glb")
+  const {nodes} = useGLTF("/kingkai.glb")
   
   
   return (

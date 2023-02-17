@@ -5,22 +5,14 @@ import { IconContext } from 'react-icons';
 import { TiThMenuOutline } from "react-icons/ti";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 import Experience from './Experience'
-import {Modal} from './Modal';
 
 
-
-const [isOpen, setIsOpen] = useState(false);
-const toggleModal = ()=>{
-  setIsOpen(!isOpen)
-}
-
+ 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
     <div className='App-Wrapper'>
-      <Modal isOpen={isOpen} onClose={toggleModal} >
-        <h2>Modal is working</h2>
-      </Modal>
+      
       <section className='header'>
       <div className='header-items'>
         <div className='header-left'>

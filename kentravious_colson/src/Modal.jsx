@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
-const Modal = () => {
+const Modal = ({isOpen, onClose, children}) => {
   return (
-    <div></div>
+    <>
+    {
+        isOpen ? (
+            {children}
+        ) : null
+    }
+    </>
   )
 }
 

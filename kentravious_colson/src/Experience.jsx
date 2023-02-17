@@ -1,31 +1,31 @@
-import React from 'react';
+import React from 'react'
+import './index.scss'
 import {Canvas} from '@react-three/fiber'
-import { Perf } from 'r3f-perf';
-import { useControls } from 'leva'
-import { Sparkles, Center, useTexture, useGLTF, OrbitControls  } from '@react-three/drei'
+import {OrbitControls, Center, useGLTF, useTexture} from '@react-three/drei'
 
-export const Experience = () => {
-  
+
+
+const Experience = () => {
   const {nodes} = useGLTF("/lunch.glb")
   
-  const texture =  useTexture('/lunch.jpg')
-  texture.flipY = false
-
-
+  
   return (
-    <Canvas>
-        <color  args={ [ '#201919' ] } attach="background"/>
-        <OrbitControls makeDefault />
+    <div id='canvas_wrapper'> 
 
-        
-      <Center>     
-            <mesh >
-              <boxGeometry/>
-              <meshBasicMaterial />
-            </mesh>
-      </Center>
-        
-    </Canvas>
+      <Canvas>
+        <OrbitControls makeDefault/>
+        <ambientLight intensity={0.9}/>
+        <color args={['#010101']} attach='background'/>
+        <Center>
+
+        <mesh scale={1} geometry={nodes.baked.geometry}>
+          <meshBasicMaterial />
+        </mesh>
+        </Center>
+      </Canvas>
+    
+      </div>
   )
 }
 
+export default Experience

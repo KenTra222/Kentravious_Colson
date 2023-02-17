@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.scss'
 import { IconContext } from 'react-icons';
 import { TiThMenuOutline } from "react-icons/ti";
 import { MdOutlineDeveloperMode } from "react-icons/md";
-import {Experience} from './Experience'
-console.log(Experience);
+import Experience from './Experience'
+
 
 
 
@@ -19,8 +19,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <MdOutlineDeveloperMode/>
           <p className='logo-text'>KC</p>
         </div>
+
         <div className='header-center'>
-          3d Component
+            <Experience/>
+            <small>spin me</small>
         </div>
 
    

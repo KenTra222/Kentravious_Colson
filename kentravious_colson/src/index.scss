@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Monoton&family=Zeyada&display=swap');
+
+
 $base-color: #e0e0db;
-$accent-color: #8a2be2;
+$accent-color: #892be2a9;
+$hover-color: #8a2be2;
+
 
 
 html,
@@ -14,8 +21,6 @@ body,
     
     border-radius: 21px 21px 21px 21px;
    
-    
-    
     .App-Wrapper{
         width: 100%;
         height: 100%;
@@ -27,10 +32,11 @@ body,
             background: #010101;
             display: flex;
             align-items: center;
+            height: 3rem;
             justify-content: space-around;
             padding: 0;
             box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
-            border-bottom: 1px outset $base-color;
+            border-bottom: 1px solid $accent-color;
         
             .header-left{
                 
@@ -39,23 +45,34 @@ body,
                 align-items:center;
                 text-shadow: 4px 4px 2px rgba(0,0,0,0.3);
                 width: 30%;
+                
+                p{
+                    font-size: 1.2rem;
+                    font-family: 'Monoton', cursive;
+                }
+                :hover{
+                    color: $hover-color;
+                }
+            }
+
+            .header-center{    
+                display: flex; 
+                flex-direction: column; 
+                align-items: center;
+                width: 30%;
+                color: $base-color;
+                #canvas_wrapper{
+                    height: 2rem;
+                }
                
             }
 
-            .header-center{
-                
-                width: 30%;
-            }
-
             .header-right{
-                
                 display: flex;
                 align-items: center;
                 justify-content: right;
                 width: 30%;
-    
 
-                
                 .hamburger_menu{
                     color: #e0e0db;
                     border: none;
@@ -63,7 +80,7 @@ body,
                     font-size: larger;
 
                     :hover{
-                        color: grey;
+                        color: $hover-color;
                     }
                 }
             }

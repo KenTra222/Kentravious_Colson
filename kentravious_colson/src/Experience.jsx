@@ -1,31 +1,27 @@
 import React from 'react'
 import './index.scss'
-import {Canvas} from '@react-three/fiber'
-import {OrbitControls, Center, useGLTF, useTexture} from '@react-three/drei'
 
 
+import { Center, useTexture, useGLTF, OrbitControls } from '@react-three/drei'
 
-const Experience = () => {
-  const {nodes} = useGLTF("/kingkai.glb")
-  
+export default function Experience() {
+  const {nodes} = useGLTF("./model/kingkai.glb");
+  const texture = useTexture('./model/kingkai_texture.jpg')
+  texture.flipY = false
+ 
   
   return (
-    <div id='canvas_wrapper'> 
-
-      <Canvas>
+    <> 
         <OrbitControls makeDefault/>
         <ambientLight intensity={0.9}/>
         <color args={['#010101']} attach='background'/>
         <Center>
 
         <mesh scale={2.5} geometry={nodes.baked.geometry}>
-          <meshBasicMaterial />
+          <meshBasicMaterial map={texture}/>
         </mesh>
-        </Center>
-      </Canvas>
-    
-      </div>
+        </Center>    
+      </>
   )
 }
 
-export default Experience

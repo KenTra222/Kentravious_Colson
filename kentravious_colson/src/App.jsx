@@ -3,6 +3,7 @@ import { TiThMenuOutline } from "react-icons/ti";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 import Experience from './Experience'
 import Modal from './Modal';
+import {Canvas} from '@react-three/fiber'
 
 
 export default function App() {
@@ -36,8 +37,12 @@ export default function App() {
         </div>
 
         <div className='header-center'>
-            <Experience/>
-            <small>spin me</small>
+          <div id='canvas_wrapper'>
+          <Canvas>
+              <Experience/>
+          </Canvas>
+          </div>
+            
         </div>
 
    

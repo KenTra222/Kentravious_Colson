@@ -57,10 +57,10 @@ export default function App() {
         <Modal isOpen={isOpen} onClose={toggleModal}>
           <nav>
             <ul >
-                <li><p>home</p></li>
-                <li><p>about</p></li>
-                <li><p>projects</p></li>
-                <li><p>contact</p></li>
+                <li><a href='#' data-text='home'>home</a ></li>
+                <li><a href='#about' data-text='about'>about</a ></li>
+                <li><a href='#project' data-text='projects'>projects</a ></li>
+                <li><a href='#contact' data-text='contact'>contact</a ></li>
 
 
             </ul>

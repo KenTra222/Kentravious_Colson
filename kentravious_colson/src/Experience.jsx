@@ -17,7 +17,7 @@ export default function Experience() {
         <color args={['#010101']} attach='background'/>
         <Center>
 
-        <mesh scale={2.5} geometry={nodes.baked.geometry}>
+        <mesh scale={2.75} geometry={nodes.baked.geometry}>
           <meshBasicMaterial map={texture}/>
         </mesh>
         </Center>    

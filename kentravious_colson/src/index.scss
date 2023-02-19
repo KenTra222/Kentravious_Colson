@@ -28,16 +28,13 @@ body,
     
     .App-Wrapper{
         background: #010101;
-        
         display: flex;
         flex-direction: column;
-        
         align-items: center;
         top: 0;
         left: 0;
         height:100vh;
         width:100%;
-        border: 1px solid red;
         margin: 0;
         padding: 0;
         scroll-snap-type: y mandatory;
@@ -48,7 +45,7 @@ body,
         text-align: center;
         
         .header{
-            
+            position: sticky;
             top: 0;
             width: 100%;
             z-index:100;
@@ -56,7 +53,7 @@ body,
         
         
         .header-items{
-            background: #010101;
+            background: #252525;
             display: flex;
             position: fixed;
             align-items: center;
@@ -93,10 +90,12 @@ body,
                 flex-direction: column; 
                 align-items: center;
                 justify-content: space-evenly;
-                width: 30%;
+                width: 20%;
+                height: 100%;
                 color: $base-color;
                 #canvas_wrapper{
-                    height: 2rem;
+                    height: 4rem;
+                    width: 100%;
                 }
                 
             }
@@ -108,7 +107,7 @@ body,
                 width: 30%;
                 
                 .hamburger_menu{
-                    font-size: larger;
+                    font-size: 1.5rem;
                     :hover{
                         color: $hover-color;
                         cursor: pointer;
@@ -120,20 +119,22 @@ body,
 }
 
 #intro{
-    //   background: url("https://media.giphy.com/media/5xtDarqiAfN6mqPwdyw/giphy.gif") no-repeat;
     background: url("https://media.giphy.com/media/3oriNYvVkCgIhSIKic/giphy.gif") no-repeat;
-    //    background: url("https://media.giphy.com/media/5bivE122X5rrfU2193/giphy.gif") no-repeat;
     background-size:  cover;
     background-position: center;
-    background-color: #010101;
+    background-color: #252525;
     opacity: 0.75;
-    
-    color: #000;
+    color: #252525;
     font-size: 2.5rem; 
+    .intro_contents{
+        display: flex;
+        flex-direction: column;
+    }
     h1{
         
         font-family: 'Lato';
         margin-bottom: 0;
+        text-shadow: 2px 2px 2px $accent-color;
     }
     p{
         font-family: 'Zeyada';
@@ -141,11 +142,13 @@ body,
         font-weight: bolder;
         font-size: 1rem;
         margin-bottom: 0;
+        margin-top: 0;
+
         padding-bottom: 0;
     }
     small{
         padding-top: 0;
-        
+        color: #252525;
         font-size: .5rem;
     }
 }
@@ -156,10 +159,14 @@ section{
     height: 100vh;
     display: flex;
     align-items: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
     p{
         margin-left: 40px;
         margin-right: 40px;
     }
+    box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+
 
 }
 

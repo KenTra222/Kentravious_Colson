@@ -11,6 +11,7 @@ export default function  Modal ({isOpen, children, onClose})  {
         background: 'transparent',
         color: '#892be2a9',
         border: 'none'
+        
     }
 
     

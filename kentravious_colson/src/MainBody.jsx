@@ -9,7 +9,7 @@ const MainBody = () => {
             <div className='intro_contents'>
               <h1>{`<Kentravious Colson/>`}</h1>
               <p>Creative  Frontend Product Developer</p>
-              <small> HTML | CSS | JAVASCRIPT | REACT.JS | BLENDER | FIGMA | WIX </small>
+              <p className='small'> Designing and Building digital assets for small business</p>
             </div>
           </section>
           <section id='work' className='section'>
@@ -22,14 +22,6 @@ const MainBody = () => {
             </div>
           </section>
 
-          <section id='about' className='section'>
-            <div className='about_title'>
-              <h1>Timeline</h1>
-              <div>
-             
-              </div>
-            </div>
-          </section>
 
               <Form/>
         </main>

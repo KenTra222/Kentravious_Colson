@@ -12,7 +12,7 @@ body,
 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     margin: 0;
@@ -31,7 +31,7 @@ body,
         top: 0;
         left: 0;
         height:100vh;
-        width:100vw;
+        width:100%;
         margin: 0;
         padding: 0;
         scroll-snap-type: y mandatory;
@@ -70,10 +70,7 @@ body,
                 width: 30%;
                 p{
                     font-size: 1.2rem;
-                    font-family: 'Zeyada';
-                }
-                :hover{
-                    color: $hover-color;
+                    font-family: 'Monoton';
                 }
             }
             .header-center{    
@@ -120,31 +117,35 @@ body,
         flex-direction: column;
         justify-content: center;
         color: $base-color;
-        background: rgba($color: black, $alpha: 0.5);
+        background: rgba($color: #090909, $alpha: 0.8);
         height: 100vh;
         width: 100vw;
     }
     h1{
-        font-family: 'Monoton', cursive;
-        color: $accent-color;
-        margin-bottom: 0;
-        text-shadow: 2px 2px 1px $base-color; 
-        font-size: 2.75rem;
-    }
-    p{
+        font-family: 'Lato', cursive;
         color: $base-color;
-        font-family: 'Lato';
+        margin-bottom: .5rem;
+        text-shadow: 2px 2px 1px $hover-color; 
+        font-size: 4rem;
+       }
+    p{
+        color: $hover-color;
+        font-family: 'zayada';
         font-weight: bolder;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         margin-bottom: 0;
         margin-top: 0;
-        text-shadow: 2px 2px 2px $accent-color;
+       // text-shadow: 2px 2px 2px $base-color;
+        text-shadow: 2px 2px 2px #090909;
+
         padding-bottom: 0;
     }
-    small{
+    .small{
         padding-top: 0;
         font-size: .75rem;
-        color: #ffffff;
+        color: $base-color;
+     
+
     }
 }
 

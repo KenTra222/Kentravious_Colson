@@ -11,17 +11,39 @@ export default function Form() {
     <section id='contact' className='section'>
             
     <div className='contact_contents'>
-              <h1>Contact</h1>
-              
+      <h1>Contact Me</h1>
+      <div>
+        <div className='contact_info'>
+          <div className='phone_info'>
+            <p className='info_label'>Phone</p>
+            <p className='info_text'>4787443006</p>
+          </div>
+          <div className='email_info'>
+            <p className='info_label'>Email</p>
+            <p className='info_text'>Kentraviousc@gmail.com</p>
+          </div>
+        </div>
+
     <form className='form' onSubmit={handleSubmit(onSubmit)}>
-      
+      <label>
+      Name
       <input className='input' type="text" placeholder="Name" {...register("Name", {})} />
+      </label>
+      <label>
+      Email
       <input className='input' type="email" placeholder="Email" {...register("Email", {})} />
-      <textarea {...register("Short Message", {})} />
+      </label>
+      <label>
+      Describe your project
+      <textarea {...register("Short Message", {})} placeholder="this is where you leave a message"/>
+      </label>
 
       <input className='submit' type="submit" />
     </form>
-            </div>
+        <p>or download my resume here <button>Resume Me </button></p>
+      </div>
+        </div>
+
     </section>
   );
 }

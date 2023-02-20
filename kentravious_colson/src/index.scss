@@ -70,7 +70,7 @@ body,
                 width: 30%;
                 p{
                     font-size: 1.2rem;
-                    font-family: 'Monoton', cursive;
+                    font-family: 'Zeyada';
                 }
                 :hover{
                     color: $hover-color;
@@ -107,7 +107,7 @@ body,
 }
 
 #intro{
-   // background: url('https://media.giphy.com/media/j9E6whHPamxa5KpDQt/giphy.gif');
+    // background: url('https://media.giphy.com/media/j9E6whHPamxa5KpDQt/giphy.gif');
     //background: url("https://media.giphy.com/media/3oriNYvVkCgIhSIKic/giphy.gif") no-repeat;
     background: url('https://media.giphy.com/media/xUOrwev00PyqNAlLu8/giphy.gif');
     //background: url('https://media.giphy.com/media/l3978y5HqiEtqupiM/giphy.gif');
@@ -125,16 +125,17 @@ body,
         width: 100vw;
     }
     h1{
-        color: $base-color;
-        font-family: 'Lato';
+        font-family: 'Monoton', cursive;
+        color: $accent-color;
         margin-bottom: 0;
-       text-shadow: 2px 2px 1px $accent-color; 
+        text-shadow: 2px 2px 1px $base-color; 
+        font-size: 2.75rem;
     }
     p{
         color: $base-color;
-        font-family: 'Zeyada';
+        font-family: 'Lato';
         font-weight: bolder;
-        font-size: 2rem;
+        font-size: 1.25rem;
         margin-bottom: 0;
         margin-top: 0;
         text-shadow: 2px 2px 2px $accent-color;

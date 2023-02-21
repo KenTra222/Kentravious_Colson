@@ -1,6 +1,7 @@
 import React from 'react'
-import './index.scss'
-import Form from './Form'
+import '../index.scss'
+import Form from './Form/Form'
+import { Portfolio } from './Portfolio/Portfolio'
 
 const MainBody = () => {
   return (
@@ -17,7 +18,7 @@ const MainBody = () => {
               <h1>My Projects</h1>
               <div>
                 <h4>Title</h4>
-              
+                <Portfolio/>
               </div>
             </div>
           </section>

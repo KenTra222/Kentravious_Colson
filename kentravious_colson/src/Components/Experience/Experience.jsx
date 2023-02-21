@@ -1,8 +1,7 @@
 import React, {useRef} from 'react'
-import './index.scss'
+import './experience.scss'
 import { useFrame } from '@react-three/fiber';
 import { Center, useTexture, useGLTF, OrbitControls } from '@react-three/drei'
-
 
 
 export default function Experience() {

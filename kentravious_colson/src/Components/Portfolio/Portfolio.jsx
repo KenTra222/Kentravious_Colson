@@ -1,7 +1,7 @@
 import React from 'react'
 import portfolio from "../data/portfolio.js"
 import { PortfolioItem } from '../PortfolioItem/PortfolioItem';
-console.log(portfolio);
+import './portfolio.scss'
 
 export const Portfolio = () => {
   return (

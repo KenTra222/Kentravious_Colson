@@ -12,5 +12,17 @@ export default [
         stack: ['React', 'SCSS', 'Vite '],
         link: 'https://www.claudthacreator.com/'
     },
+    {
+        title: 'fanbloop app',
+        imgUrl: '',
+        stack: ['React', 'SCSS', 'Vite '],
+        link: 'https://www.claudthacreator.com/'
+    },
+    {
+        title: 'fanbloop app',
+        imgUrl: '',
+        stack: ['React', 'SCSS', 'Vite '],
+        link: 'https://www.claudthacreator.com/'
+    },
 
 ]

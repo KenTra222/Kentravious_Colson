@@ -43,7 +43,7 @@ body,
 }
 
 #intro{
-    // background: url('https://media.giphy.com/media/j9E6whHPamxa5KpDQt/giphy.gif');
+     //background: url('https://media.giphy.com/media/j9E6whHPamxa5KpDQt/giphy.gif');
     //background: url("https://media.giphy.com/media/3oriNYvVkCgIhSIKic/giphy.gif") no-repeat;
     background: url('https://media.giphy.com/media/xUOrwev00PyqNAlLu8/giphy.gif');
     //background: url('https://media.giphy.com/media/l3978y5HqiEtqupiM/giphy.gif');
@@ -89,8 +89,9 @@ body,
 }
 
 section{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    background-color: orange;
     display: flex;
     flex-direction: column;
     justify-content: center;

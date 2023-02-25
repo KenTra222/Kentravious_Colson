@@ -1,26 +1,26 @@
 export default [
     {
         title: 'claudthacreator',
-        imgUrl: '',
+        imgUrl: '/src/assets/titans.jpg',
         stack: ['WIX'],
         link: 'https://www.claudthacreator.com/'
     },
 
     {
         title: 'Portfolio Site',
-        imgUrl: '',
+        imgUrl: '/src/assets/titans.jpg ',
         stack: ['React', 'SCSS', 'Vite '],
         link: 'https://www.claudthacreator.com/'
     },
     {
         title: 'fanbloop app',
-        imgUrl: '',
+        imgUrl: '/src/assets/titans.jpg',
         stack: ['React', 'SCSS', 'Vite '],
         link: 'https://www.claudthacreator.com/'
     },
     {
         title: 'fanbloop app',
-        imgUrl: '',
+        imgUrl: '/src/assets/titans.jpg',
         stack: ['React', 'SCSS', 'Vite '],
         link: 'https://www.claudthacreator.com/'
     },

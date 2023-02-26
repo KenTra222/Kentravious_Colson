@@ -43,9 +43,8 @@ body,
 }
 
 #intro{
-     //background: url('https://media.giphy.com/media/j9E6whHPamxa5KpDQt/giphy.gif');
-    //background: url("https://media.giphy.com/media/3oriNYvVkCgIhSIKic/giphy.gif") no-repeat;
-    background: url('https://media.giphy.com/media/xUOrwev00PyqNAlLu8/giphy.gif');
+    
+    background: url('https://media.giphy.com/media/xUOrwev00PyqNAlLu8/giphy.gif') ;
     //background: url('https://media.giphy.com/media/l3978y5HqiEtqupiM/giphy.gif');
     background-size:  cover;
     background-position: center;  
@@ -65,13 +64,18 @@ body,
         color: $base-color;
         margin-bottom: .5rem;
         text-shadow: 2px 2px 1px $hover-color; 
-        font-size: 4.5rem;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 36px;
        }
     p{
         color: $hover-color;
         font-family: 'zayada';
         font-weight: bolder;
         font-size: 2.5rem;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
         margin-bottom: 0;
         margin-top: 0;
        // text-shadow: 2px 2px 2px $base-color;
@@ -81,11 +85,19 @@ body,
     }
     .small{
         padding-top: 0;
-        font-size: 1.25rem;
         color: $base-color;
-     
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+            
 
     }
+}
+
+#work{
+    
+    display: flex;
 }
 
 section{
@@ -98,6 +110,14 @@ section{
     align-items: center;    
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    text-shadow: 2px 2px 1px $hover-color; 
+
+    h3{
+        
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+    }
     p{
         margin-left: 40px;
         margin-right: 40px;

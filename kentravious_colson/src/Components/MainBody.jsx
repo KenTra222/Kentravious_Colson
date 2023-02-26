@@ -17,7 +17,7 @@ const MainBody = () => {
           
           <section id='work' className='section'>
             <div className='work_contents'>
-              <h1>My Projects</h1>
+              <h3>My Projects</h3>
                 <Portfolio/>
             </div>
           </section>

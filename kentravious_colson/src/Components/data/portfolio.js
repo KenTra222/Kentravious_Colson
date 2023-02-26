@@ -9,7 +9,7 @@ export default [
     {
         title: 'Portfolio Site',
         imgUrl: '/src/assets/titans.jpg ',
-        stack: ['React', 'SCSS', 'Vite '],
+        stack: ['React ', 'SCSS | ', 'Vite '],
         link: 'https://www.claudthacreator.com/'
     },
     {

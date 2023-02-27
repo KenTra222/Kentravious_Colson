@@ -1,0 +1,6 @@
+tasks:
+  - name: Installing Dependencies
+    init: npm install
+  - name: Start Dev Server
+    command: npm run dev
+ 

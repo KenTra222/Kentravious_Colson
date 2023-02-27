@@ -2,8 +2,21 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			
+			"type": "npm",
+			"script": "install",
+			"path": "kentravious_colson",
+			"group": "clean",
+			"problemMatcher": [],
+			"label": "npm: install - kentravious_colson",
+			"detail": "install dependencies from package"
+		},
+		{
+			"type": "npm",
+			"script": "dev",
+			"path": "kentravious_colson",
+			"problemMatcher": [],
+			"label": "npm: dev - kentravious_colson",
+			"detail": "vite"
 		}
-	],
-	
+	]
 }

@@ -18,13 +18,12 @@ export default function Experience() {
       planet.current.rotation.x += delta * 0.2
 
   })
- 
-  
+
   return (
     <> 
         <OrbitControls makeDefault/>
         <ambientLight intensity={1}/>
-        <color args={['#252525']} attach='background'/>
+        <color args={['#010101']} attach='background'/>
         <Center>
 
         <mesh ref={planet} scale={2} geometry={nodes.baked.geometry}>

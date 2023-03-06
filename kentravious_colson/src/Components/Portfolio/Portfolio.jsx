@@ -47,6 +47,7 @@ export const Portfolio = () => {
                 title={project.title}
                 stack={project.stack}
                 link={project.link}
+                product={project.product}
                 />
                 </SwiperSlide>
                 ))}

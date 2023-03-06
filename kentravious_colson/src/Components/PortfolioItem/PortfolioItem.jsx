@@ -1,7 +1,7 @@
 import React from 'react'
 import './portfolioItem.scss'
-import {Carousel} from 'react-responsive-carousel'
-export const PortfolioItem = ({ title, imgUrl, stack, link}) => {
+ 
+export const PortfolioItem = ({ title, imgUrl, stack, link,product }) => {
 
   
   return (
@@ -13,7 +13,11 @@ export const PortfolioItem = ({ title, imgUrl, stack, link}) => {
               className='portfolio_img'/>
 
               <div className='item_details'>
-                  <h3>{title}</h3>
+                        <div className='projectInfo'>
+                            <h3>{title}</h3>
+                            <p className='product_tag'><span>{product}</span></p>
+                        </div>
+                   
                   <p>
                       {stack.map(item =>(
                         <span>{item}</span>

@@ -1,10 +1,24 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import '../index.scss'
 
 import Form from './Form/Form'
 import { Portfolio } from './Portfolio/Portfolio'
 
 const MainBody = () => {
+
+  const [animeImage, setAnimeImage] = useState([])
+
+async function getApiData() {
+  const response = await fetch('https://nekos.best/api/v2/neko')
+  const json = await response.json()
+  console.log(json.results[0].url);
+  setAnimeImage(json.results[0].url)
+}
+
+useEffect(() => {
+  getApiData()
+}, [])
+
   return (
     <main>
           <section id='intro' className='section'>
@@ -12,18 +26,22 @@ const MainBody = () => {
               <h1>{`<Kentravious Colson/>`}</h1>
               <p>Creative  Frontend Developer</p>
               <p className='small'> Designing and Building digital assets for small business</p>
+
+
             </div>
           </section>
           
           <section id='work' className='section'>
-            <div className='work_contents'>
-              <h3>My Projects</h3>
+          
+              <h2>My Projects</h2>
                 <Portfolio/>
-            </div>
+            
           </section>
 
-
-              <Form/>
+          <section id='contact' className='section'>
+          <h2>Contact Me</h2>
+            <Form/>
+          </section>
         </main>
   )
 }

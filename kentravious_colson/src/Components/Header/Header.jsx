@@ -21,7 +21,7 @@ export const Header = () => {
 
 
     const   HAMBURGER_BUTTON_STYLES = {
-    color: '#e0e0db',
+    color: '#8a2be2',
     border: 'none',
     background: 'none',
     }

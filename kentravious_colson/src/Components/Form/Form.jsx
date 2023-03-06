@@ -4,14 +4,14 @@ import { useForm } from 'react-hook-form';
 
 export default function Form() {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data);
-  console.log(errors);
+  const onSubmit = data => console.log('hi');
+  //console.log(errors);
   
   return (
-    <section id='contact' className='section'>
+    
             
     <div className='contact_contents'>
-      <h1>Contact Me</h1>
+    
       <div>
         <div className='contact_info'>
           <div className='phone_info'>
@@ -44,6 +44,6 @@ export default function Form() {
       </div>
         </div>
 
-    </section>
+  
   );
 }

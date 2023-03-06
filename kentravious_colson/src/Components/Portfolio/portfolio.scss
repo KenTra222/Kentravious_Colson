@@ -1,12 +1,15 @@
 .portfolio_wrapper{
-    width: 100%;
+    width: 85%;
+   
+    margin-left: 2rem;
 }
 
-.portfolio{
-    display: grid;
-    grid-template-columns: repeat(4, 100%);
-    overflow: auto;
-    overflow-x: scroll;
-    margin-left: 20px;
-    width: 100%;
-}
+// .portfolio{
+//     display: grid;
+//     grid-template-columns: repeat(4, 100%);
+//     overflow: auto;
+//     overflow-x: scroll;
+//     margin-left: 20px;
+//     width: 100%;
+// }
+ 

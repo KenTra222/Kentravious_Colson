@@ -1,17 +1,15 @@
 import React, {useState, useEffect} from 'react'
-import '../index.scss'
-
 import Form from './Form/Form'
 import { Portfolio } from './Portfolio/Portfolio'
+import '../index.scss'
 
 const MainBody = () => {
-
-  const [animeImage, setAnimeImage] = useState([])
+ const [animeImage, setAnimeImage] = useState([])
 
 async function getApiData() {
   const response = await fetch('https://nekos.best/api/v2/neko')
   const json = await response.json()
-  console.log(json.results[0].url);
+  
   setAnimeImage(json.results[0].url)
 }
 

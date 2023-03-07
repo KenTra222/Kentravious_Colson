@@ -20,6 +20,20 @@ $hover-color: #8a2be2;
     
     .contact_info{
         border: 1px solid yellow;
+        display: flex;
+        flex-direction: column;
+        
+        .info_label{
+            font-size: medium;
+            font-weight: 700;
+            margin-bottom: auto;
+        }
+
+        .info_text{
+            font-size: small;
+            font-weight: 400;
+            margin-top: .25rem;
+        }
     }
 
 

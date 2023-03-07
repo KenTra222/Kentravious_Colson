@@ -11,22 +11,22 @@ export default [
         title: 'Portfolio Site',
         imgUrl: '/src/assets/titans.jpg ',
         stack: ['React ', 'SCSS  ', 'Vite '],
-        link: 'https://www.claudthacreator.com/',
+        link: '',
         product: '3D Artwork'
     },
     {
-        title: 'Fanbloop app',
-        imgUrl: '/src/assets/titans.jpg',
+        title: 'King Kai Planet',
+        imgUrl: '/src/assets/kkpic.png',
         stack: ['React ', 'SCSS ', 'Vite '],
-        link: 'https://www.claudthacreator.com/',
-        product: 'indie game'
+        link: '',
+        product: '3D Artwork'
     },
     {
-        title: 'fanbloop app',
-        imgUrl: '/src/assets/titans.jpg',
+        title: 'gas station(1940s)',
+        imgUrl: '/src/assets/gasStation.jpg',
         stack: ['Blender'],
         link: '',
-        product: 'website'
+        product: '3D Artwork'
     },
 
 ]

@@ -28,12 +28,15 @@ useEffect(() => {
 
             </div>
           </section>
+
+          <section id='work' className='section'>
+              <h2>About Me!</h2> 
+                <p>Hi !</p>
+          </section>
           
           <section id='work' className='section'>
-          
               <h2>My Projects</h2>
                 <Portfolio/>
-            
           </section>
 
           <section id='contact' className='section'>

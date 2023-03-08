@@ -37,7 +37,7 @@ export const Header = () => {
 
       <div className='header-center'>
         <div id='canvas_wrapper'>
-        <Canvas>
+        <Canvas shadows>
             <Experience/>
         </Canvas>
         </div>

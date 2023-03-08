@@ -12,6 +12,8 @@ $hover-color: #8a2be2;
     line-height: 1;
     letter-spacing: 1px;  
     color: $base-color;  
+    box-shadow: 6px 3px 5px -1px rgba(0,0,0,0.75);
+
     
     img{
         width: 100%;
@@ -28,17 +30,19 @@ $hover-color: #8a2be2;
         justify-content: space-around;
         width: 100%;
         text-align: left;
+        background: rgba(248, 233, 255, 0.267);
+        color: whitesmoke;
 
         h3{
             width: 100%;
             margin: 0.75rem .25rem;   
             font-style: normal;
             font-weight: 700;
-            font-size: 1.25rem;
+            font-size: 1rem;
             line-height: 24px;
             letter-spacing: 1px;
             text-shadow: none;
-            text-shadow: 1px 1px  $hover-color;
+           text-transform: uppercase;
          }
         
         p{      
@@ -51,7 +55,10 @@ $hover-color: #8a2be2;
     font-size: .85rem;
     color: $base-color;
     text-shadow: none;
-    margin-top: 2rem;
+    margin-top: 1.75rem;
+    color: rgb(190, 138, 250);
+    
+
   }
 }
 

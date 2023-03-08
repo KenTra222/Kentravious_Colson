@@ -53,7 +53,7 @@ export default function Form() {
 
       <input className='submit' type="submit" />
       </form>
-        <p className='resumeText'> - or download my <button >RESUME </button> </p>
+        <p className='resumeText'>  or download my <button >RESUME </button> </p>
       </div>
         </div>
 

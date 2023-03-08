@@ -9,8 +9,8 @@ export default [
 
     {
         title: 'Portfolio Site',
-        imgUrl: '/src/assets/titans.jpg ',
-        stack: ['React ', 'SCSS  ', 'Vite '],
+        imgUrl: '/src/assets/portfolio.jpg ',
+        stack: ['React |', 'SCSS  |', 'Vite |', 'R3F '],
         link: '',
         product: '3D Artwork'
     },

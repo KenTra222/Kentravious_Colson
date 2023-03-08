@@ -7,79 +7,88 @@ $hover-color: #8a2be2;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;  
-    width: 100vw;
-    height: 100svh;  
-     margin: auto;
+    width: 100%;
      padding: 0 1.5rem;
     text-align: left;
     color: $base-color;
     text-shadow: none;
-    
-   
+
 }
+        .info-wrapper{
+        width: 85%;
+        margin-top: 0;
+        }
     
     .contact_info{
         display: flex;
         flex-direction: column;
-         
-         padding: 0;
-     
-        
+        padding: 0;
+        margin-bottom: 25px;
+
+        :nth-child(1){
+        margin-bottom: -2px;
+        }
+
+        :nth-child(2){
+        margin-bottom: 0;
+        }
+   
         .info_label{
-            font-size: medium;
+            font-size: small;
             font-weight: 700;
             margin-bottom: auto;
             margin-left: .5rem;
 
-
         }
 
         .info_text{
-            font-size: small;
+            font-size: smaller;
             font-weight: 400;
-            margin-top: .2rem;
-            color: rgba(245, 245, 245, 0.712);
-         margin-left: .5rem;
-
+            margin-top: .15rem;
+            color:#cc6ef8;
+            margin-left: .5rem;
+            letter-spacing: 1px;
         }
+
     }
 
 
     .form{
-        width: 85%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-    
-        margin: 0;
+        margin-bottom: -2px;
+
 
         label{
-            color: rgba(192, 97, 255, 0.808);
+            color: rgb(255, 255, 255);
             text-shadow: none;
-            margin-bottom: 0;
+            margin-bottom: .2rem;
             margin-left: .5rem;
 
         }
 
         .input{
-            color: $base-color;
             border: none;
-            background: #090909;
+            background: #241b31c5;
             margin: .35rem auto .5rem;
-            width: 99%;
-            padding-top: .25rem;
-            padding-left: .25rem;
+            width: 100%;
+            padding-top: .45rem;
+            padding-left: .5rem;
             padding-bottom: 1.25rem;
             border-radius: 4px;
-      
+            box-shadow: 1px 1px 1px 0px rgba(213, 119, 250, 0.75);
         }
         textarea{
-            border-radius: 4px;
-            border: none;
-            color: $base-color;
-            background: #090909;
             width: 100%;
-            padding-bottom: 3.5rem ;
+            border: none;
+            border-radius: 4px;
+            color: $base-color;
+            background: #241b31c5;
+            padding-bottom: 2.5rem ;
+            box-shadow: 1px 1px 1px 0px rgba(213, 119, 250, 0.75);
+            margin-top: 5px;
         }
     
         .submit{
@@ -92,9 +101,11 @@ $hover-color: #8a2be2;
             line-height: 1;
             font-weight: bolder;
             height: 25%;  
-            padding: 1rem 1.5rem;
-            margin-top: 1.2rem;
-           
+            padding: .75rem 1.25rem;
+            margin-top: 1rem;
+           margin-left: .5rem;
+      
+
         }
             .submit:hover{
                 background: $base-color;
@@ -102,3 +113,17 @@ $hover-color: #8a2be2;
             }
     }
     
+    .resumeText{
+
+        text-align: center;
+        
+        button{
+            background: none;
+            border: none;
+            color:$accent-color;
+
+        }
+            :hover{
+                color: $base-color;
+            }
+    }

@@ -12,7 +12,7 @@ export default function Form() {
             
     <div className='contact_contents'>
     
-      <div>
+      <div className='info-wrapper'>
         <div className='contact_info'>
           <div className='phone_info'>
             <p className='info_label'>Phone</p>
@@ -36,12 +36,12 @@ export default function Form() {
       </label>
       <label>
       Describe your project
-      <textarea {...register("Short Message", {})} placeholder="this is where you leave a message"/>
+      <textarea {...register("Short Message", {})} placeholder=" leave a message"/>
       </label>
 
       <input className='submit' type="submit" />
-    </form>
-        <p>or download my resume here <button>Resume Me </button></p>
+      </form>
+        <p className='resumeText'> - or download my <button >RESUME </button> </p>
       </div>
         </div>
 

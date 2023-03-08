@@ -31,8 +31,7 @@ $hover-color: #8a2be2;
 
         h3{
             width: 100%;
-            margin: 0.5rem .25rem;
-             text-transform: capitalize;
+            margin: 0.75rem .25rem;   
             font-style: normal;
             font-weight: 700;
             font-size: 1.25rem;
@@ -40,7 +39,6 @@ $hover-color: #8a2be2;
             letter-spacing: 1px;
             text-shadow: none;
             text-shadow: 1px 1px  $hover-color;
-
          }
         
         p{      
@@ -50,8 +48,10 @@ $hover-color: #8a2be2;
 
   .stack{ 
     padding-left: .75rem;
-    font-size: 10px;
+    font-size: .85rem;
     color: $base-color;
+    text-shadow: none;
+    margin-top: 2rem;
   }
 }
 
@@ -61,11 +61,12 @@ $hover-color: #8a2be2;
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    font-size: .85rem;
 
     .product_tag{
          text-align: right;
          margin-right: .5rem;
          padding: 0;
-         text-shadow: 1px 1px  $accent-color;
+         text-shadow: none;
     }
 }

@@ -36,6 +36,13 @@ useEffect(() => {
             </div>
           </section>
 
+          
+          
+          <section id='work' className='section'>
+              <h2>MY PROJECTS</h2>
+                <Portfolio/>
+          </section>
+          
           <section id='about' className='section'>
               <h2>ABOUT ME!</h2> 
                 <ul className='about_ul'>
@@ -75,11 +82,6 @@ useEffect(() => {
                   <p>Bad Cereal Commercials dont exist...</p>
                   </li>
                 </ul>
-          </section>
-          
-          <section id='work' className='section'>
-              <h2>MY PROJECTS</h2>
-                <Portfolio/>
           </section>
 
           <section id='contact' className='section'>

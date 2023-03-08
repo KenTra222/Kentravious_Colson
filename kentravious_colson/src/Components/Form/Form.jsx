@@ -16,11 +16,12 @@ export default function Form() {
         <div className='contact_info'>
           <div className='phone_info'>
             <p className='info_label'>Phone</p>
-            <p className='info_text'>4787443006</p>
+            <p className='info_text'>@4787443006</p>
           </div>
+          
           <div className='email_info'>
             <p className='info_label'>Email</p>
-            <p className='info_text'>Kentraviousc@gmail.com</p>
+            <p className='info_text'>@Kentraviousc@gmail.com</p>
           </div>
         </div>
 

@@ -23,7 +23,7 @@ useEffect(() => {
             <div className='intro_contents'>
               <h1>{`<Kentravious Colson/>`}</h1>
               <p>Creative  Frontend Developer</p>
-              <p className='small'> Designing and Building digital assets for small business</p>
+              <p className='small'> Building digital assets for small business</p>
 
 
             </div>

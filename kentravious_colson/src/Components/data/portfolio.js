@@ -1,7 +1,7 @@
 export default [
     {
         title: 'claudthacreator',
-        imgUrl: '/src/assets/titans.jpg',
+        imgUrl: '/src/assets/ctc.jpg',
         stack: ['WIX'],
         link: 'https://www.claudthacreator.com/',
         product: 'website'
@@ -17,12 +17,12 @@ export default [
     {
         title: 'King Kai Planet',
         imgUrl: '/src/assets/kkpic.png',
-        stack: ['React ', 'SCSS ', 'Vite '],
+        stack: ['Blender '],
         link: '',
         product: '3D Artwork'
     },
     {
-        title: 'gas station(1940s)',
+        title: 'gas station',
         imgUrl: '/src/assets/gasStation.jpg',
         stack: ['Blender'],
         link: '',

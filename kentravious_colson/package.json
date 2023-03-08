@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "-": "^0.0.1",
+    "@emailjs/browser": "^3.10.0",
     "@react-three/drei": "^9.56.12",
     "@react-three/fiber": "^8.11.1",
     "force": "^0.0.3",
@@ -31,14 +32,14 @@
     "vite": "^4.1.0"
   },
   "tasks": [
-		{
-			"type": "npm",
-			"script": "install",
-			"path": "kentravious_colson",
-			"group": "clean",
-			"problemMatcher": [],
-			"label": "npm: install - kentravious_colson",
-			"detail": "install dependencies from package"
-		}
-	]
+    {
+      "type": "npm",
+      "script": "install",
+      "path": "kentravious_colson",
+      "group": "clean",
+      "problemMatcher": [],
+      "label": "npm: install - kentravious_colson",
+      "detail": "install dependencies from package"
+    }
+  ]
 }

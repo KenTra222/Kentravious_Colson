@@ -5,7 +5,7 @@ $hover-color: #8a2be2;
 .modal{}
 
 .modal_background{
-    background-color: rgba(230, 196, 255, 0.456);
+ 
     width: 100w;
     height: 100svh;
     position: fixed;
@@ -16,8 +16,8 @@ $hover-color: #8a2be2;
 }
 
 .modal_container{
-    background-color: #010101;
-    color: $accent-color;
+    background: rgb(9,9,9);
+background: linear-gradient(-45deg,  rgba(9,9,9,1) 80%, rgba(78,9,121,1) 95%, rgb(134, 46, 189) 100%);
     position: absolute;
     top: 0;
     right: 0;
@@ -36,6 +36,7 @@ $hover-color: #8a2be2;
         text-align: center;
         height: 85vh;
         padding-right: 25px;
+    color: whitesmoke;
         li{
             list-style: none;
         
@@ -48,13 +49,14 @@ $hover-color: #8a2be2;
                 line-height: 1em;
                 letter-spacing: 2px;
                 text-transform: uppercase;
-                color: transparent;
-                -webkit-text-stroke: 1px $accent-color;               
+                color: #7b0ce4;
+                     
             }
                 :hover{
-                    border-bottom: 1px solid $accent-color;
-                    font-weight: bold;
+                    border-bottom: 2px solid $accent-color;
+                    font-weight: bolder;
                     color: #f1f1f1;
+                    -webkit-text-stroke: 1px #481379; 
                 }
         }
     }

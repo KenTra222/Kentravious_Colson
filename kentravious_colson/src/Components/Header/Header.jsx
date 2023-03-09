@@ -6,6 +6,7 @@ import { MdOutlineDeveloperMode } from "react-icons/md";
 import {Canvas} from '@react-three/fiber'
 import './header.scss'
 
+
 export const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false) 
@@ -48,6 +49,7 @@ export const Header = () => {
       <div className='header-right'>
           <button className='hamburger_menu' style={HAMBURGER_BUTTON_STYLES} onClick={toggleModal}>
             <TiThMenuOutline />
+       
           </button>
       </div>
       </div>
@@ -57,7 +59,7 @@ export const Header = () => {
         <nav>
           <ul >
               <li><a href='#' data-text='home'>home</a ></li>
-              <li><a href='#about' data-text='about'>about</a ></li>
+              <li><a href='' data-text='about'>about</a ></li>
               <li><a href='#project' data-text='projects'>projects</a ></li>
               <li><a href='#contact' data-text='contact'>contact</a ></li>
           </ul>

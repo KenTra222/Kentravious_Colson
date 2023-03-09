@@ -42,55 +42,48 @@ const MainBody = () => {
           <section id='about' className='section'>
               <h2>ABOUT ME!</h2> 
                 <ul className='about_ul'>
-                <motion.ul animate="hidden" variants={list}>
-
-                  <motion.li variants={item}>
+                 
+                  
                     <li>
                       <div>
                         <SiAboutdotme/>
+                      <p>Artist By nature</p>
                       </div>
-                      <p>Hugeee nerd!</p>
                     </li>
-                  </motion.li>
-
-                  <motion.li variants={item}>
+                 
                     <li>
                       <div>
                       <SiStylelint/>
+                    <p>Great in a suit</p> 
+
                       </div>
-                      <p> Bruce Wayne is valid</p>
+                     
                     </li>
-                  </motion.li>
 
-
-                  <motion.li variants={item}>
                   <li>
                     <div>
                       <AiFillLike/>
+                       <p>Music, Anime, Dancing</p> 
                     </div>
-                       <p>Music, Anime, Chicken Sandwiches, ATL </p> 
                     </li>
-                  </motion.li>
 
-                    <motion.li variants={item}>
                       <li>
                         <div>
                           <ImCool2/> 
+                        <p>Cool because i sweat a lot <span><TbHandLittleFinger/></span></p>
                         </div>
-                        <p>Cool because i sweat a lot <span><TbHandLittleFinger/></span>...</p>
                       </li>
-                    </motion.li>
 
-                  <motion.li variants={item}>
+
                     <li>
                       <div>
                         <GiThink/>  
-                    </div>
                     <p>Bad Cereal Commercials dont exist...</p>
+                    </div>
                     </li>
-                  </motion.li>
 
-                </motion.ul>
+
+
                 </ul>
           </section>
 

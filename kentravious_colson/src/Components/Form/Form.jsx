@@ -2,11 +2,37 @@ import React, {useRef} from 'react';
 import './form.scss'
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Form() {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = data => console.log('hi');
-  //console.log(errors);
+  const submitNotify = () => {
+    toast.success('🫱🏾‍🫲🏿 Great! Will Be In Touch Soon', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
+};
+
+const resumeNotify = () => {
+  toast.success('🫱🏾‍🫲🏿 Great! The Resume Is Downloading', {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    });
+};
+  
   
   const form = useRef();
 
@@ -51,9 +77,23 @@ export default function Form() {
       <textarea {...register("message", {})} placeholder=" leave a message"/>
       </label>
 
-      <input className='submit' type="submit" />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        />
+       
+         <input className='submit' type="submit" onClick={submitNotify}/>
+      <ToastContainer />
       </form>
-        <p className='resumeText'>  or download my <button >RESUME </button> </p>
+        <p className='resumeText'>  or download my <button onClick={resumeNotify}>RESUME </button> </p>
       </div>
         </div>
 

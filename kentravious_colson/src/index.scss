@@ -121,13 +121,14 @@ section{
 
     h2{
         font-family: 'rampart one', cursive;
-        margin-top: 3rem;
+        margin-top: 4rem;
         margin-bottom: 0;
         font-weight: 700;
         font-size: 2rem;
         line-height: 28px;
         letter-spacing: 1.25px;
         text-shadow:  1px 1px 1px #3f00a5;
+       
     }
    
     box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
@@ -137,11 +138,16 @@ section{
 //about
 
 .about_ul{
-    width: 100%;
+    width: 95%;
     list-style: none;
     text-transform: capitalize;
     line-height: 20px;
     text-shadow: none;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
 
     li{
         display: flex;       

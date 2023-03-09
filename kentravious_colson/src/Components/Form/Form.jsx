@@ -10,7 +10,7 @@ export default function Form() {
   const submitNotify = () => {
     toast.success('🫱🏾‍🫲🏿 Great! Will Be In Touch Soon', {
       position: "top-right",
-      autoClose: 5000,
+      autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -23,7 +23,7 @@ export default function Form() {
 const resumeNotify = () => {
   toast.success('🫱🏾‍🫲🏿 Great! The Resume Is Downloading', {
     position: "top-right",
-    autoClose: 5000,
+    autoClose: 3000,
     hideProgressBar: false,
     closeOnClick: true,
     pauseOnHover: true,
@@ -68,27 +68,19 @@ const resumeNotify = () => {
       Name
       <input className='input' type="text" placeholder="Name" {...register("user_name", {})} />
       </label>
+
       <label>
-      Email
+       Email
       <input className='input' type="email" placeholder="Email" {...register("user_email", {})} />
       </label>
+
       <label>
-      Describe your project
-      <textarea {...register("message", {})} placeholder=" leave a message"/>
+        Describe your project
+        <textarea {...register("message", {})} placeholder=" leave a message"/>
       </label>
 
-      <ToastContainer
-        position="top-right"
-        autoClose={3000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-        />
+      {/*notification*/}
+      
        
          <input className='submit' type="submit" onClick={submitNotify}/>
       <ToastContainer />

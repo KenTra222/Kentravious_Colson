@@ -6,10 +6,12 @@ import { Header } from './Components/Header/Header';
 export default function App() {
 
   return (    
-    <div  className='App-Wrapper'>
-        <Header/>
-        <MainBody/>
-    </div>
+    
+      
+    <div  className='App-Wrapper'>     
+          <Header/>
+          <MainBody/>
+    </div> 
   )
 }
 

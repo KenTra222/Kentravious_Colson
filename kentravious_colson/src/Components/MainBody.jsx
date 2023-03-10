@@ -10,9 +10,7 @@ import {TbHandLittleFinger} from 'react-icons/tb'
 import { motion, useScroll, Reorder } from "framer-motion"
 
 const MainBody = () => {
-  const list = { hidden: { opacity: 0 } }
-  const item = { hidden: { x: -10, opacity: 0 } }
-
+  
   return (
     <main>
           <motion.div

@@ -38,7 +38,7 @@ export const Header = () => {
             y:[-2,-1,-2,-1,-2,-1,-2,-1,0],
             rotate: [0, 90, 90,90, 90,180,180, 270, 270,0, 0],
             }}         
-          transition={{ type: 'spring', damping: 0, stiffness: 800, duration: 3}}>
+          transition={{ type: 'spring', damping: 0, stiffness: 800, duration: 4}}>
           <FaPlaceOfWorship color='#c766ffbd'/>
         </motion.div>
         <p className='logo-text'>KC</p>

@@ -207,4 +207,16 @@ justify-content: space-evenly;
 }
 
 
- 
+ .scrollText{
+    display: inline;
+    background: #090909;
+    font-size: small;
+    position: absolute; 
+    letter-spacing: 1px;
+    font-weight: bold;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: .15rem .5rem;
+    border-radius: 8px 8px 0 0;
+    
+ }

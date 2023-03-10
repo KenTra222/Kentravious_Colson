@@ -8,9 +8,11 @@ export default function App() {
   return (    
     
       
-    <div  className='App-Wrapper'>     
+    <div  className='App-Wrapper'>  
+            
           <Header/>
           <MainBody/>
+          <p className='scrollText'> scroll down</p>
     </div> 
   )
 }

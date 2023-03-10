@@ -1,24 +1,23 @@
+import './header.scss'
 import React, {useState} from 'react'
 import Experience from '../Experience/Experience'
 import Modal from '../Modal/Modal';
 import { TiThMenuOutline } from "react-icons/ti";
-import { MdOutlineDeveloperMode } from "react-icons/md";
+import { FaPlaceOfWorship } from "react-icons/fa";
 import {Canvas} from '@react-three/fiber'
-import './header.scss'
-
+import {motion} from 'framer-motion'
+import ReactDOM from "react-dom/client";
+import {createBrowserRouter,RouterProvider} from "react-router-dom";
 
 export const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false) 
-    const [isScrolling, setIsScrolling] = useState(false)
+
 
     const toggleModal = ( ) => {
         setIsOpen(!isOpen)
     }
 
-    const scrollingFunction = ( ) => {
-        setIsScrolling(!isScrolling)
-    }
 
 
     const   HAMBURGER_BUTTON_STYLES = {
@@ -32,7 +31,15 @@ export const Header = () => {
         <div className='header' >
     <div className='header-items'>
       <div className='header-left'>
-        <MdOutlineDeveloperMode/>
+        <motion.div
+          animate={{
+            x: [0, 75,  200, 200,200, 200, 0, 0],
+            rotate: [0, 90, 90, -90, -90,0, 0],
+            }}        
+        
+          transition={{ type: 'spring', bounce: 3, velocity: 20, delay: 2}}>
+          <FaPlaceOfWorship/>
+        </motion.div>
         <p className='logo-text'>KC</p>
       </div>
 
@@ -55,15 +62,27 @@ export const Header = () => {
       </div>
     </div>   
        
+
       <Modal isOpen={isOpen} onClose={toggleModal}>
+    <motion.div
+              initial={{x: -100}}
+              animate={{ x: 0}}
+            >
         <nav>
           <ul >
+            <motion.div
+              initial={{x: -100}}
+              animate={{ x: 0}}
+            >
+
               <li><a href='#' data-text='home'>home</a ></li>
               <li><a href='' data-text='about'>about</a ></li>
               <li><a href='#project' data-text='projects'>projects</a ></li>
               <li><a href='#contact' data-text='contact'>contact</a ></li>
+            </motion.div>
           </ul>
         </nav>
+            </motion.div>
         </Modal>
         </div>
         

@@ -1,14 +1,15 @@
 import './header.scss'
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Experience from '../Experience/Experience'
 import Modal from '../Modal/Modal';
 import { TiThMenuOutline } from "react-icons/ti";
 import { FaPlaceOfWorship } from "react-icons/fa";
 import {Canvas} from '@react-three/fiber'
-import {motion} from 'framer-motion'
+import {motion, useMotionValue, useVelocity } from 'framer-motion'
 import ReactDOM from "react-dom/client";
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
 
+console.log(motion);
 export const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false) 
@@ -18,7 +19,7 @@ export const Header = () => {
         setIsOpen(!isOpen)
     }
 
-
+    
 
     const   HAMBURGER_BUTTON_STYLES = {
     color: '#8a2be2',
@@ -33,12 +34,12 @@ export const Header = () => {
       <div className='header-left'>
         <motion.div
           animate={{
-            x: [0, 75,  200, 200,200, 200, 0, 0],
-            rotate: [0, 90, 90, -90, -90,0, 0],
-            }}        
-        
-          transition={{ type: 'spring', bounce: 3, velocity: 20, delay: 2}}>
-          <FaPlaceOfWorship/>
+            x: [0, 75, 100, 100,100, 100, 0, 0],
+            y:[-2,-1,-2,-1,-2,-1,-2,-1,0],
+            rotate: [0, 90, 90,90, 90,180,180, 270, 270,0, 0],
+            }}         
+          transition={{ type: 'spring', damping: 0, stiffness: 800, duration: 3}}>
+          <FaPlaceOfWorship color='#c766ffbd'/>
         </motion.div>
         <p className='logo-text'>KC</p>
       </div>

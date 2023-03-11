@@ -44,68 +44,7 @@ body,
     }
 }
 
-#intro{
-    
-    background: url('https://media.giphy.com/media/xUOrwev00PyqNAlLu8/giphy.gif') ;
-    background-size:  cover;
-    background-position: center;  
 
-    font-size: 2.5rem; 
-    .intro_contents{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: $base-color;
-        background: rgba($color: #090909, $alpha: 0.85);
-        height: 100svh;
-        width: 100%;
-        letter-spacing: normal;
-        margin: 0 auto;
-        div{
-           
-            width: 85%;
-            margin: 0 auto;
-        }
-    }
-    h1{
-        color: $base-color;
-        margin-bottom: .5rem;
-        text-shadow: 2px 1px 1px $hover-color; 
-        font-weight: 700;
-        font-size: 3.5rem;
-        line-height: 1em;
-  
-       }
-    p{
-        color: $hover-color;
-        font-weight: bolder;
-        font-size: 1.75rem;
-        font-weight: 800; 
-        line-height: 28px;
-        margin-bottom: 35px;
-        margin-top: 0;
-        // text-shadow: 2px 2px 2px $base-color;
-        text-shadow: 2px 1px 1px #090909;
-        
-        
-    }
-    .small{
-    
-        font-family: 'Lato';
-        color: whitesmoke;
-        padding: .5rem .85rem;
-        background: #090909;
-        border-radius: 61px 0px 61px 0px;
-        font-size: 1rem;
-        line-height: 22px;
-        letter-spacing: 2px;
-        box-shadow: 2px 2px 2px 0px #c766ffbd;
-        margin: 0 auto;
-        width: 75%;
-       
-
-    }
-}
 
 
 
@@ -141,50 +80,6 @@ section{
 
 //about
 
-#about{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-evenly;
-margin: 0 auto;
-width: 100%;
-.aboutContent_wrapper{
-width: 85%;
-padding: 0;
-margin: 0 auto;
-//background: rgba(112, 92, 92, 0.185);
-
-}
-p{
-     
-    margin: 0 auto;
-    font-size: 1.35rem;
-    letter-spacing: 1px;
-    line-height: 26px;
-    width: 85%;
-    color: rgb(245, 245, 245);
-    text-shadow:  1px 1px 1px rgba(177, 176, 176, 0.75);
-
-     
-}
-span{                 
-    font-family: 'Monoton';
-    color: rgba(250, 250, 36, 0.884);
-   
-    
-    font-size: 1.5rem;
-}
-    .coolStuff{
-        font-family: 'Lobster';
-             font-size: 1.25rem;
-    color: rgba(182, 36, 250, 0.767);
-
-
-    }
-
- 
- 
-}
 
 
  .scrollText{

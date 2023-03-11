@@ -48,6 +48,10 @@ const resumeNotify = () => {
   };
 
   return (
+
+    <section id='contact' className='section'>
+          <h2>CONTACT ME</h2>
+        
     <div className='contact_contents'>
     
       <div className='info-wrapper'>
@@ -89,6 +93,7 @@ const resumeNotify = () => {
       </div>
         </div>
 
+          </section>
   
   );
 }

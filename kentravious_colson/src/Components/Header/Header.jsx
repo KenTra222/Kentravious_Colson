@@ -5,28 +5,26 @@ import Modal from '../Modal/Modal';
 import { TiThMenuOutline } from "react-icons/ti";
 import { FaPlaceOfWorship } from "react-icons/fa";
 import {Canvas} from '@react-three/fiber'
-import {motion, useMotionValue, useVelocity } from 'framer-motion'
-import ReactDOM from "react-dom/client";
-import {Link} from "react-router-dom";
+import {motion} from 'framer-motion'
+import { HashLink as Link } from 'react-router-hash-link';
 
-console.log(motion);
-export const Header = () => {
+
+
+const   HAMBURGER_BUTTON_STYLES = {
+  color: '#8a2be2',
+  border: 'none',
+  background: 'none',
+  }
+
+export const Header = (...props) => {
 
     const [isOpen, setIsOpen] = useState(false) 
-
-
     const toggleModal = ( ) => {
         setIsOpen(!isOpen)
     }
 
+   
     
-
-    const   HAMBURGER_BUTTON_STYLES = {
-    color: '#8a2be2',
-    border: 'none',
-    background: 'none',
-    }
-
   return (
     <div>      
         <div className='header' >
@@ -76,14 +74,20 @@ export const Header = () => {
               animate={{ x: 0}}
             >
 
-              <li>
-               
-                  <a href='#about' data-text='home'>home</a >
-                 
-                  </li>
-              <li><a href='' data-text='about'>about</a ></li>
-              <li><a href='#project' data-text='projects'>projects</a ></li>
-              <li><a href='#contact' data-text='contact'>contact</a ></li>
+              <li onClick={toggleModal}>
+                <Link smooth  to='#intro'>
+                    home
+                </Link>
+              </li>
+              <li onClick={toggleModal}>
+                <Link to='#projects' smooth>projects</Link >
+              </li>
+              <li onClick={toggleModal}>
+                <Link smooth to="#about" >about</Link>
+              </li>
+              <li onClick={toggleModal}>
+                <Link smooth to='#contact'  >contact</Link >
+              </li>
             </motion.div>
           </ul>
         </nav>

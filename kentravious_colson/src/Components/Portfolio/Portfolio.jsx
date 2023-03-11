@@ -14,7 +14,9 @@ import 'swiper/css/navigation';
 
 export const Portfolio = () => {
   return (
-    
+    <section id='projects' className='section'>
+              <h2>MY PROJECTS</h2>
+             
     <div className='portfolio_wrapper'>
 
           <div className='portfolio'>
@@ -29,7 +31,7 @@ export const Portfolio = () => {
             stretch: 0,
             depth: 100,
             modifier: 2.5,
-        }}
+          }}
             pagination={{ el: '.swiper-pagination', clickable: true }}
             navigation={{
               nextEl: '.swiper-button-next',
@@ -55,6 +57,7 @@ export const Portfolio = () => {
                 </Swiper>
           </div>
     </div>
+          </section>
             
   )
 }

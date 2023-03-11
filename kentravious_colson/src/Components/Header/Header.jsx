@@ -7,7 +7,7 @@ import { FaPlaceOfWorship } from "react-icons/fa";
 import {Canvas} from '@react-three/fiber'
 import {motion, useMotionValue, useVelocity } from 'framer-motion'
 import ReactDOM from "react-dom/client";
-import {createBrowserRouter,RouterProvider} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 console.log(motion);
 export const Header = () => {
@@ -34,11 +34,11 @@ export const Header = () => {
       <div className='header-left'>
         <motion.div
           animate={{
-            x: [0, 75, 100, 100,100, 100, 0, 0],
-            y:[-2,-1,-2,-1,-2,-1,-2,-1,0],
-            rotate: [0, 90, 90,90, 90,180,180, 270, 270,0, 0],
+            x: [0, 0, 100, 100,100, 100, 0, 0],
+            y:[-1,1,-1,1,-1,1,-1,1,-1,1,-1,1, 0],
+            rotate: [0, 90, 90,90, 90,180,180, 180, 270, 270,270,360, ],
             }}         
-          transition={{ type: 'spring', damping: 0, stiffness: 800, duration: 4}}>
+          transition={{ type: 'spring', damping: 0, stiffness: 800, duration: 4, delay: 2}}>
           <FaPlaceOfWorship color='#c766ffbd'/>
         </motion.div>
         <p className='logo-text'>KC</p>
@@ -76,7 +76,11 @@ export const Header = () => {
               animate={{ x: 0}}
             >
 
-              <li><a href='#' data-text='home'>home</a ></li>
+              <li>
+               
+                  <a href='#about' data-text='home'>home</a >
+                 
+                  </li>
               <li><a href='' data-text='about'>about</a ></li>
               <li><a href='#project' data-text='projects'>projects</a ></li>
               <li><a href='#contact' data-text='contact'>contact</a ></li>

@@ -117,21 +117,4 @@ $hover-color: #8a2be2;
             }
     }
     
-    .resumeText{
-      
-        text-align: right;
-        margin-top: -20px;
-        
-        font-size: .75rem;
-        button{
-            background: none;
-            border: none;
-            color:$accent-color;
-        font-size: .65rem;
-        margin: 0;
-            
-        }
-            :hover{
-                color: $base-color;
-            }
-    }
+    

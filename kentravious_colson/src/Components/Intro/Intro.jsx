@@ -5,11 +5,7 @@ import './intro.scss'
 const Intro = () => {
   return (
     <section id='intro' className='section'>
-    <motion.div
-            initial={{ opacity: 0,  }}
-            animate={{  opacity: 1,   }}
-            transition={{ duration: 0.75 }}
-          >
+    
             
             <div className='intro_contents'>
               <div>
@@ -20,7 +16,7 @@ const Intro = () => {
                 </p>
               </div>
             </div>
-          </motion.div>
+    
           </section>
   )
 }

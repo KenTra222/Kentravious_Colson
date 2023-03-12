@@ -59,7 +59,6 @@ const resumeNotify = () => {
           <div className='phone_info'>
             <p className='info_label'>Phone</p>
             <p className='info_text'>@4787443006</p>
-      <p className='resumeText'>   download my <button onClick={resumeNotify}>RESUME </button> 👈🏾</p>
           </div>
           
           <div className='email_info'>

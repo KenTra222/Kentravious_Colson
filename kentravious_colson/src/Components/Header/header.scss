@@ -59,10 +59,10 @@ $hover-color: #8a2be2;
     }
     .header-right{
         display: flex;
-        align-items: center;
+       
         justify-content: right;
-        width: 30%; 
-  
+        width: 25%; 
+        margin-right: .5rem;
         .hamburger_menu{
            
             font-size: 1.5rem;

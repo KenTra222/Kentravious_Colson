@@ -32,22 +32,22 @@ const App = () => {
               <div className='whyme_wrapper'> 
               <ul className='whyList'>
                 <li>
-                  <p>Firstly, I have customer relations experience which gives me an understanding of the needs and desires of your target audience to create products that will resonate with them. allowing me to be able to conduct effective market research, gather customer feedback, and incorporate that feedback into the product development process. This can lead to products that are more likely to succeed in the marketplace.
-                  </p>
+                   Firstly, I have customer relations experience which gives me an understanding of the needs and desires of your target audience to create products that will resonate with them. allowing me to be able to conduct effective market research, gather customer feedback, and incorporate that feedback into the product development process. This can lead to products that are more likely to succeed in the marketplace.
+                   
                 </li>
 
                 <li>
-                  <p>Secondly, 3D modeling skills are increasingly important in product development. 3D modeling allows me to create detailed, accurate models of products before they are built, which can save time and resources in the development process.  also allowing me to create virtual prototypes that can be tested and refined before moving to the production stage.
-                  </p>
+                  Secondly, 3D modeling skills are increasingly important in product development. 3D modeling allows me to create detailed, accurate models of products before they are built, which can save time and resources in the development process.  also allowing me to create virtual prototypes that can be tested and refined before moving to the production stage.
+                   
                 </li>
 
                 <li>
-                  <p>Finally, a product developer with both customer relations experience and 3D modeling skills can bring a unique perspective to the product development process. allowing me to consider both the customer's perspective and the technical requirements of the product, leading to products that are both user-friendly and technically sound.
-                  </p>
+                  Finally, a product developer with both customer relations experience and 3D modeling skills can bring a unique perspective to the product development process. allowing me to consider both the customer's perspective and the technical requirements of the product, leading to products that are both user-friendly and technically sound.
+                 
                 </li>
                 <li>
-                  <p>Overall, I can help your organization create products that are more likely to succeed in the marketplace, while also saving time and resources in the development process.
-                  </p>
+                  Overall, I can help your organization create products that are more likely to succeed in the marketplace, while also saving time and resources in the development process.
+                  
                 </li>
 
               </ul>

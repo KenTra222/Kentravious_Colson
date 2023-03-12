@@ -22,6 +22,7 @@ body,
     
     ::-webkit-scrollbar {
         display: none;
+        padding-bottom: 40px; 
     }
     
     .App-Wrapper{                
@@ -57,7 +58,6 @@ section{
     align-items: center;    
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    padding-bottom: 20px; 
     
     
 

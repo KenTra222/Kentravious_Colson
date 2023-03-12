@@ -2,6 +2,16 @@ $base-color: #e0e0db;
 $accent-color: #892be2a9;
 $hover-color: #8a2be2;
 
+
+#contact{
+    
+    padding: 0;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 .contact_contents{
     display: flex;
     flex-direction: column;

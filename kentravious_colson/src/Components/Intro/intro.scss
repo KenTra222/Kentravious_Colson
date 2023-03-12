@@ -15,7 +15,7 @@ $hover-color: #8a2be2;
         flex-direction: column;
         justify-content: center;
         color: $base-color;
-        background: rgba($color: #090909, $alpha: 0.85);
+        background: rgba($color: #090909, $alpha: 0.9);
         height: 100svh;
         width: 100svw;
         letter-spacing: normal;
@@ -39,7 +39,7 @@ $hover-color: #8a2be2;
     p{
         color:  rgba(213, 119, 250, 0.75);
         font-weight: bolder;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         font-weight: 800; 
         font-family: 'lobster';
 
@@ -62,7 +62,7 @@ $hover-color: #8a2be2;
         font-size: 1rem;
         line-height: 22px;
         letter-spacing: 2px;
-        box-shadow: 2px 2px 2px 0px #c766ffbd;
+        box-shadow: 1px 1px 1px 0px rgba(213, 119, 250, 0.75);
         margin: 0 auto;
         width: 75%;
        

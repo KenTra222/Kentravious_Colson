@@ -12,7 +12,7 @@ const Intro = () => {
                 <h1>{`<Kentravious Colson/>`}</h1>
                 <p>Creative Product Developer</p>
                 <p className='small'> 
-                Designing and Building digital assets for small businesses
+                Designing and Building digital assets for businesses
                 </p>
               </div>
             </div>

@@ -18,7 +18,11 @@ const About = () => {
                     delaySpeed={3000}/>
                     </span>
                       <p>
-                    If You're reading this then that means i didn't survive...Wait! wrong script...okay from the top!..I'm a Creative Product Developer (<span className='coolStuff'>I Make cool stuff on my laptop</span>). I have experience in multiple fields such as web design, project management, Computer Programming, 3D Modeling & etc to bring your ideas to life! 
+                    If you're reading this then that means I didn't survive. Wait... 
+                    wrong script...okay from the top. I'm a Creative Product Developer
+                     (<span className='coolStuff'>I Make cool stuff for businesses.</span>).
+                      I have experience in multiple fields such as Web Design, 
+                      Project Management, Computer Programming, 3D Modeling, & much more to bring your ideas to life. 
                     </p>
 
             </div>    

@@ -17,8 +17,8 @@ export const Portfolio = () => {
     <section id='projects' className='section'>
               <h2>MY PROJECTS</h2>
              
+          <span>(swipe to view)</span>
     <div className='portfolio_wrapper'>
-
           <div className='portfolio'>
           <Swiper
             effect={'coverflow'}

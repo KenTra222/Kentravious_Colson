@@ -14,7 +14,7 @@ export default function Experience() {
   useFrame((state, delta) =>
   {
       planet.current.rotation.y += delta * 0.2
-      planet.current.rotation.x += delta * 0.2
+      planet.current.rotation.x += delta * 0.1
   })
 
   return (

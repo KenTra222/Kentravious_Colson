@@ -24,7 +24,7 @@ background: linear-gradient(-45deg,  rgba(9,9,9,1) 80%, rgba(78,9,121,1) 95%, rg
     bottom: 0;
     left: 0;
     z-index: 110;
-    height: 100vh;
+    height: 100svh;
     -webkit-text-stroke: #8a2be2;
     width: 100vw;
 
@@ -36,12 +36,13 @@ background: linear-gradient(-45deg,  rgba(9,9,9,1) 80%, rgba(78,9,121,1) 95%, rg
         text-align: center;
         height: 85vh;
         padding-right: 25px;
-    color: whitesmoke;
+        color: whitesmoke;
+        margin: 0 auto;
         li{
             list-style: none;
         
             font-size: 1.75rem;
-            margin-top: 2.5rem;
+            margin-top: 2.25rem;
             a{
     
                 font-size: 4rem;
@@ -63,20 +64,22 @@ background: linear-gradient(-45deg,  rgba(9,9,9,1) 80%, rgba(78,9,121,1) 95%, rg
 }
 
 .modal_controls {
-    width: 100%;
+     
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: baseline;
+ 
+    padding: 0;
 }
 
 .modal_close{
     position: relative;
     border: none;
-    background: transparent;
     font-size: 2.75rem;
     cursor: pointer;
-    margin-top: .75rem;
-    margin-right: .75rem;
+    margin-top: 1.75rem;
+    margin-right: 2rem;
+ 
 
 }
 

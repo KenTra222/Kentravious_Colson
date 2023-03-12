@@ -6,6 +6,7 @@ import About from './About/About'
 import Intro from './Intro/Intro'
 import { Header } from './Header/Header'
 import { BrowserRouter as Router } from 'react-router-dom';
+import {AiOutlineDown} from 'react-icons/ai'
  
 const App = () => {
     
@@ -28,7 +29,7 @@ const App = () => {
           <About  />
 
           <Form  />
-          <p className='scrollText'> scroll down</p>
+          <p className='scrollArrow'> <AiOutlineDown/></p>
         </main>
     </div> 
     </Router>

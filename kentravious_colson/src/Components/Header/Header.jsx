@@ -11,7 +11,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 
 const   HAMBURGER_BUTTON_STYLES = {
-  color: '#8a2be2',
+  color: ' rgba(213, 119, 250, 0.75)',
   border: 'none',
   background: 'none',
   }

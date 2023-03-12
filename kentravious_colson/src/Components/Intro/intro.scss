@@ -17,9 +17,9 @@ $hover-color: #8a2be2;
         color: $base-color;
         background: rgba($color: #090909, $alpha: 0.85);
         height: 100svh;
-        width: 100vw;
+        width: 100svw;
         letter-spacing: normal;
-        margin: 0 auto;
+        margin: 0  ;
         div{
            
             width: 85%;
@@ -37,7 +37,7 @@ $hover-color: #8a2be2;
   
        }
     p{
-        color: $hover-color;
+        color:  rgba(213, 119, 250, 0.75);
         font-weight: bolder;
         font-size: 1.75rem;
         font-weight: 800; 

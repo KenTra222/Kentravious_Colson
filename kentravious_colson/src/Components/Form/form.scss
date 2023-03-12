@@ -90,7 +90,7 @@ $hover-color: #8a2be2;
             color: $base-color;
             background: #241b31c5;
             padding-bottom: 2.5rem ;
-            box-shadow: 1px 1px 1px 0px rgba(213, 119, 250, 0.75);
+            box-shadow: 1px 1px 1px  rgba(213, 119, 250, 0.75);
             margin-top: 5px;
         }
     
@@ -99,7 +99,7 @@ $hover-color: #8a2be2;
             color: $accent-color;
             background: transparent; 
             border: 1px solid $accent-color;
-            border-radius: 4px ;
+            border-radius: 4px 4px   ;
             font-size: larger;
             line-height: 1;
             font-weight: bolder;
@@ -114,6 +114,8 @@ $hover-color: #8a2be2;
             .submit:hover{
                 background: $base-color;
                 color: $accent-color;
+ 
+
             }
     }
     

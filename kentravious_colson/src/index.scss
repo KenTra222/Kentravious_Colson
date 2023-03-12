@@ -9,7 +9,7 @@ body,
 {
 
     box-sizing: border-box;
-    width: 100%;
+    width: 100svw;
     height: 100svh;
     overflow: hidden;
     margin: 0;
@@ -35,7 +35,7 @@ body,
         top: 0;
         left: 0;
         height:100vh;
-        width:100%;
+        width:100svw;
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
         color: $base-color;        
@@ -51,7 +51,7 @@ body,
 //section
 
 section{
-    width: 100vw;
+    width: 100svw;
     height: 100svh;
     display: flex;
     flex-direction: column;

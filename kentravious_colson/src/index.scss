@@ -83,15 +83,14 @@ section{
 
 
  .scrollArrow{
-    display: inline;
-    background: #090909;
-    font-size: normal;
+    display: inline-block;
+    background: #09090970;
+    width: 25px;
+    height: 25px;
     position: absolute; 
-    letter-spacing: .5px;
-    font-weight: bold;
+    font-weight: bolder;
     bottom: 0;
-    margin-bottom: 5px;
-    padding: .25rem;
+    margin: 0 auto 5px;
     border-radius: 50%;
     color: rgb(250, 250, 36);
     

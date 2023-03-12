@@ -48,7 +48,7 @@ const resumeNotify = () => {
   };
 
   return (
-
+    
     <section id='contact' className='section'>
           <h2>CONTACT ME</h2>
         
@@ -59,6 +59,7 @@ const resumeNotify = () => {
           <div className='phone_info'>
             <p className='info_label'>Phone</p>
             <p className='info_text'>@4787443006</p>
+      <p className='resumeText'>   download my <button onClick={resumeNotify}>RESUME </button> 👈🏾</p>
           </div>
           
           <div className='email_info'>
@@ -66,21 +67,20 @@ const resumeNotify = () => {
             <p className='info_text'>@Kentraviousc@gmail.com</p>
           </div>
         </div>
-
     <form ref={form} className='form' onSubmit={sendEmail}>
       <label>
       Name
-      <input className='input' type="text" placeholder="Name" {...register("user_name", {})} />
+      <input className='input' type="text" placeholder="Name" required {...register("user_name", {})} />
       </label>
 
       <label>
        Email
-      <input className='input' type="email" placeholder="Email" {...register("user_email", {})} />
+      <input className='input' type="email" placeholder="Email" required {...register("user_email", {})} />
       </label>
 
       <label>
         Describe your project
-        <textarea {...register("message", {})} placeholder=" leave a message"/>
+        <textarea required {...register("message", {})} placeholder=" leave a message"/>
       </label>
 
       {/*notification*/}
@@ -89,7 +89,7 @@ const resumeNotify = () => {
          <input className='submit' type="submit" onClick={submitNotify}/>
       <ToastContainer />
       </form>
-        <p className='resumeText'>  or download my <button onClick={resumeNotify}>RESUME </button> </p>
+      
       </div>
         </div>
 

@@ -1,6 +1,6 @@
-$base-color: #e0e0db;
-$accent-color: #892be2a9;
-$hover-color: #8a2be2;
+$background-color: #0a192f;
+$white: #e0e0db;
+$green: #64ffda;
 
 
 .header{
@@ -14,7 +14,7 @@ $hover-color: #8a2be2;
 
 
 .header-items{
-    background: #010101;
+    background: $background-color;
     display: flex;
     position: fixed;
     align-items: center;
@@ -32,7 +32,7 @@ $hover-color: #8a2be2;
     
     .header-left{
         
-        color: $base-color;
+        color: $white;
         display: flex;
         align-items:center;
         text-shadow: 4px 4px 2px rgba(0,0,0,0.3);
@@ -67,7 +67,7 @@ $hover-color: #8a2be2;
            
             font-size: 1.5rem;
             :hover{
-                color: $base-color; 
+                color: $white; 
                 cursor: pointer;
             }
         }

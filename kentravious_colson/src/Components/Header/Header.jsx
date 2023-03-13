@@ -11,7 +11,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 
 const   HAMBURGER_BUTTON_STYLES = {
-  color: ' rgba(213, 119, 250, 0.75)',
+  color: ' #64ffda',
   border: 'none',
   background: 'none',
   }
@@ -37,19 +37,14 @@ export const Header = (...props) => {
             rotate: [0, 90, 90,90, 90,180,180, 180, 270, 270,270,360, ],
             }}         
           transition={{ type: 'spring', damping: 0, stiffness: 800, duration: 4, delay: 2}}>
-          <FaPlaceOfWorship color='#c766ffbd'/>
+          <FaPlaceOfWorship color='#64ffda'/>
         </motion.div>
         <p className='logo-text'>KC</p>
       </div>
 
-      <div className='header-center'>
-        <div id='canvas_wrapper'>
-        <Canvas shadows>
-            <Experience/>
-        </Canvas>
-        </div>
+    
           
-      </div>
+      
 
  
       <div className='header-right'>
@@ -59,14 +54,11 @@ export const Header = (...props) => {
           </button>
       </div>
       </div>
-    </div>   
        
+    </div>   
 
       <Modal isOpen={isOpen} onClose={toggleModal}>
-    <motion.div
-              initial={{x: -100}}
-              animate={{ x: 0}}
-            >
+       
         <nav>
           <ul >
             <motion.div
@@ -88,10 +80,13 @@ export const Header = (...props) => {
               <li onClick={toggleModal}>
                 <Link smooth to='#contact'  >contact</Link >
               </li>
+              <li onClick={toggleModal}>
+                <a className='resumeBtn' href='#'  >resume</a >
+              </li>
             </motion.div>
           </ul>
         </nav>
-            </motion.div>
+          
         </Modal>
         </div>
         

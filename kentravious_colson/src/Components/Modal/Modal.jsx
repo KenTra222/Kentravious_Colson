@@ -9,7 +9,7 @@ export default function  Modal ({isOpen, children, onClose})  {
 
     const   CLOSE_BTN_STYLES ={
         background: 'transparent',
-        color: '  rgba(213, 119, 250, 0.75)',
+        color: '  #64ffda',
         border: 'none'
         
     }

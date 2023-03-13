@@ -1,21 +1,21 @@
-$base-color: #e0e0db;
-$accent-color: #892be2a9;
-$hover-color: #8a2be2;
-
+$background-color: #0a192f;
+$white: #e6f1ff;
+$green: #64ffda;
 
 #intro{
     
-    background: url('https://media.giphy.com/media/xUOrwev00PyqNAlLu8/giphy.gif') ;
+    //background: url('https://media.giphy.com/media/xUOrwev00PyqNAlLu8/giphy.gif') ;
     background-size:  cover;
     background-position: center;  
+    background: $background-color;
 
     font-size: 2.5rem; 
     .intro_contents{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        color: $base-color;
-        background: rgba($color: #090909, $alpha: 0.9);
+        color: $white;
+        //background: rgba($color: #090909, $alpha: 0.9);
         height: 100svh;
         width: 100svw;
         letter-spacing: normal;
@@ -28,16 +28,16 @@ $hover-color: #8a2be2;
     }
     h1{
         font-family: 'Lato';
-        color: $base-color;
+        color: $white;
         margin-bottom: .5rem;
-        text-shadow: 1px 1px 1px $hover-color; 
+        text-shadow: 1px 1px 1px $green; 
         font-weight: 700;
         font-size: 3.5rem;
         line-height: 1em;
   
        }
     p{
-        color:  rgba(213, 119, 250, 0.75);
+        color:  $green;
         font-weight: bolder;
         font-size: 1.5rem;
         font-weight: 800; 
@@ -47,7 +47,7 @@ $hover-color: #8a2be2;
         margin-bottom: 35px;
         margin-top: 0;
         // text-shadow: 2px 2px 2px $base-color;
-        text-shadow: 2px 1px 1px #090909;
+        //text-shadow: 2px 1px 1px $white;
         
         
     }
@@ -62,7 +62,7 @@ $hover-color: #8a2be2;
         font-size: 1rem;
         line-height: 22px;
         letter-spacing: 2px;
-        box-shadow: 1px 1px 1px 0px rgba(213, 119, 250, 0.75);
+        box-shadow: 1px 1px 1px 0px $green;
         margin: 0 auto;
         width: 75%;
        

@@ -1,4 +1,7 @@
-
+$background-color: #0a192f;
+$white: #e6f1ff;
+$green: #64ffda;
+ 
     #about{
         display: flex;
         flex-direction: column;
@@ -34,7 +37,7 @@
             .coolStuff{
                 font-family: 'Lobster';
                      font-size: 1.25rem;
-            color:  rgba(213, 119, 250, 0.75);
+            color:  $green;
         
         
             }

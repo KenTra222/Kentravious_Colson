@@ -2,6 +2,7 @@ import React, {Fragment} from 'react'
 import { ReactDOM } from 'react-dom'
 import {MdClose} from 'react-icons/md'
 import './modal.scss'
+import{motion} from 'framer-motion'
 
 
 
@@ -16,7 +17,9 @@ export default function  Modal ({isOpen, children, onClose})  {
 
     
   return (
-    <>
+       
+        <>
+
         {isOpen ? (
             <div className='modal'>
                 <div className='modal_background' onClick={onClose}/>
@@ -31,5 +34,6 @@ export default function  Modal ({isOpen, children, onClose})  {
             </div>
         ): null}
     </>
+      
   )
 }

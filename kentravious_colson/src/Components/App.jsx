@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState, useEffect } from 'react'
 import Form from './Form/Form'
 import { Portfolio } from './Portfolio/Portfolio'
 import '../index.scss'
@@ -7,18 +7,24 @@ import Intro from './Intro/Intro'
 import { Header } from './Header/Header'
 import { BrowserRouter as Router } from 'react-router-dom';
 import {AiOutlineDown} from 'react-icons/ai'
- 
-const App = () => {
-    
+import LoadingScreen from './LoadingScreen/LoadingScreen.jsx';
+
+
+const App = () => {  
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Do some asynchronous work here
+    setIsLoading(false);
+  }, []);
+
   return (
     <Router>
-
     <div  className='App-Wrapper'>  
-            
-           
-          
+      <LoadingScreen isLoading={isLoading} />
+
           <Header/>
-    <main>
+        <main>
      
       {/*intro*/}
           <Intro  /> 

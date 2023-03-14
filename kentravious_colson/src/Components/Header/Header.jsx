@@ -67,18 +67,30 @@ export const Header = (...props) => {
             >
 
               <li onClick={toggleModal}>
+                <div>
+                  01.
                 <Link smooth  to='#intro'>
                     home
                 </Link>
+                </div>
               </li>
               <li onClick={toggleModal}>
+              <div>
+                  01.
                 <Link to='#projects' smooth>projects</Link >
+                </div>
               </li>
               <li onClick={toggleModal}>
+              <div>
+                  01.
                 <Link smooth to="#about" >about</Link>
+                </div>
               </li>
               <li onClick={toggleModal}>
+              <div>
+                  01.
                 <Link smooth to='#contact'  >contact</Link >
+                </div>
               </li>
               <li onClick={toggleModal}>
                 <a className='resumeBtn' href='#'  >resume</a >

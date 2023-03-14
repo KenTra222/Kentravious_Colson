@@ -1,6 +1,6 @@
-$base-color: #e0e0db;
-$accent-color: #892be2a9;
-$hover-color: #8a2be2;
+$background-color: #0a192f;
+$white: #e6f1ff;
+$green: #64ffda;
 
 
 .portfolioItem_wrapper{
@@ -12,7 +12,7 @@ $hover-color: #8a2be2;
      margin: 0 auto;
     line-height: 1;
     letter-spacing: 1px;  
-    color: $base-color;  
+    color: $white;  
     box-shadow: 6px 3px 5px -1px rgba(0,0,0,0.75);
 
     a{
@@ -61,11 +61,11 @@ $hover-color: #8a2be2;
   .stack{ 
     padding-left: .75rem;
     font-size: .75rem;
-    color: $base-color;
+    color: $white;
     text-shadow: none;
     margin-top: 1.5rem;
     margin-left: .75rem;
-    color: rgba(213, 119, 250, 0.75);
+    color: $green;
     
 
   }

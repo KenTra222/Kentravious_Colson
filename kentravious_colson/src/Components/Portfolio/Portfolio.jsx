@@ -15,7 +15,8 @@ import 'swiper/css/navigation';
 export const Portfolio = () => {
   return (
     <section id='projects' className='section'>
-              <h2>MY PROJECTS</h2>
+        <h2 className='section_header'><span>~My Recent Projects!~</span></h2>           
+              
              
           <span>(swipe to view)</span>
     <div className='portfolio_wrapper'>

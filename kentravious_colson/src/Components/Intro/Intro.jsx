@@ -9,10 +9,17 @@ const Intro = () => {
             
             <div className='intro_contents'>
               <div>
-                <h1>{`<Kentravious Colson/>`}</h1>
-                <p>Creative Product Developer</p>
-                <p className='small'> 
-                Designing and Building digital assets for businesses
+                <div className='small'>
+                  Hi, my name is 
+                </div>
+                <div>
+                <h1>{`Kentravious Colson`}</h1>
+                </div>
+                <div>
+                  <p>Creative Frontend Developer</p>
+                </div>
+                <p className='intro_text'> 
+                I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.
                 </p>
               </div>
             </div>

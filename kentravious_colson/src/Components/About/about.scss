@@ -10,10 +10,11 @@ $green: #64ffda;
         margin: 0 auto;
         width: 100%;
         
-.aboutContent_wrapper{
-    width: 85%;
-    padding: 0;
-    margin: 0 auto;
+        .aboutContent_wrapper{
+            width: 85%;
+            padding: 0;
+            margin: 0 auto;
+            color: $white;
        
     }
         p{
@@ -26,23 +27,5 @@ $green: #64ffda;
             color: rgb(245, 245, 245); 
         
              
-        }
-        span{                 
-            font-family: 'Lobster';
-            color: rgba(250, 250, 36, 0.884);
-           
-            
-            font-size: 1.5rem;
-        }
-            .coolStuff{
-                font-family: 'Lobster';
-                     font-size: 1.25rem;
-            color:  $green;
-        
-        
-            }
-        
-         
-         
-        }
+        }}
         

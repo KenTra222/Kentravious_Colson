@@ -50,7 +50,8 @@ const resumeNotify = () => {
   return (
     
     <section id='contact' className='section'>
-          <h2>CONTACT ME</h2>
+      <h2 className='section_header'><span>~Let's Talk!~</span></h2>           
+          
         
     <div className='contact_contents'>
     

@@ -1,34 +1,18 @@
-import React, {useRef} from 'react'
-import './experience.scss'
-import { useFrame } from '@react-three/fiber';
-import { Center, useTexture, useGLTF, OrbitControls } from '@react-three/drei'
+import React from "react";
+import { Canvas } from "@react-three/fiber";
+import ParticleSystem from "../ParticleSystem/ParticleSystem";
+import skillsData from "../data/skills";
 
-
-export default function Experience() {
-  const {nodes} = useGLTF("./model/kingkai.glb");
-  const texture = useTexture('./model/kingKaiTexture.jpg')
-  texture.flipY = false
-
-  const planet = useRef()
-
-  useFrame((state, delta) =>
-  {
-      planet.current.rotation.y += delta * 0.2
-      planet.current.rotation.x += delta * 0.1
-  })
-
+function Experience() {
   return (
-    <> 
-        <OrbitControls makeDefault/>
-        <ambientLight intensity={5}/>
-        <color args={['#010101']} attach='background'/>
-        <Center>
-
-        <mesh ref={planet} scale={2} geometry={nodes.baked.geometry}>
-          <meshBasicMaterial map={texture}/>
-        </mesh>
-        </Center>    
-      </>
-  )
+    <Canvas>
+      <ambientLight intensity={0.5} />
+      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+      <ParticleSystem data={skillsData} />
+    </Canvas>
+  );
 }
+
+export default Experience;
+
 

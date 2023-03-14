@@ -1,6 +1,7 @@
 import React from 'react'
 import { Typewriter } from "react-simple-typewriter"
 import './about.scss'
+import Experience from '../Experience/Experience.jsx'
 const About = () => {
   return (
     <section id='about' className='section'>
@@ -24,8 +25,8 @@ const About = () => {
                       I have experience in multiple fields such as Web Design, 
                       Project Management, Computer Programming, 3D Modeling, & much more to bring your ideas to life. 
                     </p>
-
             </div>    
+                
     </section>
    
   )

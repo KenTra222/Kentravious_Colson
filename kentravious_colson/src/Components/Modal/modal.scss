@@ -8,18 +8,19 @@ $lightest-navy: #233554;
  background: #112240a2;
  backdrop-filter: blur(10px);
     width: 100%;
-    height: 100svh;
-    position: absolute;
+    min-height: 100%;
+    position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
     cursor: pointer; 
-    z-index: 100;
+    z-index: 1001;
 }
 
 .modal_container{
      
 background: linear-gradient(-45deg,  $background-color 80%, $light-navy 95%, $lightest-navy 100%);
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -27,7 +28,7 @@ background: linear-gradient(-45deg,  $background-color 80%, $light-navy 95%, $li
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 110;
+    z-index: 1100;
     min-height: 100%;
     
     width: 75%;
@@ -40,7 +41,7 @@ background: linear-gradient(-45deg,  $background-color 80%, $light-navy 95%, $li
         align-items: flex-start; 
         justify-content: center;
         text-align: center;
-        min-height: 50%;
+        min-height: 100%;
         margin-top: -2.25rem;
         
        

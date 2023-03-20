@@ -63,7 +63,8 @@ $ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,
     }
 
     h1{
-        font-size: clamp(40px, 8vw, 80px);
+        font-size:  2.25rem;
+        line-height: 2.5rem;
         margin: 0;
     }
         .small{
@@ -76,3 +77,13 @@ $ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,
     }
    
 }
+
+@media (min-width: 1024px){
+    #intro{
+text-align: left;
+        h1{
+            font-size: 4.5rem; 
+            line-height: 1;
+        }
+    }
+ }

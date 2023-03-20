@@ -1,26 +1,30 @@
 export default[
     { 
         year: '2022',
-        title:"attended Empower App release party",
+        title:" Empower App release party",
         duration:'1 day',
-        details:"",
+        details:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore!",
+
     },
     { 
         year: '2022',
         title:"enrolled in bruno simon's three.js course",
         duration:'4 months',
-        details:'',
+        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore!",
+
     },
     { 
         year: '2021',
-        title:"'Completed Scrimb's Frontend Career Path",
+        title:"'Scrimba's Frontend Career Path",
         duration:'1 day',
-        details:"",
+        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore!",
+
     },
     { 
         year: '2022',
-        title:" ",
+        title:" First line of code",
         duration:'1 day',
-        details:"",
+        details:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis, odit atque, quaerat quae dolor cupiditate maiores nihil, nisi ratione nemo dolorem alias eaque ea doloribus dolores fuga reprehenderit labore!",
+
     },
 ]

@@ -1,0 +1,24 @@
+.timeline{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem; 
+    margin-bottom: 5rem; 
+ 
+
+    div{
+        width: 100%;
+    }
+  
+}
+
+
+@media (min-width: 720px){
+    .timeline{
+ 
+        width: 75%;
+        flex-direction: row;
+        
+         
+    }
+}

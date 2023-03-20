@@ -8,6 +8,7 @@ import { Header } from './Header/Header'
 import { BrowserRouter as Router } from 'react-router-dom';
 import {AiOutlineDown} from 'react-icons/ai'
 import LoadingScreen from './LoadingScreen/LoadingScreen.jsx';
+import Timeline from './Timeline/Timeline'
 
 
 const App = () => {  
@@ -31,8 +32,7 @@ const App = () => {
   
           {/*projects*/}
           <Portfolio />
- 
-          <About  />
+          <Timeline/>
           
 
           <Form  />

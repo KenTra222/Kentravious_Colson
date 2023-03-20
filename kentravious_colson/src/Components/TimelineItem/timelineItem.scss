@@ -1,42 +1,49 @@
 $green: #64ffda;
 ol{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+   
+    
+    padding:0 ;
+    
     list-style: none;
     
+    
     li{
-        
+        width: 98%;
+        margin-left: 1.25rem;
         margin-bottom: 2.5rem;
         
-        .year_title_duration_wrapper{
+        
+        .div_element{
             height: .75rem;
             width: .75rem;
             position: absolute;
             border-radius: 50%;
-            color: #64ffda;
-            left: 0.375rem;
-            margin-top: .5rem;
+            border: 1px solid $green;
+            left: 0.275rem;
+            margin-top: 0.95rem;
         }
         p{
                 margin: 0 auto;
                 display: flex;
-              
                 font-size: x-small;
-          
                 align-items: center;
                 justify-content: flex-start;
                 gap: 1rem;
+              
+               
                 .year{
                     display: inline-block;
                     font-weight: bold;
                     padding: .5rem .25rem;
                     background-color: #090909;
-                    border-radius: 10px;
+                    border-radius: 0.375rem;
+                     
+                    
+
                 }
                 .title{
-                    font-size: 1.125rem;  
-                    line-height: 1.75rem;  
+                    font-size: 1.1rem;  
+                    line-height: 1.7rem;  
                 }
 
                 .duration{
@@ -44,23 +51,38 @@ ol{
                     line-height: 1px;
                     font-size: small;
                     color: $green; 
-                    width: 15%;
+              
+                 
+                  
                 }
             }
 
             .details{
-                margin-top: 0.5rem;  
+                margin-top: 0.25rem;  
                 margin-bottom: 0.5rem;  
                 font-size: 1rem;  
                 line-height: 1.5rem;  
                 font-weight: 400;
+             
+                
             }
     }
 }
 
 @media (min-width: 720px){
     ol{
- 
-        flex-direction: column;        
+        li{
+                .div_element{
+                    position: relative;
+                }
+        }
+        
+        flex-direction: row;  
+        p{
+            flex-direction: column;
+            text-align: left;
+      
+            font-size: small;
+        }      
     }
 }

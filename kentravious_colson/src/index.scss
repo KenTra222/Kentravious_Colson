@@ -63,7 +63,9 @@ body,
     }
     
     .App-Wrapper{                
-        font-family: $font-sans, 'Lato', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;        
+        font-family: $font-sans, 'Lato', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+        display: flex;    
+        flex-direction: column;
     }
 }
 

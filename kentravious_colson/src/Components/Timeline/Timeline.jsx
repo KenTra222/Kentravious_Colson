@@ -6,7 +6,7 @@ import TimelineItem from '../TimelineItem/TimelineItem'
 const Timeline = () => {
   return (
     <div className='timeline'>
-        <div>
+        <div className='individual'>
 
         {timeline.map(item =>(
             <TimelineItem

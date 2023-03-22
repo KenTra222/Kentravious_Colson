@@ -1,12 +1,11 @@
 import './header.scss'
 import React, {useState, useEffect} from 'react'
-import Experience from '../Experience/Experience'
+import NavItems from '../NavItems/NavItems';
 import Modal from '../Modal/Modal';
 import { TiThMenuOutline } from "react-icons/ti";
 import { FaPlaceOfWorship } from "react-icons/fa";
 import {Canvas} from '@react-three/fiber'
 import {motion} from 'framer-motion'
-import { HashLink as Link } from 'react-router-hash-link';
 
 
 
@@ -29,6 +28,7 @@ export const Header = (...props) => {
     <div>      
         <div className='header' >
     <div className='header-items'>
+
       <div className='header-left'>
         <motion.div
           animate={{
@@ -39,18 +39,19 @@ export const Header = (...props) => {
           transition={{ type: 'spring', damping: 0, stiffness: 800, duration: 4, delay: 2}}>
           <FaPlaceOfWorship color='#64ffda'/>
         </motion.div>
-        <p className='logo-text'>KC</p>
+        <span className='logo-text'>KC</span>
+        <small>web Developer</small>
       </div>
 
-    
-          
+    <div className='header-center'>
+      <NavItems className='menu'/>
+    </div>
       
 
  
       <div className='header-right'>
           <button className='hamburger_menu' style={HAMBURGER_BUTTON_STYLES} onClick={toggleModal}>
             <TiThMenuOutline />
-       
           </button>
       </div>
       </div>
@@ -58,48 +59,8 @@ export const Header = (...props) => {
     </div>   
 
       <Modal isOpen={isOpen} onClose={toggleModal}>
-       
-        <nav>
-          <ul >
-            <motion.div
-              initial={{x: -100}}
-              animate={{ x: 0}}
-            >
-
-              <li onClick={toggleModal}>
-                <div>
-                  01.
-                <Link smooth  to='#intro'>
-                    home
-                </Link>
-                </div>
-              </li>
-              <li onClick={toggleModal}>
-              <div>
-                  02.
-                <Link to='#projects' smooth>projects</Link >
-                </div>
-              </li>
-              <li onClick={toggleModal}>
-              <div>
-                  03.
-                <Link smooth to="#about" >about</Link>
-                </div>
-              </li>
-              <li onClick={toggleModal}>
-              <div>
-                  04.
-                <Link smooth to='#contact'  >contact</Link >
-                </div>
-              </li>
-              <li onClick={toggleModal}>
-                <a className='resumeBtn' href='#'  >resume</a >
-              </li>
-            </motion.div>
-          </ul>
-        </nav>
-          
-        </Modal>
+       <NavItems/>  
+      </Modal>
         </div>
         
   )

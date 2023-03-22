@@ -10,17 +10,41 @@ const Intro = () => {
             <div className='intro_contents'>
               <div>
                 <div className='small'>
-                  Hi, my name is 
+                  Hi, my name is
                 </div>
                 <div>
-                <h1>{`Kentravious Colson`}</h1>
+                <h1> 
+                  <span>K</span>
+                  <span>E</span>
+                  <span>T</span>
+                  <span>R</span>
+                  <span>A</span>
+                  <span>V</span>
+                  <span>I</span>
+                  <span>O</span>
+                  <span>U</span>
+                  <span>S</span>
+                  <br/>
+                  <span>C</span>
+                  <span>O</span>
+                  <span>L</span>
+                  <span>S</span>
+                  <span>O</span>
+                  <span>N</span>
+                  <br/>
+                  <span className='diff_color'>W</span>
+                  <span className='diff_color'>E</span>
+                  <span className='diff_color'>B</span>
+                  <span className='diff_color'> </span>
+                  <span className='diff_color'>D</span>
+                  <span className='diff_color'>E</span>
+                  <span className='diff_color'>V</span>
+                </h1>
                 </div>
                 <div>
-                  <p>Creative Frontend Developer</p>
+                  <p>Frontend Developer | Creative Artist </p>
                 </div>
-                <p className='intro_text'> 
-                I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.
-                </p>
+                
               </div>
             </div>
     

@@ -2,7 +2,7 @@ import './header.scss'
 import React, {useState, useEffect} from 'react'
 import NavItems from '../NavItems/NavItems';
 import Modal from '../Modal/Modal';
-import { TiThMenuOutline } from "react-icons/ti";
+import { FaHamburger } from "react-icons/fa";
 import { FaPlaceOfWorship } from "react-icons/fa";
 import {Canvas} from '@react-three/fiber'
 import {motion} from 'framer-motion'
@@ -36,23 +36,25 @@ export const Header = (...props) => {
             y:[-1,1,-1,1,-1,1,-1,1,-1,1,-1,1, 0],
             rotate: [0, 90, 90,90, 90,180,180, 180, 270, 270,270,360, ],
             }}         
-          transition={{ type: 'spring', damping: 0, stiffness: 800, duration: 4, delay: 2}}>
-          <FaPlaceOfWorship color='#64ffda'/>
+          transition={{ 
+            type: 'spring', 
+            damping: 0, 
+            stiffness: 800, 
+            duration: 4, 
+            delay: 2}}>
+          <FaPlaceOfWorship 
+            color='#64ffda'/>
         </motion.div>
         <span className='logo-text'>KC</span>
         <small>web Developer</small>
       </div>
 
-    <div className='header-center'>
-      <NavItems className='menu'/>
-    </div>
-      
-
  
       <div className='header-right'>
           <button className='hamburger_menu' style={HAMBURGER_BUTTON_STYLES} onClick={toggleModal}>
-            <TiThMenuOutline />
+            <FaHamburger />
           </button>
+      <NavItems className='menu'/>
       </div>
       </div>
        

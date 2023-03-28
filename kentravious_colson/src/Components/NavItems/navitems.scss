@@ -1,0 +1,50 @@
+$green: #64ffda;
+$white: #e0e0db;
+$lightest-navy: #233554;
+
+@media (min-width: 1024px){
+    nav{
+ 
+        width: 30%;
+        margin: 0 auto;
+        
+        ul{
+        width: 100%;
+            list-style: none;
+         
+           
+        
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            color: $green;
+
+            li{
+                margin-left:1.75rem ;
+          
+                a{
+                    text-decoration: none;
+                    color: $white;
+                
+                }
+                    a:hover{
+                    color: $green;
+                   
+                    }
+            }
+        }
+        .resumeBtn{
+            font-size: 13px;
+                border: 1px solid $green;
+                padding: 0.75rem 1rem;
+                color: $green;
+                border-radius: 6px;
+               
+        }
+        }
+    }
+
+    }
+ 

@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {motion} from 'framer-motion'
 import { HashLink as Link } from 'react-router-hash-link';
-
+import './navitems.scss'
 
 const NavItems = ( props ) => {
 
@@ -14,9 +14,14 @@ const NavItems = ( props ) => {
     <nav className={props.className}>
           <ul >
             <motion.div
-              initial={{x: -100}}
-              animate={{ x: 0}}
+              initial={{opacity: 0.2}}
+              animate={{ opacity: 1}}
+              transition={ {duration: 1 }}
             >
+              <motion.div
+              initial={{y: -100}}
+              animate={{ y: 0}}
+              transition={ {duration: 2 }}>
 
               <li onClick={toggleModal}>
                 <div>
@@ -26,6 +31,12 @@ const NavItems = ( props ) => {
                 </Link>
                 </div>
               </li>
+              </motion.div>
+
+              <motion.div
+              initial={{y: -100}}
+              animate={{ y: 0}}
+              transition={ {duration: 2.5 }}>
               <li onClick={toggleModal}>
               <div>
                   02.
@@ -38,15 +49,31 @@ const NavItems = ( props ) => {
                 <Link smooth to="#about" >about</Link>
                 </div>
               </li>
+                </motion.div>        
+
+            <motion.div
+            initial={{y: -100}}
+            animate={{ y: 0}}
+            transition={ {duration: 2.7 }}>
+
               <li onClick={toggleModal}>
               <div>
                   04.
                 <Link smooth to='#contact'  >contact</Link >
                 </div>
               </li>
+            </motion.div>
+
+            <motion.div
+            initial={{y: -100}}
+            animate={{ y: 0}}
+            transition={ {duration: 3 }}>
+
               <li onClick={toggleModal}>
                 <a className='resumeBtn' href='#'  >resume</a >
               </li>
+            </motion.div>
+
             </motion.div>
           </ul>
         </nav>

@@ -35,7 +35,7 @@ const App = () => {
 
           {/*projects*/}
           <Portfolio />
-          <Timeline/>
+ 
           
 
           <Form  />

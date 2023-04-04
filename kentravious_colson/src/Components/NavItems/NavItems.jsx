@@ -26,7 +26,7 @@ const NavItems = ( props ) => {
               <li onClick={toggleModal}>
                 <div>
                   01.
-                <Link smooth  to='#intro'>
+                <Link className="underline" smooth  to='#intro'>
                     home
                 </Link>
                 </div>
@@ -40,13 +40,13 @@ const NavItems = ( props ) => {
               <li onClick={toggleModal}>
               <div>
                   02.
-                <Link to='#projects' smooth>projects</Link >
+                <Link to='#projects' className="underline" smooth>projects</Link >
                 </div>
               </li>
               <li onClick={toggleModal}>
               <div>
                   03.
-                <Link smooth to="#about" >about</Link>
+                <Link smooth to="#about" className="underline"  >about</Link>
                 </div>
               </li>
                 </motion.div>        
@@ -59,7 +59,7 @@ const NavItems = ( props ) => {
               <li onClick={toggleModal}>
               <div>
                   04.
-                <Link smooth to='#contact'  >contact</Link >
+                <Link smooth to='#contact' className="underline"  >contact</Link >
                 </div>
               </li>
             </motion.div>

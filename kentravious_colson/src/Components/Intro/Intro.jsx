@@ -10,9 +10,16 @@ const Intro = () => {
             
             <div className='intro_contents'  >
               <div>
-                <div className='small'>
-                  Hi, my name is
-                </div>
+              <motion.div
+                    initial={{  opacity: 0}}
+                    animate={{ opacity: 1}}
+                    transition={{duration: 2}}
+                    >
+                       <div className='small'>
+                        Hi, my name is
+                      </div>
+                    </motion.div>
+               
                 <div>
                 <h1> 
                 <motion.div
@@ -41,25 +48,39 @@ const Intro = () => {
                   <span>N</span>
                   <br/>
                 
+                  </motion.div>
+                  <motion.div
+                    initial={{y: 1000, opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    transition={{duration: 2.85}}
+                    >
 
-                  <span className='diff_color'>W</span>
-                  <span className='diff_color'>E</span>
-                  <span className='diff_color'>B</span>
-                  <span className='diff_color'> </span>
-                  <span className='diff_color'>D</span>
-                  <span className='diff_color'>E</span>
-                  <span className='diff_color'>V</span>
+                  <span className='diff_color'>WEB DEV</span>          
                     </motion.div>
             
                 </h1>
                 </div>
-                <div>
-                  <p>Frontend Developer | Creative Artist </p>
-                </div>
+                <motion.div
+                    initial={{y: 1000, opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    transition={{duration: 3.85}}
+                    >
+                      <div>
+                      <p>Frontend Developer | Creative Artist </p>
+                    </div>
+                    </motion.div>
+                
                 
               </div>
-              
+              <motion.div
+                    initial={{  opacity: 0}}
+                    animate={{  opacity:[0,0.2,1] }}
+                    transition={{duration: 10}}
+                    >
+
+                   
           <span className='scroll'>
+            
             <span className='letterTurn'>
             S
             </span>
@@ -97,7 +118,7 @@ const Intro = () => {
 
             </span>
             </span>
-
+       
             <span className='scroll2'>
             <span className='letterTurn'>
             S
@@ -136,7 +157,7 @@ const Intro = () => {
 
             </span>
             </span>
-
+            </motion.div>
 
             </div>
           </section>

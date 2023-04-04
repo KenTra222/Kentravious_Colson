@@ -6,6 +6,10 @@ import TimelineItem from '../TimelineItem/TimelineItem'
 const Timeline = () => {
   return (
     <div className='timeline'>
+      <h2>
+        04.
+        <span>Timeline</span>
+      </h2>
         <div className='individual'>
 
         {timeline.map(item =>(

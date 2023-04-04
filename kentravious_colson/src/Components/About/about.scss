@@ -4,10 +4,7 @@ $green: #64ffda;
  
     #about{
     
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
+         
         margin: 0 auto;
         width: 100%;
         z-index: 101;
@@ -17,7 +14,8 @@ $green: #64ffda;
             padding: 0;
             margin: 0 auto;
             color: $white;
-       
+            display: flex;
+            flex-direction: column;
     }
         p{
              
@@ -25,9 +23,46 @@ $green: #64ffda;
             font-size: .85rem;
             letter-spacing: 1px;
             line-height: 26px;
-            width: 85%;
+           
             color: rgb(245, 245, 245); 
         
              
         }}
-        
+        .bio_img_wrapper{
+            width: 13rem;
+            height: 13rem;
+            background: url("/public/assets/devPics/headshot4.png");
+           padding: 0; 
+           margin: 0 auto;
+           background-size: cover;
+           background-position: center center;
+           background-blend-mode: multiply;
+           opacity: 0.8;
+           display: none;
+        }
+
+        @media (min-width: 1024px) {
+            #about{
+                .aboutContent_wrapper{
+                
+                    
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: space-evenly;
+                    .bio_img_wrapper{
+                        width: 24rem;
+                        height: 24rem;
+                        margin-left: 20px;
+                        background-position: left;
+                        display: block;
+                        border: 1px $green solid;
+                        border-radius: 50%;
+                    }
+                    .bio_text{
+
+                        width: 50%;
+                        p{width: 100%;}
+                    }
+                }
+            }
+        }

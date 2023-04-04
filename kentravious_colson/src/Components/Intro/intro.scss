@@ -39,10 +39,9 @@ $ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,
 
 #intro{
     
-    //background: url('https://media.giphy.com/media/xUOrwev00PyqNAlLu8/giphy.gif') ;
+    background: url('https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif') ;
     background-size:  cover;
     background-position: center;  
-    background: $background-color;
     font-size: 2.5rem; 
     
     .intro_contents{
@@ -50,7 +49,7 @@ $ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,
         flex-direction: column;
         justify-content: center;
         color: $white;
-        //background: rgba($color: #090909, $alpha: 0.9);
+        background: rgba($color: $dark-navy, $alpha: 0.9);
         height: 100svh;
         width: 100svw;
         letter-spacing: normal;
@@ -75,7 +74,53 @@ $ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,
        margin:0; 
         font-size: $fz-xl;
     }
-   
+    
+
+        .scroll{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            right: 0;
+            bottom: 0;
+    padding: 0;
+    font-family: inherit;
+    font-weight: bold;
+    
+    font-size: x-small;
+    
+    margin-right: 35px;
+    margin-bottom: 9px;
+    color: $white;
+}
+
+.scroll2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: x-small;
+    margin-left: 35px;
+    margin-bottom: 9px;
+    color: $white;
+}
+.letterTurn{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.arrow{
+    color: $green;
+    font-weight: bold;
+    font-size: large;
+    
+}
 }
 
 .diff_color{

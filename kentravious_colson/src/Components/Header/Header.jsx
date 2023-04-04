@@ -2,8 +2,8 @@ import './header.scss'
 import React, {useState, useEffect} from 'react'
 import NavItems from '../NavItems/NavItems';
 import Modal from '../Modal/Modal';
-import { FaHamburger } from "react-icons/fa";
-import { FaPlaceOfWorship } from "react-icons/fa";
+import { FaPlaceOfWorship, FaBars } from "react-icons/fa";
+import {CgMenuMotion} from 'react-icons/cg'
 import {Canvas} from '@react-three/fiber'
 import {motion} from 'framer-motion'
 
@@ -21,8 +21,8 @@ export const Header = (...props) => {
     const toggleModal = ( ) => {
         setIsOpen(!isOpen)
     }
+    
 
-   
     
   return (
     <div>      
@@ -40,7 +40,7 @@ export const Header = (...props) => {
             type: 'spring', 
             damping: 0, 
             stiffness: 800, 
-            duration: 4, 
+            duration: 5, 
             delay: 2}}>
           <FaPlaceOfWorship 
             color='#64ffda'/>
@@ -52,7 +52,7 @@ export const Header = (...props) => {
  
       <div className='header-right'>
           <button className='hamburger_menu' style={HAMBURGER_BUTTON_STYLES} onClick={toggleModal}>
-            <FaHamburger />
+            <CgMenuMotion />
           </button>
       <NavItems className='menu'/>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion  } from "framer-motion"
 import './intro.scss'
- 
+ import {HiOutlineArrowSmDown } from 'react-icons/hi'
 
 const Intro = () => {
   return (
@@ -58,8 +58,87 @@ const Intro = () => {
                 </div>
                 
               </div>
+              
+          <span className='scroll'>
+            <span className='letterTurn'>
+            S
+            </span>
+            <span className='letterTurn'>
+            C
+            </span>
+            <span className='letterTurn'>
+            R
+            </span>
+            <span className='letterTurn'>
+            O
+            </span>
+            <span className='letterTurn'>
+            L
+            </span>
+            <span className='letterTurn'>
+            L
+            </span>
+            <span className='letterTurn'>
+            </span>
+            <span className='letterTurn'>
+            D
+            </span>
+            <span className='letterTurn'>
+            O
+            </span>
+            <span className='letterTurn'>
+            W
+            </span>
+            <span className='letterTurn'>
+            N
+            </span>
+            <span className='arrow'>
+              <HiOutlineArrowSmDown/>
+
+            </span>
+            </span>
+
+            <span className='scroll2'>
+            <span className='letterTurn'>
+            S
+            </span>
+            <span className='letterTurn'>
+            C
+            </span>
+            <span className='letterTurn'>
+            R
+            </span>
+            <span className='letterTurn'>
+            O
+            </span>
+            <span className='letterTurn'>
+            L
+            </span>
+            <span className='letterTurn'>
+            L
+            </span>
+            <span className='letterTurn'>
+            </span>
+            <span className='letterTurn'>
+            D
+            </span>
+            <span className='letterTurn'>
+            O
+            </span>
+            <span className='letterTurn'>
+            W
+            </span>
+            <span className='letterTurn'>
+            N
+            </span>
+            <span className='arrow'>
+              <HiOutlineArrowSmDown/>
+
+            </span>
+            </span>
+
+
             </div>
-    
           </section>
   )
 }

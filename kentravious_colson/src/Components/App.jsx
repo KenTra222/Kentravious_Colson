@@ -6,7 +6,7 @@ import About from './About/About'
 import Intro from './Intro/Intro'
 import { Header } from './Header/Header'
 import { BrowserRouter as Router } from 'react-router-dom';
-import {AiOutlineDown} from 'react-icons/ai'
+
 import LoadingScreen from './LoadingScreen/LoadingScreen.jsx';
 import Timeline from './Timeline/Timeline'
 
@@ -14,6 +14,7 @@ import Timeline from './Timeline/Timeline'
 const App = () => {  
   const [isLoading, setIsLoading] = useState(true);
 
+  
   useEffect(() => {
     // Do some asynchronous work here
     setIsLoading(false);
@@ -29,14 +30,16 @@ const App = () => {
      
       {/*intro*/}
           <Intro  /> 
+          <About/>
   
+
           {/*projects*/}
           <Portfolio />
           <Timeline/>
           
 
           <Form  />
-          <p className='scrollArrow'> <AiOutlineDown/></p>
+         
         </main>
     </div> 
     </Router>

@@ -1,15 +1,22 @@
 import React from "react";
-import { Canvas } from "@react-three/fiber";
-import ParticleSystem from "../ParticleSystem/ParticleSystem";
-import skillsData from "../data/skills";
 
+import { OrbitControls, useTexture, useGLTF } from '@react-three/drei'
+ 
 function Experience() {
+
+  const  {nodes} = useGLTF(' ./assets/model/kingkai.glb')
+ const bakedTexture = useTexture('./assets/model/kingKaiTexture.jpg')
+ bakedTexture.flipY = false
+ 
   return (
-    <Canvas>
-      <ambientLight intensity={0.5} />
-      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-      <ParticleSystem data={skillsData} />
-    </Canvas>
+    <>
+       <color  args={ [ '#0a192f'] } attach="background"/>
+      <OrbitControls/>
+  
+      <mesh geometry={ nodes.baked.geometry }>
+         <meshBasicMaterial  map={bakedTexture} />
+      </mesh>    
+    </>
   );
 }
 

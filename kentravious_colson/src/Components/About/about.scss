@@ -3,12 +3,14 @@ $white: #e6f1ff;
 $green: #64ffda;
  
     #about{
+    
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         margin: 0 auto;
         width: 100%;
+        z-index: 101;
         
         .aboutContent_wrapper{
             width: 85%;
@@ -20,7 +22,7 @@ $green: #64ffda;
         p{
              
             margin: 0 auto;
-            font-size: 1.35rem;
+            font-size: .85rem;
             letter-spacing: 1px;
             line-height: 26px;
             width: 85%;

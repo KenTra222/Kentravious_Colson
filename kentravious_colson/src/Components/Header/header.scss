@@ -68,6 +68,16 @@ $lightest-navy: #233554;
     }
 }
 
+
+.menu-icon {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu-icon.open {
+    transform: rotate(90deg);
+  }
+  
+
 @media (max-width: 1023px )
 {
         small{

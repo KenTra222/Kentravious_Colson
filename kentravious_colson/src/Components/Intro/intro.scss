@@ -38,8 +38,7 @@ $ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,
 
 
 #intro{
-    
-    background: url('https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif') ;
+    background: url('https://media.giphy.com/media/l0HlO8EgtP1KeyZ0Y/giphy.gif');
     background-size:  cover;
     background-position: center;  
     font-size: 2.5rem; 
@@ -49,7 +48,7 @@ $ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,
         flex-direction: column;
         justify-content: center;
         color: $white;
-        background: rgba($color: $dark-navy, $alpha: 0.9);
+        background: rgba($color: $dark-navy, $alpha: 0.8);
         height: 100svh;
         width: 100svw;
         letter-spacing: normal;
@@ -133,6 +132,12 @@ $ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,
 /*breakpoints*/
 @media (min-width: 1024px){
     #intro{
+    background: url('https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif') ;
+    
+
+    background-size:  cover;
+    background-position: center;  
+    font-size: 2.5rem; 
 text-align: left;
         h1{
             font-size: 4.5rem; 

@@ -1,13 +1,23 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import { Typewriter } from "react-simple-typewriter"
 import './about.scss'
-import Experience from '../Experience/Experience.jsx'
-import { Canvas } from "@react-three/fiber";
-const About = () => {
-  return (<>
-    <section id='about' className='section'>
-        <h2 className='section_header'> 01.   <span>All About Me!</span></h2>
+import { useInView } from 'framer-motion'
 
+
+const About = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true });
+ 
+  return (
+  
+    <section id='about' className='section' ref={ref}
+     style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}>
+        <h2 className='section_header'> 01.   <span>All About Me!</span></h2>
+         
          <div className='aboutContent_wrapper'> 
          <div className='bio_img_wrapper'>
          </div>
@@ -16,7 +26,7 @@ const About = () => {
 
         
          <p>
-         I'm a passionate creator who loves to build things on the internet. My journey started in 2020 while I was working at a car shop watching YouTube videos. As it turned out, I really enjoyed learning how to talk to computers, and that sparked my interest in making technology a main factor in my life.
+         I'm a passionate creator who loves to build things on the internet using design systems and programming languages. My journey started in 2020 while I was working at a car shop watching YouTube videos. As it turned out, I really enjoyed learning how to talk to computers, and that sparked my interest in making technology a main factor in my life.
         <br/>
         <br/>
          Since then, my passion for tech has continued to grow and evolve, and I'm always striving to stay up to date with the latest software and tools. Recently, I completed the Three.js course to further improve my knowledge and skills.
@@ -31,8 +41,7 @@ const About = () => {
         </div>    
                 
     </section>
-    
-  </>
+ 
    
   )
 }

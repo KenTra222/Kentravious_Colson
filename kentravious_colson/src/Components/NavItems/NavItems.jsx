@@ -40,14 +40,16 @@ const NavItems = ( props ) => {
               <li onClick={toggleModal}>
               <div>
                   02.
-                <Link to='#projects' className="underline" smooth>projects</Link >
-                </div>
+                <Link smooth to="#about" className="underline"  >about</Link>
+              </div>
+              
               </li>
+              
               <li onClick={toggleModal}>
               <div>
                   03.
-                <Link smooth to="#about" className="underline"  >about</Link>
-                </div>
+                <Link to='#projects' className="underline" smooth>projects</Link >
+              </div>
               </li>
                 </motion.div>        
 

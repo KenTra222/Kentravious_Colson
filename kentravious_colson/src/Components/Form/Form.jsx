@@ -4,8 +4,13 @@ import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useInView } from 'framer-motion'
 
 export default function Form() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true });
+ 
+
   const { register, handleSubmit, formState: { errors } } = useForm();
   const submitNotify = () => {
     toast.success('🫱🏾‍🫲🏿 Great! Will Be In Touch Soon', {
@@ -49,7 +54,12 @@ const resumeNotify = () => {
 
   return (
     
-    <section id='contact' className='section'>
+    <section id='contact' className='section' ref={ref}
+    style={{
+      transform: isInView ? "none" : "translateX(-200px)",
+      opacity: isInView ? 1 : 0,
+      transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+    }}>
       <h2 className='section_header'> 05.<span>Contact Me</span></h2>           
           
         

@@ -9,7 +9,6 @@ $green: #64ffda;
     
     padding: 0;
     width: 100%;
-   
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -23,6 +22,7 @@ $green: #64ffda;
     text-align: left;
     color: $white;
     text-shadow: none;
+    padding-bottom: 6rem;
 }
         .info-wrapper{
         width: 85%;

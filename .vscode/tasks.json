@@ -5,7 +5,6 @@
 			"type": "npm",
 			"script": "install",
 			"path": "kentravious_colson",
-			"group": "clean",
 			"problemMatcher": [],
 			"label": "npm: install - kentravious_colson",
 			"detail": "install dependencies from package"

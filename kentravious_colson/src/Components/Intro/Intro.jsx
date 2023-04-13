@@ -54,8 +54,10 @@ const Intro = () => {
                     animate={{y: 0, opacity: 1}}
                     transition={{duration: 2.85}}
                     >
+                        {'<'}
+                  <span className='diff_color'>WEB DEV</span>
+                  {'/>'}
 
-                  <span className='diff_color'>WEB DEV</span>          
                     </motion.div>
             
                 </h1>
@@ -66,7 +68,7 @@ const Intro = () => {
                     transition={{duration: 3.85}}
                     >
                       <div>
-                      <p>Frontend Developer | Creative Artist </p>
+                      <p> </p>
                     </div>
                     </motion.div>
                 

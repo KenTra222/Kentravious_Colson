@@ -33,7 +33,7 @@ export const Header = (...props) => {
       <div className='header-left'>
         <motion.div
           animate={{
-            x: [0, 0, 100, 100,100, 100, 0, 0],
+            x: [0, 0, 175, 175, 175, 175, 0, 0],
             y:[-1,1,-1,1,-1,1,-1,1,-1,1,-1,1, 0],
             rotate: [0, 90, 90,90, 90,180,180, 180, 270, 270,270,360, ],
             }}         
@@ -43,10 +43,12 @@ export const Header = (...props) => {
             stiffness: 800, 
             duration: 5, 
             delay: 2}}>
-          <FaPlaceOfWorship 
-            color='#64ffda'/>
+          {/* <FaPlaceOfWorship 
+            color='#64ffda'/> */}
+            K
         </motion.div>
-        <span className='logo-text'>KC</span>
+
+        <span className='logo-text'>Colson</span>
         <small>web Developer</small>
       </div>
 

@@ -64,6 +64,8 @@ const resumeNotify = () => {
           
         
     <div className='contact_contents'>
+
+      
     
       <div className='info-wrapper'>
         <div className='contact_info'>

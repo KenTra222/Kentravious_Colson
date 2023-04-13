@@ -1,5 +1,6 @@
 export default [
     {
+        id: 1,
         title: 'claudthacreator',
         imgUrl: '/assets/ctc.jpg',
         stack: ['WIX'],
@@ -8,6 +9,7 @@ export default [
     },
 
     {
+        id: 2,
         title: 'Portfolio Site',
         imgUrl: '/assets/portfolio.jpg ',
         stack: ['React |', 'SCSS  |', 'Vite |', 'R3F '],
@@ -15,6 +17,7 @@ export default [
         product: '3D Artwork'
     },
     {
+        id: 3,
         title: 'King Kai Planet',
         imgUrl: '/assets/kkpic.png',
         stack: ['Blender '],
@@ -22,6 +25,7 @@ export default [
         product: '3D Artwork'
     },
     {
+        id: 4,
         title: 'gas station',
         imgUrl: '/assets/gasStation.jpg',
         stack: ['Blender'],
@@ -29,6 +33,7 @@ export default [
         product: '3D Artwork'
     },
     {
+        id: 5,
         title: 'Cadet landing Page',
         imgUrl: '/assets/cadet.jpg',
         stack: ['Figma'],
@@ -36,6 +41,7 @@ export default [
         product: 'Web Design'
     },
     {
+        id: 6,
         title: 'gigibite',
         imgUrl: '/assets/gigibite.jpg',
         stack: ['Figma'],

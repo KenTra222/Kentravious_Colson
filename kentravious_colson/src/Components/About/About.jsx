@@ -25,18 +25,14 @@ const About = () => {
          <div className='bio_text'>
 
         
-         <p>
-         I'm a passionate creator who loves to build things on the internet using design systems and programming languages. My journey started in 2020 while I was working at a car shop watching YouTube videos. As it turned out, I really enjoyed learning how to talk to computers, and that sparked my interest in making technology a main factor in my life.
+   
+        "I'm a self-taught <span className='dev_text'>Frontend Developer</span> with a passion for creating exceptional digital experiences using design systems and programming languages. My journey in tech started in 2020 while I was working at a car shop and discovered my love for learning how to talk to computers through watching YouTube videos.
         <br/>
         <br/>
-         Since then, my passion for tech has continued to grow and evolve, and I'm always striving to stay up to date with the latest software and tools. Recently, I completed the Three.js course to further improve my knowledge and skills.
+        Since then, I've been on a mission to stay up-to-date with the latest software and tools, completing the Three.js course to further improve my knowledge and skills. I also have a strong interest in 3D animation and love using Blender to create unique and engaging designs.
         <br/>
         <br/>
-        In addition to my love for technology, I also have a passion for 3D animation, and I enjoy creating unique and engaging designs using Blender. You can check out some of my work on my portfolio.
-        <br/>
-        <br/>
-        Currently, I work remotely with a select group of freelance clients, but I'm always open to new opportunities and challenges. If you have a project you'd like to collaborate on, feel free to reach out to me.
-        </p>
+        Currently, I work remotely with a select group of freelance clients, but I'm always open to new opportunities and challenges. If you have a project you'd like to collaborate on, please feel free to reach out to me. You can check out some of my work on my portfolio."
         </div>
         </div>    
                 

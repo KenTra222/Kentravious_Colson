@@ -100,7 +100,10 @@ h1, h2, h3, h4, h5, h6 {
   p{
     color: $white;
   }
-
+  #about,#projects{
+    padding-bottom: 60px;
+    border-bottom: solid 1px $blue;
+   }
    
 @media (min-width: 1024px){
   .App-Wrapper{
@@ -121,7 +124,3 @@ h1, h2, h3, h4, h5, h6 {
      }
  }
 
- #about,#projects{
-  padding-bottom: 60px;
-  border-bottom: solid 1px $blue;
- }

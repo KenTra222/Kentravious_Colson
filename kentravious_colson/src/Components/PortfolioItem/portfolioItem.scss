@@ -13,8 +13,9 @@ $green: #64ffda;
      border-radius: 0.25rem;
     box-shadow: 6px 3px 5px -1px rgba(0,0,0,0.75);
     border: 2px solid ;
+    background: rgba(112, 112, 112, 0.137);
  
-
+     
     a{
       text-decoration: none;
       padding: 0;
@@ -33,9 +34,8 @@ $green: #64ffda;
         align-items: center;
         justify-content: space-around;
         width: 100%;
-        background: rgba(112, 112, 112, 0.137);
         color: whitesmoke;
-        padding: 1rem
+        min-height:6rem;
         
         h3{
           width: 100%;

@@ -10,7 +10,7 @@ $green: #64ffda;
         z-index: 101;
         
         .aboutContent_wrapper{
-            width: 85%;
+            width: 80%;
             padding: 0;
             margin: 0 auto;
             color: $white;
@@ -59,10 +59,16 @@ $green: #64ffda;
                         border-radius: 50%;
                     }
                     .bio_text{
-
+                        text-align: left;
+                        line-height: 1.5rem;
                         width: 50%;
-                        p{width: 100%;}
+                        p{width: 100%;
+                        }
                     }
+                           
                 }
             }
+        }
+        .dev_text{
+            color: $green;
         }

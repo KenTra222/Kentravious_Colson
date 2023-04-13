@@ -6,7 +6,6 @@ import About from './About/About'
 import Intro from './Intro/Intro'
 import { Header } from './Header/Header'
 import { BrowserRouter as Router } from 'react-router-dom';
-import {FaLinkedin} from 'react-icons/fa'
 import {Footer} from './Footer/Footer'
 import LoadingScreen from './LoadingScreen/LoadingScreen.jsx';
 import Timeline from './Timeline/Timeline'

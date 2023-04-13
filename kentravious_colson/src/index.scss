@@ -115,6 +115,13 @@ h1, h2, h3, h4, h5, h6 {
       margin-top: 4rem;
       margin-bottom: 5rem;
     }
+
+    #about,#projects{
+      border-bottom: none;
+     }
  }
 
- 
+ #about,#projects{
+  padding-bottom: 60px;
+  border-bottom: solid 1px $blue;
+ }

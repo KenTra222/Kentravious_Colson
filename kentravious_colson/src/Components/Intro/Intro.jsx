@@ -54,21 +54,24 @@ const Intro = () => {
                     animate={{y: 0, opacity: 1}}
                     transition={{duration: 2.85}}
                     >
-                        {'<'}
+                    
                   <span className='diff_color'>WEB DEV</span>
-                  {'/>'}
+             
 
-                    </motion.div>
+                  </motion.div>
             
                 </h1>
+
                 </div>
+
+                <br/>
                 <motion.div
                     initial={{y: 1000, opacity: 0}}
                     animate={{y: 0, opacity: 1}}
                     transition={{duration: 3.85}}
                     >
                       <div>
-                      <p> </p>
+                      <p> "I am a frontend developer who is passionate about crafting visually stunning and intuitive digital experiences. With expertise in React, Three.js, and UX design, I am self-taught and constantly seeking to expand my skill set. Currently, I am focused on building high-quality, responsive websites using Wix."</p>
                     </div>
                     </motion.div>
                 

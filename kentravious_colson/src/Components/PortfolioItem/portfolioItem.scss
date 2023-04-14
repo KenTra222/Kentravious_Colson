@@ -8,26 +8,27 @@ $green: #64ffda;
     flex-direction: column;
     align-items: center;
     justify-content:center;
-     width: 100%;
-   
-     border-radius: 0.25rem;
+    width: 100%;
+    border-radius: 0.25rem;
     box-shadow: 6px 3px 5px -1px rgba(0,0,0,0.75);
     border: 2px solid ;
     background: rgba(112, 112, 112, 0.137);
- 
-     
+    text-align: left;
+
     a{
       text-decoration: none;
       padding: 0;
     }
+
+
     img{
         width: 100%;
         height: 9rem;
         object-fit: cover;
         cursor: pointer;
         border: none;
-     
     }
+
     .item_details{
         display: flex;
         flex-direction: column;
@@ -36,41 +37,37 @@ $green: #64ffda;
         width: 100%;
         color: whitesmoke;
         min-height:6rem;
+ 
         
         h3{
-          width: 100%;
-          margin: 0.75rem .75rem;   
+          width: 90%;
+          margin: 0 auto;   
           font-style: normal;
           font-weight: bold;
-          font-size: large;
+          font-size: medium;
           line-height: 24px;
           letter-spacing: 1px;
         
           text-transform: uppercase;
           text-shadow:  2px 1px 1px #080113;
-
          }
         
         p{      
-        width: 100%;
+          width: 90%;
         text-shadow:  2px 1px 1px #080113;
-
         }
   }
 
   .stack{ 
-    padding-left: .75rem;
-    font-size: .75rem;
+    font-size: .5rem;
     color: $white;
     text-shadow: none;
     margin-top: 1.5rem;
-    margin-left: .75rem;
+    margin-left: 0;
     color: $green;
-    
 
   }
 }
-
 
 .projectInfo{
     display: flex;
@@ -90,10 +87,8 @@ $green: #64ffda;
 
 @media (min-width: 1024px){
   .portfolio_wrapper{
-
     h3{
       font-size:  x-large;
-    
     }
   }
 }

@@ -28,7 +28,16 @@ const TextSphere = () => {
         "Web Development",
         "Responsive Web Design",
         "UX Design",
-        "UI Design"
+        "UI Design",
+        "Wix",
+        "Blender",
+        "Unity",
+        "Figma", 
+        "React Three Fiber",
+        "Three.js",
+        "Wix",
+        "E-Commerce",
+        ""
       ];
 
       const options = {

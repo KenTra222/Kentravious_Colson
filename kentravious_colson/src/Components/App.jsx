@@ -8,7 +8,7 @@ import { Header } from './Header/Header'
 import { BrowserRouter as Router } from 'react-router-dom';
 import {Footer} from './Footer/Footer'
 import LoadingScreen from './LoadingScreen/LoadingScreen.jsx';
-import Timeline from './Timeline/Timeline'
+import TextSphere from './Experience/TextSphere'
 
 
 const App = () => {  
@@ -24,19 +24,21 @@ const App = () => {
     <Router>
     <div  className='App-Wrapper'>  
       <LoadingScreen isLoading={isLoading} />
-
+{/* 
+      <Experience/> */}
           <Header/>
         <main>
      
       {/*intro*/}
           <Intro  /> 
           <About/>
-  
+         
+          <TextSphere/>
+       
+
 
           {/*projects*/}
           <Portfolio />
- 
-          
 
           <Form  />
 

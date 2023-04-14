@@ -30,6 +30,7 @@
     "sass": "^1.58.1",
     "sort-by": "^1.2.0",
     "swiper": "^9.0.5",
+    "TagCloud": "^2.3.2",
     "three": "^0.149.0"
   },
   "devDependencies": {

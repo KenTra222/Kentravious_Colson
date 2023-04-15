@@ -26,6 +26,7 @@ export const Portfolio = () => {
                 stack={project.stack}
                 link={project.link}
                 product={project.product}
+                description={project.description}
                 />           
                 ))}
           </div>

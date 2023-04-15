@@ -5,13 +5,14 @@ $green: #64ffda;
 
 .portfolioItem_wrapper{
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content:center;
     width: 100%;
     border-radius: 0.25rem;
     box-shadow: 6px 3px 5px -1px rgba(0,0,0,0.75);
-    border: 2px solid ;
+  
     background: rgba(112, 112, 112, 0.137);
     text-align: left;
 
@@ -68,6 +69,41 @@ $green: #64ffda;
 
   }
 }
+
+.see_more_container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+ 
+     
+span{
+  color: $white;
+  margin-left: .75rem;
+   margin-top: .5rem;
+   margin-bottom: .5rem;
+
+
+}
+}
+  .see_morebtn{
+    background: none;
+    position: absolute;
+    border: none;
+    font-size: 1rem;
+    padding: 0;
+    color: $green;
+    margin-right: .75rem;
+   margin-bottom: .5rem;
+   bottom: 0;
+   right: 0;
+
+  }
+  p{
+    font-size: .8rem;
+    margin-left: .85rem;
+  }
 
 .projectInfo{
     display: flex;

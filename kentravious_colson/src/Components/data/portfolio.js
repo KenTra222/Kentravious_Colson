@@ -5,7 +5,8 @@ export default [
         imgUrl: '/assets/ctc.jpg',
         stack: ['WIX'],
         link: 'https://www.claudthacreator.com/',
-        product: 'Website'
+        product: 'Website',
+        description: 'this is an example description'
     },
 
     {
@@ -14,7 +15,9 @@ export default [
         imgUrl: '/assets/portfolio.jpg ',
         stack: ['React |', 'SCSS  |', 'Vite |', 'R3F '],
         link: '#',
-        product: '3D Artwork'
+        product: '3D Artwork',
+        description: 'this is an example description'
+
     },
     {
         id: 3,

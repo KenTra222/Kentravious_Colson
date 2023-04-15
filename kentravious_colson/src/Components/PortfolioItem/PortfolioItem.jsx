@@ -32,7 +32,7 @@ export const PortfolioItem = ({ title, imgUrl, stack, link, product, description
                 </button>           
               </div>    
 
-              <div className='see_more_container'>
+              <div className='see_more_container' onClick={handleToggleContent} >
                 {showContent &&  <p className='description'> {description} </p>}
               </div>                
       </div>

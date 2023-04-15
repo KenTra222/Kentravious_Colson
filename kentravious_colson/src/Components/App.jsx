@@ -33,7 +33,9 @@ const App = () => {
           <Intro  /> 
           <About/>
          
-          <TextSphere/>
+          <div style={{ height: "500px", width: "500px", margin: '0 auto' }}>
+            <TextSphere />
+          </div>
        
 
 

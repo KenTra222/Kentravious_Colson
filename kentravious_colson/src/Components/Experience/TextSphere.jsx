@@ -41,7 +41,6 @@ const TextSphere = () => {
      < >
 
       <div className="text-sphere" >
-        {/* span tag className must be "tagcloud"  */}
         <span className="tagcloud"></span>
       </div>
      </ >

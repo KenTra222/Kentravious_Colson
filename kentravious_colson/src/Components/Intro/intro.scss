@@ -38,7 +38,8 @@ $ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,
 
 
 #intro{
-    background: url('https://media.giphy.com/media/l0HlO8EgtP1KeyZ0Y/giphy.gif');
+    //background: url('https://media.giphy.com/media/l0HlO8EgtP1KeyZ0Y/giphy.gif');
+    background: url('https://media.giphy.com/media/3ov9k22S4De372LQf6/giphy.gif');
     background-size:  cover;
     background-position: center;  
     font-size: 2.5rem; 
@@ -130,7 +131,7 @@ $ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,
 /*breakpoints*/
 @media (min-width: 1024px){
     #intro{
-    background: url('https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif') ;
+  // background: url('https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif') ;
     background-size:  cover;
     background-position: center;  
     font-size: 2.5rem; 

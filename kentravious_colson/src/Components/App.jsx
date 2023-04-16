@@ -8,7 +8,7 @@ import { Header } from './Header/Header'
 import { BrowserRouter as Router } from 'react-router-dom';
 import {Footer} from './Footer/Footer'
 import LoadingScreen from './LoadingScreen/LoadingScreen.jsx';
-import TextSphere from './Experience/TextSphere'
+ 
 
 
 const App = () => {  
@@ -32,10 +32,7 @@ const App = () => {
       {/*intro*/}
           <Intro  /> 
           <About/>
-         
-          <div style={{ height: "500px", width: "500px", margin: '0 auto', background: "none" }}>
-            <TextSphere />
-          </div>
+    
        
 
 

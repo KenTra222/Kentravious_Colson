@@ -1,0 +1,12 @@
+import resumePdf from './resume.pdf';
+
+function Resume() {
+  
+
+  return (
+    <div>
+      <h1>My Resume</h1>
+      <button onClick={downloadResume}>Download</button>
+    </div>
+  );
+}

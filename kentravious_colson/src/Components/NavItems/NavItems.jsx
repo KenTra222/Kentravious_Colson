@@ -72,7 +72,7 @@ const NavItems = ( props ) => {
             transition={ {duration: 3 }}>
 
               <li onClick={toggleModal}>
-                <a className='resumeBtn' href='#'  >resume</a >
+                <a className='resumeBtn' href='../../../public/Resume.pdf' download="Resume.pdf"  >resume</a >
               </li>
             </motion.div>
 

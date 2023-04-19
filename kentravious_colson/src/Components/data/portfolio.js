@@ -16,7 +16,7 @@ export default [
         stack: ['React |', 'SCSS  |', 'Vite |', 'R3F '],
         link: '#',
         product: '3D Artwork',
-        description: 'this is an example description'
+        description: ''
 
     },
     {
@@ -40,7 +40,7 @@ export default [
         title: 'Cadet landing Page',
         imgUrl: '/assets/cadet.jpg',
         stack: ['Figma'],
-        link: '#',
+        link: 'https://www.figma.com/file/2st9LypPJgSbpUBByWZwXk/cadet-landing-page?node-id=0%3A1&t=6XL8TqASQxVCO4Fq-1',
         product: 'Web Design'
     },
     {
@@ -48,7 +48,7 @@ export default [
         title: 'gigibite',
         imgUrl: '/assets/gigibite.jpg',
         stack: ['Figma'],
-        link: '#',
+        link: 'https://www.figma.com/proto/90wwOJrU5nhAWZXyzLUadN/Untitled?node-id=2-2&starting-point-node-id=2%3A2',
         product: 'Web Design'
     } 
 ]

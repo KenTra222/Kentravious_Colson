@@ -33,15 +33,15 @@ export const Header = (...props) => {
       <div className='header-left'>
         <motion.div
           animate={{
-            x: [0, 0, 175, 175, 175, 175, 0, 0],
+            x: [0, 40, 80, 120, 160, 200, 240, 280, 0],
             y:[-1,1,-1,1,-1,1,-1,1,-1,1,-1,1, 0],
-            rotate: [0, 90, 90,90, 90,180,180, 180, 270, 270,270,360, ],
+            rotate: [0, 90, 180,270, 360,450, 540,630, 0  ],
             }}         
           transition={{ 
             type: 'spring', 
             damping: 0, 
             stiffness: 800, 
-            duration: 5, 
+            duration: 6, 
             delay: 2}}>
           {/* <FaPlaceOfWorship 
             color='#64ffda'/> */}

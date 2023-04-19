@@ -55,14 +55,19 @@ const Intro = () => {
                     transition={{duration: 2.85}}
                     >
                     
-                  <span className='diff_color'>WEB DEV</span>
-             
-
+                  <span className='diff_color'>WEB DEV</span>       
                   </motion.div>
-            
                 </h1>
-
                 </div>
+
+                <motion.div
+                    initial={{y: 1000, opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    transition={{duration: 3}}
+                    >
+
+                <p className='career_title'>Frontend developer | Creative Developer</p>
+                    </motion.div>
 
                 <br/>
                 <motion.div

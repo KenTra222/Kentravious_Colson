@@ -69,6 +69,7 @@ $ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,
         .small{
             font-size: $fz-sm;
             color: $green;
+          
         }
     p{
        margin:0; 
@@ -140,12 +141,21 @@ $ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,
         .intro_contents{
             div{
            padding-right: 80px;
-
+            }
+            .small{
+                margin-left: 2.1rem;
             }
         }
         h1{
             font-size: 4.5rem; 
             line-height: 1;
+        }
+        .diff_color{
+            margin-left: .25rem;
+        }
+
+        .career_title{
+            margin-left: 2.25rem;
         }
     }
  }

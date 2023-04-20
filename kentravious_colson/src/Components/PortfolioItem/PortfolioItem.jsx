@@ -1,12 +1,12 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './portfolioItem.scss'
 
  
-export const PortfolioItem = ({ title, imgUrl, stack, link, product, description }) => {
+export const PortfolioItem = ({id, title, imgUrl, stack, link, product, description }) => {
     
   return (
     
-      <div className='portfolioItem_wrapper'>
+      <div id={id} className='portfolioItem_wrapper'>
 
           <img
               src={imgUrl}

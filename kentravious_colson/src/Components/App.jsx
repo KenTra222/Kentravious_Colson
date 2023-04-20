@@ -10,6 +10,7 @@ import {Footer} from './Footer/Footer'
 import LoadingScreen from './LoadingScreen/LoadingScreen.jsx';
 import Experience from './Experience/Experience'
 import { Canvas } from '@react-three/fiber'
+import Casestudies from './CaseStudies/Casestudies'
 
 
 const App = () => {  
@@ -25,37 +26,36 @@ const App = () => {
     <Router>
     <div  className='App-Wrapper'>  
       <LoadingScreen isLoading={isLoading} />
-{/* 
-      <Experience/> */}
+
+          {/* header*/}
           <Header/>
         <main>
      
-      {/*intro*/}
+          {/*intro*/}
            <Intro  /> 
+
+          {/*experience*/}
           <Canvas className='canvas' 
-          style={{ 
-            backgroundColor: 'none',
-            
-            left:'0', 
-            position: "absolute",
-            zindex: "-100",
-            width: "100vw",
-            height: "150svh" }}>
-
-          <Experience/>
+            style={{ 
+              backgroundColor: 'none',
+              left:'0', 
+              position: "absolute",
+              zindex: "-100",
+              width: "100vw",
+              height: "150svh" }}>
+            <Experience/>
           </Canvas>
-              <About/>
-       
 
+          {/*About*/}
+          <About/>
 
           {/*projects*/}
           <Portfolio />
 
+          {/*Form*/}
           <Form  />
-
-         <Footer/>
-         
         </main>
+         <Footer/>
     </div> 
     </Router>
   )

@@ -2,7 +2,7 @@ import React, {useRef} from 'react'
 import portfolio from "../data/portfolio.js"
 import { PortfolioItem } from '../PortfolioItem/PortfolioItem';
 import './portfolio.scss'
-import {   useInView } from 'framer-motion'
+import { useInView } from 'framer-motion'
 
 export const Portfolio = () => {
   const ref = useRef(null)
@@ -21,6 +21,7 @@ export const Portfolio = () => {
           <div className='portfolio'>
               {portfolio.map(project => (
                 <PortfolioItem
+                id={project.id}
                 imgUrl={project.imgUrl}
                 title={project.title}
                 stack={project.stack}

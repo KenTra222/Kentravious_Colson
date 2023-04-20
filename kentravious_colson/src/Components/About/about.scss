@@ -4,7 +4,7 @@ $green: #64ffda;
  
     #about{
     
-         
+         position: relative;
         margin: 0 auto;
         width: 100%;
         z-index: 101;
@@ -23,6 +23,7 @@ $green: #64ffda;
             font-size: .85rem;
             letter-spacing: 1px;
             line-height: 26px;
+             z-index: 101;
            
             color: rgb(245, 245, 245); 
         

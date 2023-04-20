@@ -50,7 +50,7 @@ body,
    min-height: 100%;
    overflow-x: hidden;
    -webkit-font-smoothing: antialiased;
-   background-color: $background-color;
+   background-color: none;
    color: $slate;
    font-family: $font-sans;
    font-size: $fz-xl;
@@ -66,6 +66,7 @@ body,
         font-family: $font-sans, 'Lato', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
         display: flex;    
         flex-direction: column;
+        position: absolute;
     }
 }
 

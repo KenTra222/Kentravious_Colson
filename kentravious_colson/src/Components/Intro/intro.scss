@@ -45,6 +45,7 @@ $ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,
     font-size: 2.5rem; 
     
     .intro_contents{
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;

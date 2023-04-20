@@ -8,7 +8,8 @@ import { Header } from './Header/Header'
 import { BrowserRouter as Router } from 'react-router-dom';
 import {Footer} from './Footer/Footer'
 import LoadingScreen from './LoadingScreen/LoadingScreen.jsx';
- 
+import Experience from './Experience/Experience'
+import { Canvas } from '@react-three/fiber'
 
 
 const App = () => {  
@@ -30,9 +31,20 @@ const App = () => {
         <main>
      
       {/*intro*/}
-          <Intro  /> 
-          <About/>
-    
+           <Intro  /> 
+          <Canvas className='canvas' 
+          style={{ 
+            backgroundColor: 'none',
+            
+            left:'0', 
+            position: "absolute",
+            zindex: "-100",
+            width: "100vw",
+            height: "150svh" }}>
+
+          <Experience/>
+          </Canvas>
+              <About/>
        
 
 

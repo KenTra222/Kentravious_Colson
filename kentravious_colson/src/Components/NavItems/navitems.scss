@@ -1,6 +1,7 @@
 $green: #64ffda;
 $white: #e0e0db;
 $lightest-navy: #233554;
+$dark-slate: #495670;
 
 @media (min-width: 1024px){
     nav{
@@ -62,8 +63,10 @@ $lightest-navy: #233554;
                 padding: 0.75rem 1rem;
                 color: $green;
                 border-radius: 6px;
-         
-        }
+            }
+         .resumeBtn:hover{
+            background: $dark-slate;
+         }
         }
     }
 

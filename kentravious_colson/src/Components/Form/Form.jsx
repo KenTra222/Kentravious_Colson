@@ -7,11 +7,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useInView } from 'framer-motion'
 
 export default function Form() {
-  const ref = useRef(null)
+  const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
  
-
   const { register, handleSubmit, formState: { errors } } = useForm();
+
+  
   const submitNotify = () => {
     toast.success('🫱🏾‍🫲🏿 Great! Will Be In Touch Soon', {
       position: "top-right",
@@ -25,19 +26,6 @@ export default function Form() {
       });
 };
 
-const resumeNotify = () => {
-  toast.success('🫱🏾‍🫲🏿 Great! The Resume Is Downloading', {
-    position: "top-right",
-    autoClose: 3000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "dark",
-    });
-};
-  
   
   const form = useRef();
 

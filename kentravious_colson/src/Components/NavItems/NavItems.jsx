@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {motion} from 'framer-motion'
 import { HashLink as Link } from 'react-router-hash-link';
 import './navitems.scss'
+import { ToastContainer, toast } from 'react-toastify';
 
 const NavItems = ( props ) => {
 
@@ -9,6 +10,19 @@ const NavItems = ( props ) => {
     const toggleModal = ( ) => {
         setIsOpen(!isOpen)
     }
+
+    const resumeNotify = () => {
+      toast.success('🫱🏾‍🫲🏿Great! The Resume Is Downloading', {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
+    };
 
   return (
     <nav className={props.className}>
@@ -72,8 +86,10 @@ const NavItems = ( props ) => {
             transition={ {duration: 3 }}>
 
               <li onClick={toggleModal}>
-                <a className='resumeBtn' href='../../../public/Resume.pdf' download="Resume.pdf"  >resume</a >
+                <a onClick={resumeNotify} className='resumeBtn' href='../../../public/Resume.pdf' download="Resume.pdf"  >resume</a >
               </li>
+      <ToastContainer />
+
             </motion.div>
 
             </motion.div>

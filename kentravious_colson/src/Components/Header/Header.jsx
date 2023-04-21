@@ -10,6 +10,7 @@ import MobileItems from '../NavItems/MobileItems';
 
 
 
+
 const   HAMBURGER_BUTTON_STYLES = {
   color: ' #64ffda',
   border: 'none',
@@ -23,7 +24,7 @@ export const Header = (...props) => {
         setIsOpen(!isOpen)
     }
     
-
+    
     
   return (
     <div>      

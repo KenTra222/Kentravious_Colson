@@ -42,6 +42,8 @@ $green: #64ffda;
            display: none;
         }
 
+
+        
         @media (min-width: 1024px) {
             #about{
                 .aboutContent_wrapper{
@@ -74,4 +76,5 @@ $green: #64ffda;
         .dev_text{
             color: $green;
         }
+       
         

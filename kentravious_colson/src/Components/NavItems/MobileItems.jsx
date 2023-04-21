@@ -68,8 +68,8 @@ const MobileItems = ( props ) => {
             animate={{ x: 0}}
             transition={ {duration: 2 }}>
 
-              <li onClick={toggleModal}>
-              <a onClick={resumeNotify} className='resumeBtn' href='../../../public/assets/Kentravious_Colson_Resume.pdf' download="Resume.pdf"  >resume</a >
+            <li onClick={toggleModal}>
+                <a onClick={resumeNotify} className='resumeBtn' href='../../../public/assets/Kentravious_Colson_Resume.pdf' download="Resume.pdf"  >resume</a >
               </li>
             </motion.div>
 

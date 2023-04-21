@@ -85,7 +85,7 @@ const NavItems = ( props ) => {
             animate={{ y: 0}}
             transition={ {duration: 3 }}>
 
-              <li onClick={toggleModal}>/workspace/Kentravious_Colson/kentravious_colson/src/Components/Header
+              <li onClick={toggleModal}>
                 <a onClick={resumeNotify} className='resumeBtn' href='../../../public/assets/Kentravious_Colson_Resume.pdf' download="Resume.pdf"  >resume</a >
               </li>
       <ToastContainer />

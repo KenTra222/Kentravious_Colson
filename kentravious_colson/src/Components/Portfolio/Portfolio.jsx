@@ -21,7 +21,7 @@ export const Portfolio = () => {
           <div className='portfolio'>
               {portfolio.map(project => (
                 <PortfolioItem
-                id={project.id}
+                key={project.id}
                 imgUrl={project.imgUrl}
                 title={project.title}
                 stack={project.stack}

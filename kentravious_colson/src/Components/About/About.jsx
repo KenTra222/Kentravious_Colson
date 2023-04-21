@@ -35,6 +35,7 @@ const About = () => {
         <br/>
         <br/>
         Currently, I work remotely with a select group of freelance clients, but I'm always open to new opportunities and challenges. If you have a project you'd like to collaborate on, please feel free to reach out to me. You can check out some of my work on my portfolio."
+      
         </div>
         </div>    
                 

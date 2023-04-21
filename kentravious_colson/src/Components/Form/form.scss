@@ -95,7 +95,7 @@ $light-navy: #112240;
             color:$green;
             background-color: $light-navy;
             margin: .35rem auto .5rem;
-            width: 99%;
+            width: 100%;
             padding-top: .45rem;
             padding-left: .5rem;
             padding-bottom: 1.25rem;
@@ -112,7 +112,9 @@ $light-navy: #112240;
             color: $green;
             background-color: $light-navy;
             padding-bottom: 2.5rem ;
-            padding-right: 5px;
+            padding-left: .5rem;
+
+            padding-right: 2px;
             box-shadow: 1px 1px 1px 0px $green;
             margin-top: 10px;
             

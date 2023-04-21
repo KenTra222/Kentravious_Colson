@@ -4,7 +4,6 @@ import NavItems from '../NavItems/NavItems';
 import Modal from '../Modal/Modal';
 import { FaPlaceOfWorship, FaBars } from "react-icons/fa";
 import {CgMenuMotion} from 'react-icons/cg'
-import {Canvas} from '@react-three/fiber'
 import {motion} from 'framer-motion'
 import MobileItems from '../NavItems/MobileItems';
 

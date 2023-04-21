@@ -60,7 +60,7 @@ const Experience = (props) => {
       attenuation={(width) => width} // A function to define the width in each point along it.
     >
 
-      <primitive  object={scene} ref={ref} {...props} position={[0, 18, -20]}  />
+      <primitive  object={scene} ref={ref} {...props} position={[-6, 16, -20]}  />
     </Trail>
     </>
 

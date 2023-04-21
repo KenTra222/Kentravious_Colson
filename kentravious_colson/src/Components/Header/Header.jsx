@@ -7,9 +7,6 @@ import {CgMenuMotion} from 'react-icons/cg'
 import {motion} from 'framer-motion'
 import MobileItems from '../NavItems/MobileItems';
 
-
-
-
 const   HAMBURGER_BUTTON_STYLES = {
   color: ' #64ffda',
   border: 'none',
@@ -17,14 +14,11 @@ const   HAMBURGER_BUTTON_STYLES = {
   }
 
 export const Header = (...props) => {
-
     const [isOpen, setIsOpen] = useState(false) 
     const toggleModal = ( ) => {
         setIsOpen(!isOpen)
     }
-    
-    
-    
+       
   return (
     <div>      
         <div className='header' >

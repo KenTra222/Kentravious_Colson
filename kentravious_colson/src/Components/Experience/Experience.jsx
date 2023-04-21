@@ -30,7 +30,7 @@ const Experience = (props) => {
     }, []);
     useFrame(({ clock }) => {
         const timeSinceLastMove = Date.now() - lastMouseMoveTime;
-        const moveSpeed = 0.00001; // Adjust this to control how fast the object moves
+        const moveSpeed = 0.0001; // Adjust this to control how fast the object moves
         const moveAmount = Math.min(timeSinceLastMove * moveSpeed, 1);
         const newX = ref.current.position.x + mousePos.x * moveAmount;
         const newY = ref.current.position.y + mousePos.y * moveAmount;
@@ -60,7 +60,7 @@ const Experience = (props) => {
       attenuation={(width) => width} // A function to define the width in each point along it.
     >
 
-      <primitive  object={scene} ref={ref} {...props} position={[-6, 16, -20]}  />
+      <primitive  object={scene} ref={ref} {...props} position={[-16, 8, -20]}  />
     </Trail>
     </>
 

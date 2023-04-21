@@ -5,6 +5,9 @@ $white: #e0e0db;
 $green: #64ffda;
 $dark-navy: #020c1b;
 $blue: #57cbff;
+$lightest-navy: #233554;
+$light-navy: #112240;
+
 
 #contact{
     
@@ -86,12 +89,13 @@ $blue: #57cbff;
         }
 
         .input{
+            all: unset;
             border: none;
             
             color:$green;
-            background-color: #0a192f;
+            background-color: $light-navy;
             margin: .35rem auto .5rem;
-            width: 99.6%;
+            width: 99%;
             padding-top: .45rem;
             padding-left: .5rem;
             padding-bottom: 1.25rem;
@@ -101,16 +105,15 @@ $blue: #57cbff;
             box-shadow: 1px 1px 1px 0px $green;
         }
         textarea{
+            all: unset;
             width: 100%;
             outline: 1px solid $blue;
-        
             border-radius: 4px;
             color: $green;
-            background-color: #0a192f;
-      
+            background-color: $light-navy;
             padding-bottom: 2.5rem ;
+            padding-right: 5px;
             box-shadow: 1px 1px 1px 0px $green;
-            
             margin-top: 10px;
             
         }
@@ -131,7 +134,7 @@ $blue: #57cbff;
 
         }
         .submit:hover{
-            background: #233554;
+            background: $lightest-navy;
             }
     }
     

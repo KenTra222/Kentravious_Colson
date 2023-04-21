@@ -21,6 +21,7 @@ const About = () => {
          
          <div className='aboutContent_wrapper'> 
          <div className='bio_img_wrapper'>
+          
          </div>
          
          <div className='bio_text'>

@@ -22,7 +22,10 @@ export const PortfolioItem = ({id, title, imgUrl, stack, link, product, descript
                 </a>
               </div>  
          
+                <span>
+
                 <p className='description'>{description}</p>
+                </span>
                              
                 <p className='stack'> STACK: 
                     {stack.map(item =>(

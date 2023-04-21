@@ -10,7 +10,7 @@ import {Footer} from './Footer/Footer'
 import LoadingScreen from './LoadingScreen/LoadingScreen.jsx';
 import Experience from './Experience/Experience'
 import { Canvas } from '@react-three/fiber'
-import Casestudies from './CaseStudies/Casestudies'
+
 
 
 const App = () => {  

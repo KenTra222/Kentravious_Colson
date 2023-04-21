@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import './form.scss'
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
@@ -7,12 +7,15 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useInView } from 'framer-motion'
 
 export default function Form() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+   
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
  
   const { register, handleSubmit, formState: { errors } } = useForm();
 
-  
+
   const submitNotify = () => {
     toast.success('🫱🏾‍🫲🏿 Great! Will Be In Touch Soon', {
       position: "top-right",
@@ -24,6 +27,7 @@ export default function Form() {
       progress: undefined,
       theme: "dark",
       });
+      setIsSubmitted(true);
 };
 
   
@@ -86,7 +90,14 @@ export default function Form() {
       {/*notification*/}
       
        
-         <input className='submit' type="submit" onClick={submitNotify}/>
+         {/*notification*/}
+         {!isSubmitted ? (
+              <input className='submit' type="submit" value="Submit" onClick={submitNotify}/>
+            ) : (
+              <button className='submit' type="button" disabled>
+                Thank You!
+              </button>
+            )}
       <ToastContainer />
       </form>
       

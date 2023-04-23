@@ -4,7 +4,7 @@ import NavItems from '../NavItems/NavItems';
 import Modal from '../Modal/Modal';
 import {CgMenuMotion} from 'react-icons/cg'
 import {motion} from 'framer-motion'
-import MobileItems from '../NavItems/MobileItems';
+
 
 const   HAMBURGER_BUTTON_STYLES = {
   color: ' #64ffda',
@@ -57,7 +57,7 @@ export const Header = (...props) => {
     </div>   
 
       <Modal isOpen={isOpen} onClose={toggleModal}>
-            <MobileItems/>
+  
       </Modal>
         </div>
         

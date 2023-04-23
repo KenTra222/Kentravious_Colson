@@ -5,8 +5,8 @@ $light-navy: #112240;
 $lightest-navy: #233554;
 
 .modal_background{
- background: #112240a2;
- backdrop-filter: blur(10px);
+    background: #0b2042a2;
+    backdrop-filter: blur(10px);
     width: 100%;
     min-height: 100%;
     position: fixed;
@@ -17,24 +17,21 @@ $lightest-navy: #233554;
     z-index: 1001;
 }
 
-.modal_container{
-     
-background: linear-gradient(-45deg,  $background-color 80%, $light-navy 95%, $lightest-navy 100%);
+.modal_container{    
+    background: linear-gradient(-45deg,  $background-color 80%, $light-navy 95%, $lightest-navy 100%);
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
+    left:0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 1100;
     min-height: 100%;
-    
     width: 75%;
     
-    
-
     ul{
         display: flex;
         flex-direction: column;
@@ -42,10 +39,7 @@ background: linear-gradient(-45deg,  $background-color 80%, $light-navy 95%, $li
         justify-content: center;
         text-align: center;
         min-height: 100%;
-        margin-top: -2.25rem;
-        
-       
-     
+        margin-top: -2.25rem;     
         li{
             list-style: none;
             font-size: 1rem;
@@ -54,9 +48,7 @@ background: linear-gradient(-45deg,  $background-color 80%, $light-navy 95%, $li
             div{
                 display: flex;
                 flex-direction: column;
-                color: $green;
-
-                
+                color: $green;               
             }
             a{
     
@@ -78,10 +70,7 @@ background: linear-gradient(-45deg,  $background-color 80%, $light-navy 95%, $li
                 margin-top: 3rem;
 
             }
-            :hover,
-            :focus {
-                transform: translateY(-3px);
-                }
+        
         }
     }
 }
@@ -96,7 +85,7 @@ background: linear-gradient(-45deg,  $background-color 80%, $light-navy 95%, $li
 
 .modal_close{
     border: none;
-    font-size: 2.75rem;
+    font-size: 1.5rem;
     cursor: pointer;
     margin-top: 1rem;
     margin-right: 1.2rem;

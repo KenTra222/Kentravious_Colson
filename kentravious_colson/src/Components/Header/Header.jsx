@@ -2,7 +2,6 @@ import './header.scss'
 import React, {useState, useEffect} from 'react'
 import NavItems from '../NavItems/NavItems';
 import Modal from '../Modal/Modal';
-import { FaPlaceOfWorship, FaBars } from "react-icons/fa";
 import {CgMenuMotion} from 'react-icons/cg'
 import {motion} from 'framer-motion'
 import MobileItems from '../NavItems/MobileItems';
@@ -58,7 +57,7 @@ export const Header = (...props) => {
     </div>   
 
       <Modal isOpen={isOpen} onClose={toggleModal}>
-       <MobileItems/>  
+            <MobileItems/>
       </Modal>
         </div>
         

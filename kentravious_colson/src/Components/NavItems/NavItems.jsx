@@ -51,7 +51,7 @@ const NavItems = ( props ) => {
               initial={{y: -100}}
               animate={{ y: 0}}
               transition={ {duration: 2.5 }}>
-              <li onClick={toggleModal}>
+              <li >
               <div>
                   02.
                 <Link smooth to="#about" className="underline"  >about</Link>
@@ -59,7 +59,7 @@ const NavItems = ( props ) => {
               
               </li>
               
-              <li onClick={toggleModal}>
+              <li >
               <div>
                   03.
                 <Link to='#projects' className="underline" smooth>projects</Link >
@@ -72,7 +72,7 @@ const NavItems = ( props ) => {
             animate={{ y: 0}}
             transition={ {duration: 2.7 }}>
 
-              <li onClick={toggleModal}>
+              <li >
               <div>
                   04.
                 <Link smooth to='#contact' className="underline"  >contact</Link >
@@ -85,7 +85,7 @@ const NavItems = ( props ) => {
             animate={{ y: 0}}
             transition={ {duration: 3 }}>
 
-              <li onClick={toggleModal}>
+              <li>
                 <a onClick={resumeNotify} className='resumeBtn' href='../../../public/assets/Kentravious_Colson_Resume.pdf' download="Resume.pdf"  >resume</a >
               </li>
       <ToastContainer />

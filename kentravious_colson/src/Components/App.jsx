@@ -10,6 +10,7 @@ import {Footer} from './Footer/Footer'
 import LoadingScreen from './LoadingScreen/LoadingScreen.jsx';
 import Experience from './Experience/Experience'
 import { Canvas } from '@react-three/fiber'
+import { Testimonial } from './Testimonials/Testimonial'
 
 
 
@@ -162,6 +163,8 @@ const App = () => {
           </div>
 
           {/* testimonials */}
+
+          <Testimonial/>
           <section>
             <div className='card'>
               <div className='img_cont'>

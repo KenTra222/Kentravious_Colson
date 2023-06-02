@@ -55,7 +55,7 @@ const Intro = () => {
                     transition={{duration: 2.85}}
                     >
                     
-                  <span className='diff_color'>WEB DEV</span>       
+                  <span className='diff_color'>FRONTEND DEVELOPER </span>       
                   </motion.div>
                 </h1>
                 </div>
@@ -66,7 +66,7 @@ const Intro = () => {
                     transition={{duration: 3}}
                     >
 
-                <p className='career_title'>Frontend developer | Creative Developer</p>
+                <p className='career_title'>Frontend dev | Marketing Specialist | 3D Designer</p>
                     </motion.div>
 
                 <br/>

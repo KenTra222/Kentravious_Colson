@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Orbitron&family=Rubik+Moonrocks&display=swap');
+
 $background-color: #0a192f;
 $white: #e0e0db;
 $green: #64ffda;
@@ -40,7 +41,7 @@ $lightest-navy: #233554;
         text-shadow: 4px 4px 2px rgba(0,0,0,0.3);
         width: 25%;
         margin-left: .5rem;
-        font-family: 'Major Mono Display';
+        font-family: 'Orbitron';
         
         color: $green;
         :nth-child(1){

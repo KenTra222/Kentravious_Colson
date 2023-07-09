@@ -10,7 +10,7 @@ const Intro = (props) => {
   return (
     <section id='intro' className='section' >
       <article>
-        <Canvas color='black' attach flat linear>
+        <Canvas  flat linear>
           <Text position={[0, 3, -1]}>
             Kentravious Colson
           </Text>

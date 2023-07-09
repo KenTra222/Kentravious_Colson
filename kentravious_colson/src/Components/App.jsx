@@ -26,11 +26,14 @@ const App = () => {
 
   return (
     <Router>
-    <Layout>
+      <Layout>
+
       <Intro/>
+      
       <About/>
-  
-    </Layout>
+      <Portfolio/>
+      <Form/>
+      </Layout>
     </Router>
   )
 }

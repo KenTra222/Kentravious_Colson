@@ -15,7 +15,7 @@ const About = () => {
           <div className='AboutCanvasWrapper'>
             <Canvas id='aboutExperience'  flat linear>
               
-              <ambientLight position={[0,8,0]} intensity={0.9}/>
+              <ambientLight position={[0,4,0]} intensity={0.9}/>
               <ImageCube/>
             </Canvas>
             

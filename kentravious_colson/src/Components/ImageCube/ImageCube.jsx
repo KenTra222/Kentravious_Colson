@@ -8,12 +8,12 @@ const ImageCube = () => {
 
     const groupPhotoref = useRef()
 
-    const devPic = '/assets/devPics/headshot3.png'
-    const left  =  '/assets/devPics/avatar0.jpeg'
-    const right = '/assets/devPics/headshot4.png'
-    const back =  '/assets/devPics/headshot6.png'
-    const top = '/assets/devPics/headshot5.png'
-    const bottom = '/assets/devPics/avatar1.png'
+    const devPic = '/devPics/headshot3.png'
+    const left  =  '/devPics/avatar0.jpeg'
+    const right = '/devPics/headshot4.png'
+    const back =  '/devPics/headshot6.png'
+    const top = '/devPics/headshot5.png'
+    const bottom = '/devPics/avatar1.png'
                 
     const texture = new TextureLoader().load(devPic)
     const texture1 = new TextureLoader().load(left)

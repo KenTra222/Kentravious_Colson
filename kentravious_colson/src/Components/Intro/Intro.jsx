@@ -3,12 +3,13 @@ import { motion  } from "framer-motion"
 import './intro.scss'
  import {HiOutlineArrowSmDown } from 'react-icons/hi'
  import { Canvas } from '@react-three/fiber'
- import { Text, Float, useFBX, OrbitControls} from '@react-three/drei'
+ import { Text, Float,  OrbitControls} from '@react-three/drei'
+import { Avatar } from '../Avatar/Avatar'
 
 
 const Intro = (props) => {
 
-  let delorean = useFBX('/public/assets/models/DeLorean.FBX')
+  
 
   return (
     <section id='intro' className='section' >
@@ -29,15 +30,10 @@ const Intro = (props) => {
             From ideation to implementaion, giving life to your creations
           </Text>
 
-          <Float>
+      
 
-          <primitive 
-            object={delorean} 
-            position={[0, -8, -25]}
-            rotation={[0, Math.PI * 0.25, 0]} 
-            scale={0.05}/>
+         <Avatar/>
           
-          </Float>
         </Canvas>
       </article>
      </section>

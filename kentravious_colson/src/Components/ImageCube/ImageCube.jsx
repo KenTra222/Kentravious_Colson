@@ -9,11 +9,11 @@ const ImageCube = () => {
     const groupPhotoref = useRef()
 
     const devPic = '/devPics/headshot3.png'
-    const left  =  '/devPics/avatar0.jpeg'
-    const right = '/devPics/headshot4.png'
+    const left  =  '/pics/lorenzo-herrera.jpg'
+    const right = '/pics/omk.jpg'
     const back =  '/devPics/headshot6.png'
-    const top = '/devPics/headshot5.png'
-    const bottom = '/devPics/avatar1.png'
+    const top = '/pics/georgie-cobbs.jpg'
+    const bottom = '/pics/michael-dziedzic.jpg'
                 
     const texture = new TextureLoader().load(devPic)
     const texture1 = new TextureLoader().load(left)
@@ -25,7 +25,7 @@ const ImageCube = () => {
     useFrame(({clock}) => {
       const elapsedTime = clock.getElapsedTime()
       groupPhotoref.current.rotation.y = elapsedTime * 0.40
-      groupPhotoref.current.rotation.x = elapsedTime * 0.1
+      groupPhotoref.current.rotation.x = elapsedTime * 0.2
 
     })
     
@@ -33,7 +33,7 @@ const ImageCube = () => {
     < >
     <Center>
 
-        <group scale={0.7} ref={groupPhotoref}>
+        <group scale={0.7} position={[0,0,-10]} ref={groupPhotoref}>
 
         <mesh scale={4}  position={[0, 0, 2]}>
         <planeGeometry/>

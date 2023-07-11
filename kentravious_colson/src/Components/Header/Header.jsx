@@ -24,24 +24,9 @@ export const Header = (...props) => {
     <div className='header-items'>
 
       <div className='header-left'>
-        <motion.div
-          animate={{
-            x: [0, 40, 80, 120, 160, 200, 240, 280, 0],
-            y:[-1,1,-1,1,-1,1,-1,1,-1,1,-1,1, 0],
-            rotate: [0, 90, 180,270, 360,450, 540,630, 0  ],
-            }}         
-          transition={{ 
-            type: 'spring', 
-            damping: 0, 
-            stiffness: 800, 
-            duration: 6, 
-            delay: 2}}>
-          {/* <FaPlaceOfWorship 
-            color='#64ffda'/> */}
-            K
-        </motion.div>
+        
 
-        <span className='logo-text'>Colson</span>
+        <span className='logo-text'>KColson</span>
         <small>web Developer</small>
       </div>
 

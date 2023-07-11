@@ -10,10 +10,10 @@ import * as THREE from 'three'
 
 export function Avatar(props) {
 
-  const {headFollow, cursorFollow} = useControls({
-    headFollow: false,
-    cursorFollow: false
-  })
+  // const {headFollow, cursorFollow} = useControls({
+  //   headFollow: false,
+  //   cursorFollow: false
+  // })
 
   const group = useRef()
 

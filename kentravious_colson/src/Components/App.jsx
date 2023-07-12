@@ -12,6 +12,7 @@ import LoadingScreen from './LoadingScreen/LoadingScreen.jsx';
 import { Canvas } from '@react-three/fiber'
 import { Testimonial } from './Testimonials/Testimonial'
 import Layout from './Layout/Layout'
+import Gallery from './Gallery/Gallery'
 
 
 
@@ -32,6 +33,7 @@ const App = () => {
       
       <About/>
       <Portfolio/>
+      <Gallery/>
       <Form/>
       </Layout>
     </Router>

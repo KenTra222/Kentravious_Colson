@@ -18,41 +18,29 @@ const Intro = (props) => {
         <ambientLight intensity={1} position={[0,4,0]}/>
         {/* <OrbitControls/> */}
 
-          <Text position={[0, 2.7, -1]}>
+          <Text position={[-0, 2, -1]}>
             Kentravious Colson
           </Text>
 
-          <Text position={[0, 1.7, -2]}>
+          <Text position={[0, 1, -2]}>
             Creative Developer
           </Text>
+
           <group>
 
-          <Text position={[-20, -8.7, -14]}>
-            From  
+          <Text position={[-13, -4., -14]} >
+            From ideation 
           </Text>
-          <Text position={[-16, -6.7, -14]}>
-             ideation  
+          <Text position={[-12, -5.25, -14]} >
+            to implementaion 
           </Text>
-          <Text position={[-12, -4.7, -14]}>
-             to  
+          
+          <Text position={[6, -4, -14]}>
+            giving life 
           </Text>
-          <Text position={[-8, 0.7, -14]}>
-             implementaion, 
-          </Text>
-          <Text position={[2, 0.7, -14]}>
-            giving  
-          </Text>
-          <Text position={[10, -1.7, -14]}>
-             life  
-          </Text>
-          <Text position={[14, -3.7, -14]}>
-             to  
-          </Text>
-          <Text position={[17, -4.7, -14]}>
-             your  
-          </Text>
-          <Text position={[20, -8.7, -14]}>
-             creations
+         
+          <Text position={[8, -5.25, -14]}>
+             to your creations 
           </Text>
           </group>
 

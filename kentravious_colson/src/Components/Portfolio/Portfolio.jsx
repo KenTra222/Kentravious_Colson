@@ -4,6 +4,7 @@ import { PortfolioItem } from '../PortfolioItem/PortfolioItem';
 import './portfolio.scss'
 
 
+
 export const Portfolio = () => {
  
  
@@ -13,7 +14,7 @@ export const Portfolio = () => {
               
     <div className='portfolio_wrapper'>
           <div className='portfolio'>
-           
+          
             
           </div>
     </div>

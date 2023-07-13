@@ -1,62 +1,60 @@
-import React, {useRef, useState, useEffect } from 'react'
 import Form from './Form/Form'
-import { Portfolio } from './Portfolio/Portfolio'
-import '../index.scss'
-import About from './About/About'
+import { useAtom } from 'jotai'
 import Intro from './Intro/Intro'
-import { Header } from './Header/Header'
+import About from './About/About'
+import Layout from './Layout/Layout'
+import portfolio from './data/portfolio'
+import React, {useRef, useState, useEffect } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom';
-import {Footer} from './Footer/Footer'
-import LoadingScreen from './LoadingScreen/LoadingScreen.jsx';
-import Experience from './Experience/Experience'
-import { Canvas } from '@react-three/fiber'
+import { Portfolio, currentProjectAtom } from './Portfolio/Portfolio'
+
+const BUTTONSTYLES = {
+  border: "none",
+  background: "none",
+  color: "white",
+  marginBottom: "-20px",
+  fontSize: "1.5rem",
+}
 
 
 
 const App = () => {  
-  const [isLoading, setIsLoading] = useState(true);
-
   
-  useEffect(() => {
-    // Do some asynchronous work here
-    setIsLoading(false);
-  }, []);
+
+  const [currentProject, setCurrentProject] = useAtom(currentProjectAtom)
+  
+  const nextProject = () => {
+    setCurrentProject((currentProject + 1) % portfolio.length)
+  }
+
+  const prevProject = () => {
+    setCurrentProject((currentProject - 1 + portfolio.length) % portfolio.length)
+  }
+
+
 
   return (
     <Router>
-    <div  className='App-Wrapper'>  
-      <LoadingScreen isLoading={isLoading} />
+      <Layout>
 
-          {/* header*/}
-          <Header/>
-        <main>
-     
-          {/*intro*/}
-           <Intro  /> 
+      <Intro/>
+      
+      <About/>
+      <Portfolio/>
 
-          {/*experience*/}
-          <Canvas className='canvas' 
-            style={{ 
-              backgroundColor: 'none',
-              left:'0', 
-              position: "absolute",
-              zindex: "-100",
-              width: "100vw",
-              height: "150svh" }}>
-            <Experience/>
-          </Canvas>
+     <article className='projectBtn_div'>
+      <button className='btn' onClick={prevProject}>
+        prev
+      </button>
+  <span>Projects</span>
+      <button className='btn' onClick={nextProject}>
+        next
+      </button>
+     </article>
 
-          {/*About*/}
-          <About/>
 
-          {/*projects*/}
-          <Portfolio />
-
-          {/*Form*/}
-          <Form  />
-        </main>
-         <Footer/>
-    </div> 
+      <Form/>
+      </Layout>
     </Router>
   )
 }

@@ -1,110 +1,67 @@
 import React, {useRef, useState} from 'react';
 import './form.scss'
-import { useForm } from 'react-hook-form';
-import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { useInView } from 'framer-motion'
+import { Canvas } from '@react-three/fiber';
+import { Center, Html, OrbitControls, useGLTF, Text, Float } from '@react-three/drei';
+import { PointLight } from 'three';
 
-export default function Form() {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-   
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+const WRAPPERSTYLES = {
+  width: "17.4rem",
+  height: '12rem',
+  marginBottom: '15rem',
  
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  borderRadius: '20px',
+  overflow: "hidden"
+}
 
-
-  const submitNotify = () => {
-    toast.success('🫱🏾‍🫲🏿 Great! Will Be In Touch Soon', {
-      position: "top-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-      });
-      setIsSubmitted(true);
-};
-
-  
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_8gizhqi', 'template_b97bbqi', form.current, 'Mfd4LCYeJOiwD1XzY')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+export default function Form(props) {
+  const { scene } = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
 
   return (
     
-    <section id='contact' className='section' ref={ref}
-    style={{
-      transform: isInView ? "none" : "translateX(-200px)",
-      opacity: isInView ? 1 : 0,
-      transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-    }}>
-      <h2 className='section_header'> 05.<span>Contact Me</span></h2>           
-          
+    <section id='contact' className='section' >
         
-    <div className='contact_contents'>
+
+    <article>
+      <Canvas >
+        <ambientLight intensity={1} position={[0,4,0]}/>
+        {/* <OrbitControls/> */}
+
+        <Text position={[-4, 4, -3]}>
+          Let's Chat
+        </Text>
+
 
       
-    
-      <div className='info-wrapper'>
-        <div className='contact_info'>
-          <div className='phone_info'>
-            <p className='info_label'>Phone</p>
-            <p className='info_text'>@4787443006</p>
-          </div>
-          
-          <div className='email_info'>
-            <p className='info_label'>Email</p>
-            <p className='info_text'>@Kentraviousc@gmail.com</p>
-          </div>
-        </div>
-    <form ref={form} className='form' onSubmit={sendEmail}>
-      <label>
-      Name
-      <input className='input' type="text" placeholder="Name" required {...register("user_name", {})} />
-      </label>
+        <Float>
+        <primitive 
+            position={[8, -5, -15]}
+            rotation={[Math.PI * 0.05, Math.PI * -0.3, 0]}
+            object={scene}  
+            {...props} 
+            scale={4}>
+        <pointLight color="#57cbff" position={[8, -5, -15]} intensity={0.9}/>
 
-      <label>
-       Email
-      <input className='input' type="email" placeholder="Email" required {...register("user_email", {})} />
-      </label>
-
-      <label>
-        Describe your project
-        <textarea required {...register("message", {})} placeholder=" leave a message"/>
-      </label>
-
-      {/*notification*/}
+          <Html
+          position={[0 ,0.25, -1.05]}
+          rotation={[Math.PI * -0.085, 0, 0]}
+          transform
+          center
+          distanceFactor={3.5}>
+           <iframe
+             src='https://forms.gle/ZfznMkbQCiTuJK8g8'
+             style={WRAPPERSTYLES}/>
+          </Html>
+        
+         </primitive>
+             </Float>
+        
+      </Canvas>
       
-       
-         {/*notification*/}
-         {!isSubmitted ? (
-              <input className='submit' type="submit" value="Submit" onClick={submitNotify}/>
-            ) : (
-              <button className='submit' type="button" disabled>
-                Thank You!
-              </button>
-            )}
-      <ToastContainer />
-      </form>
-      
-      </div>
-        </div>
-
-          </section>
+    </article>
+    </section>
   
   );
 }
+
+
+ 

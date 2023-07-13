@@ -1,80 +1,43 @@
-$background-color: #0a192f;
-$white: #e6f1ff;
-$green: #64ffda;
  
     #about{
-    
-         position: relative;
-        margin: 0 auto;
+        
+        
         width: 100%;
-        z-index: 101;
-        
-        .aboutContent_wrapper{
-            width: 80%;
-            padding: 0;
+        height: 100svh;
+        display: flex;
+        flex-direction: column;
+         margin-top: 4rem;
+
+        justify-content: space-evenly;
+       h2{
+        margin-bottom: 40px;
+        margin-top: 12rem;
+
+        position: relative;
+        top: 0;
+        left: 0;
+       }
+
+        .canvas_bio_wrapper{
+            width: 100%;
             margin: 0 auto;
-            color: $white;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+  
+        }
+    
+        .AboutCanvasWrapper{
+            
+            width: 50%;
+        height: 80svh;
+        
+
+
+        }
+        .bioWrapper{
+            width: 45%;
+        height: 100svh;
+        text-align: left;
+        margin-top: 6rem;
+        }
     }
-        p{
-             
-            margin: 0 auto;
-            font-size: .85rem;
-            letter-spacing: 1px;
-            line-height: 26px;
-             z-index: 101;
-           
-            color: rgb(245, 245, 245); 
-        
-             
-        }}
-        .bio_img_wrapper{
-            width: 13rem;
-            height: 13rem;
-            background: url("/public/assets/devPics/headshot3.png");
-           padding: 0; 
-           margin: 0 auto;
-           background-size: cover;
-           background-position: center center;
-           background-blend-mode: multiply;
-           opacity: 0.8;
-           display: none;
-        }
-
-
-        
-        @media (min-width: 1024px) {
-            #about{
-                .aboutContent_wrapper{
-                
-                    
-                    flex-direction: row;
-                    align-items: flex-start;
-                    justify-content: space-evenly;
-                    .bio_img_wrapper{
-                        width: 24rem;
-                        height: 24rem;
-                        margin-left: 20px;
-                        background-position: left;
-                        display: block;
-                        border: 1px $green solid;
-                        border-radius: 50%;
-                    }
-                    .bio_text{
-                        text-align: left;
-                        line-height: 1.5rem;
-                        width: 50%;
-                        p{width: 100%;
-                        }
-                    }
-                           
-                }
-                
-            }
-        }
-        .dev_text{
-            color: $green;
-        }
-       
-        

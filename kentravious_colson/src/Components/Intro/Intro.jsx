@@ -1,175 +1,58 @@
-import React from 'react'
+import {useRef} from 'react'
 import { motion  } from "framer-motion"
 import './intro.scss'
  import {HiOutlineArrowSmDown } from 'react-icons/hi'
+ import { Canvas } from '@react-three/fiber'
+ import { Text, Float,  OrbitControls} from '@react-three/drei'
+import { Avatar } from '../Avatar/Avatar'
 
-const Intro = () => {
+
+const Intro = (props) => {
+
+  
+
   return (
     <section id='intro' className='section' >
-    
-            
-            <div className='intro_contents'  >
-              <div>
-              <motion.div
-                    initial={{  opacity: 0}}
-                    animate={{ opacity: 1}}
-                    transition={{duration: 2}}
-                    >
-                       <div className='small'>
-                        Hi, my name is
-                      </div>
-                    </motion.div>
-               
-                <div>
-                <h1> 
-                <motion.div
-                    initial={{y: 1000, opacity: 0}}
-                    animate={{y: 0, opacity: 1}}
-                    transition={{duration: 2.5}}
-                    >
-                  <span>K</span>
-                  <span>E</span>
-                  <span>T</span>
-                  <span>R</span>
-                  <span>A</span>
-                  <span>V</span>
-                  <span>I</span>
-                  <span>O</span>
-                  <span>U</span>
-                  <span>S</span>
-                  <br/>
-                 
+      <article className='article_intro'>
+        <Canvas  flat linear>
+        <ambientLight intensity={1} position={[0,4,0]}/>
+        {/* <OrbitControls/> */}
 
-                  <span>C</span>
-                  <span>O</span>
-                  <span>L</span>
-                  <span>S</span>
-                  <span>O</span>
-                  <span>N</span>
-                  <br/>
-                
-                  </motion.div>
-                  <motion.div
-                    initial={{y: 1000, opacity: 0}}
-                    animate={{y: 0, opacity: 1}}
-                    transition={{duration: 2.85}}
-                    >
-                    
-                  <span className='diff_color'>WEB DEV</span>       
-                  </motion.div>
-                </h1>
-                </div>
+          <Text position={[-0, 2, -1]}>
+            Kentravious Colson
+          </Text>
 
-                <motion.div
-                    initial={{y: 1000, opacity: 0}}
-                    animate={{y: 0, opacity: 1}}
-                    transition={{duration: 3}}
-                    >
+          <Text position={[0, 1, -2]}>
+            Creative Developer
+          </Text>
 
-                <p className='career_title'>Frontend developer | Creative Developer</p>
-                    </motion.div>
+          <group>
 
-                <br/>
-                <motion.div
-                    initial={{y: 1000, opacity: 0}}
-                    animate={{y: 0, opacity: 1}}
-                    transition={{duration: 3.85}}
-                    >
-                     
-                    </motion.div>
-                
-                
-              </div>
-              <motion.div
-                    initial={{  opacity: 0}}
-                    animate={{  opacity:[0,0.2,1] }}
-                    transition={{duration: 10}}
-                    >
+          <Text position={[-13, -4., -14]} >
+            From ideation 
+          </Text>
+          <Text position={[-12, -5.25, -14]} >
+            to implementaion 
+          </Text>
+          
+          <Text position={[6, -4, -14]}>
+            giving life 
+          </Text>
+         
+          <Text position={[8, -5.25, -14]}>
+             to your creations 
+          </Text>
+          </group>
 
-                   
-          <span className='scroll'>
-            
-            <span className='letterTurn'>
-            S
-            </span>
-            <span className='letterTurn'>
-            C
-            </span>
-            <span className='letterTurn'>
-            R
-            </span>
-            <span className='letterTurn'>
-            O
-            </span>
-            <span className='letterTurn'>
-            L
-            </span>
-            <span className='letterTurn'>
-            L
-            </span>
-            <span className='letterTurn'>
-            </span>
-            <span className='letterTurn'>
-            D
-            </span>
-            <span className='letterTurn'>
-            O
-            </span>
-            <span className='letterTurn'>
-            W
-            </span>
-            <span className='letterTurn'>
-            N
-            </span>
-            <span className='arrow'>
-              <HiOutlineArrowSmDown/>
+      
 
-            </span>
-            </span>
-       
-            <span className='scroll2'>
-            <span className='letterTurn'>
-            S
-            </span>
-            <span className='letterTurn'>
-            C
-            </span>
-            <span className='letterTurn'>
-            R
-            </span>
-            <span className='letterTurn'>
-            O
-            </span>
-            <span className='letterTurn'>
-            L
-            </span>
-            <span className='letterTurn'>
-            L
-            </span>
-            <span className='letterTurn'>
-            </span>
-            <span className='letterTurn'>
-            D
-            </span>
-            <span className='letterTurn'>
-            O
-            </span>
-            <span className='letterTurn'>
-            W
-            </span>
-            <span className='letterTurn'>
-            N
-            </span>
-            <span className='arrow'>
-              <HiOutlineArrowSmDown/>
-
-            </span>
-            </span>
-            </motion.div>
-
-            </div>
-          </section>
+         <Avatar/>
+          
+        </Canvas>
+      </article>
+     </section>
   )
 }
 
 export default Intro
+

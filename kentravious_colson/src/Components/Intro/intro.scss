@@ -1,171 +1,24 @@
-$background-color: #0a192f;
-$white: #e6f1ff;
-$green: #64ffda;
-$dark-navy: #020c1b;
-$light-navy: #112240;
-$lightest-navy: #233554;
-$navy-shadow: rgba(2,12,27,0.7);
-$dark-slate: #495670;
-$slate: #8892b0;
-$light-slate: #a8b2d1;
-$lightest-slate: #ccd6f6;
-$green-tint: rgba(100,255,218,0.1);
-$pink: #f57dff;
-$blue: #57cbff;
-$font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-$font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-$fz-xxs: 12px;
-$fz-xs: 13px;
-$fz-sm: 14px;
-$fz-md: 16px;
-$fz-lg: 18px;
-$fz-xl: 20px;
-$fz-xxl: 22px;
-$fz-heading: 32px;
-$border-radius: 4px;
-$nav-height: 100px;
-$nav-scroll-height: 70px;
-$tab-height: 42px;
-$tab-width: 120px;
-$easing: cubic-bezier(0.645,0.045,0.355,1);
-$transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-$hamburger-width: 30px;
-$ham-before: top 0.1s ease-in 0.25s,opacity 0.1s ease-in;
-$ham-before-active: top 0.1s ease-out,opacity 0.1s ease-out 0.12s;
-$ham-after: bottom 0.1s ease-in 0.25s,transform 0.22s cubic-bezier(0.55,0.055,0.675,0.19);
-$ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s;
+section{
+    width: 100%;
+    height: 100svh;
 
-
-
-#intro{
-    //background: url('https://media.giphy.com/media/l0HlO8EgtP1KeyZ0Y/giphy.gif');
-    background: url('https://media.giphy.com/media/3ov9k22S4De372LQf6/giphy.gif');
-    background-size:  cover;
-    background-position: center;  
-    font-size: 2.5rem; 
     
-    .intro_contents{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: $white;
-        background: rgba($color: $dark-navy, $alpha: 0.75);
+
+        
+        .article_intro{
+         
+        width: 100%;
         height: 100svh;
-        width: 100svw;
-        letter-spacing: normal;
-        margin: 0  ;
-        div{
-           // background: orange;
-            width: 85%;
-            margin: 0 auto;
+        padding: 0;
+        background:  rgba(0, 0, 0, .65) url('public/pics/patrick-tomasso.jpg');
+        background-size: cover;
+        background-blend-mode: darken;
+        
+        
+        
+        
+        Canvas{
+            background: transparent;
         }
     }
-
-    h1{
-        font-size:  2.25rem;
-        line-height: 2.5rem;
-        margin: 0;
-    }
-        .small{
-            font-size: $fz-sm;
-            color: $green;
-          
-        }
-    p{
-       margin:0; 
-        font-size: $fz-xl;
-    }
-    
-
-        .scroll{
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            right: 0;
-            bottom: 0;
-            padding: 0;
-            font-family: inherit;
-            font-weight: bold;
-            font-size: x-small;
-            margin-right: 35px;
-            margin-bottom: 9px;
-            color: $white;
 }
-
-.scroll2{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold;
-    left: 0;
-    bottom: 0;
-    padding: 0;
-    font-family: inherit;
-    font-size: x-small;
-    margin-left: 35px;
-    margin-bottom: 9px;
-    color: $white;
-}
-.letterTurn{
-    display: inline;
-    margin: 0;
-    padding: 0;
-    animation: bounce 0.5s infinite ease-in-out;
-    
-}
-
-.arrow{
-    color: $green;
-    font-weight: bold;
-    font-size: large;
-   
-    
-}
-}
-
-.diff_color{
-    color: $green;
-}
-
-/*breakpoints*/
-@media (min-width: 1024px){
-    #intro{
-    background-size:  cover;
-    background-position: center;  
-    font-size: 2.5rem; 
-    text-align: left;
-
-        .intro_contents{
-            div{
-           padding-right: 80px;
-            }
-            .small{
-                margin-left: 2.1rem;
-            }
-        }
-        h1{
-            font-size: 4.5rem; 
-            line-height: 1;
-        }
-        .diff_color{
-            margin-left: .25rem;
-        }
-
-        .career_title{
-            margin-left: 2.25rem;
-        }
-    }
- }
-
- /*animataion*/
- @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-15px);
-    }
-  }

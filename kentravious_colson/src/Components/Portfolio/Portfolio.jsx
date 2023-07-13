@@ -3,7 +3,7 @@ import portfolio from "../data/portfolio.js"
 import { PortfolioItem } from '../PortfolioItem/PortfolioItem';
 import './portfolio.scss'
 import {Canvas} from '@react-three/fiber'
-import { Center, OrbitControls, PresentationControls } from '@react-three/drei';
+import { Center, PerspectiveCamera, PresentationControls } from '@react-three/drei';
 import {motion} from 'framer-motion-3d'
 import { atom, useAtom } from 'jotai'
 
@@ -20,10 +20,12 @@ export const Portfolio = () => {
  
   return (
     <section id='projects' className='section' >
-        <h2 className='section_header'><span>My Recent Projects!</span></h2>           
+        <h2 className='section_header'>.03<span>My Recent Projects!</span></h2>           
               
     <div className='portfolio_wrapper'>
         <Canvas>
+          <PerspectiveCamera position={[6, -1, 6]}>
+
               <Center>
               {portfolio.map((project, id) => (
                 <motion.group 
@@ -33,9 +35,14 @@ export const Portfolio = () => {
                   x: 0 + (id - currentProject) * 2.5,
                   y: currentProject === id ? 0 : -0.1,
                   z: currentProject === id ? -2 : -3,
+                  rotateX: currentProject === id ? 0 : -Math.PI /  3,
+                  rotatez: currentProject === id ? 0 : -0.2 * Math.PI
                   
-                }}>
+                }}
+                
+                transition={{type: "ease-out",  duration: 3.5 }}>
                 <PortfolioItem
+                  
                   imgUrl={project.imgUrl}
                   title={project.title.toUpperCase()}
                   link={project.link}
@@ -46,8 +53,11 @@ export const Portfolio = () => {
                 ))}
           
                 </Center>
+                  </PerspectiveCamera>
             
         </Canvas>
+
+        
     </div>
     
           </section>

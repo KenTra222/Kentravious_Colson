@@ -1,28 +1,21 @@
-import React, {useRef, useState, useEffect } from 'react'
 import Form from './Form/Form'
+import { useAtom } from 'jotai'
+import Intro from './Intro/Intro'
+import About from './About/About'
+import Layout from './Layout/Layout'
+import portfolio from './data/portfolio'
+import React, {useRef, useState, useEffect } from 'react'
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Portfolio, currentProjectAtom } from './Portfolio/Portfolio'
 
-import About from './About/About'
-import Intro from './Intro/Intro'
-
-import { BrowserRouter as Router } from 'react-router-dom';
-import LoadingScreen from './LoadingScreen/LoadingScreen.jsx';
-  
-import { Testimonial } from './Testimonials/Testimonial'
-import Layout from './Layout/Layout'
-import Gallery from './Gallery/Gallery'
-import { useAtom } from 'jotai'
-import portfolio from './data/portfolio'
-import {GrFormPreviousLink, GrFormNextLink} from 'react-icons/gr'
-
 const BUTTONSTYLES = {
-  
+
 }
 
 
 
 const App = () => {  
-  const [isLoading, setIsLoading] = useState(true);
+  
 
   const [currentProject, setCurrentProject] = useAtom(currentProjectAtom)
   
@@ -34,11 +27,7 @@ const App = () => {
     setCurrentProject((currentProject - 1 + portfolio.length) % portfolio.length)
   }
 
-  
-  useEffect(() => {
-    // Do some asynchronous work here
-    setIsLoading(false);
-  }, []);
+
 
   return (
     <Router>
@@ -49,19 +38,17 @@ const App = () => {
       <About/>
       <Portfolio/>
 
-      <section>
-        <button className='btn' onClick={prevProject}>
-        
-          prev
-        </button>
-        <button className='btn' onClick={nextProject}>
+     <article>
+      <button className='btn' onClick={prevProject}>
+        prev
+      </button>
+  
+      <button className='btn' onClick={nextProject}>
+        next
+      </button>
+     </article>
 
-          next
-    
-        </button>
-      </section>
 
-      {/* <Gallery/> */}
       <Form/>
       </Layout>
     </Router>

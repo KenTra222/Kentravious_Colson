@@ -3,7 +3,7 @@ import './portfolioItem.scss'
 import {useFrame, useThree} from '@react-three/fiber'
 import {Image, Text} from '@react-three/drei'
 import { useMotionValue,  animate  } from "framer-motion"
-import { motion} from "framer-motion-3d"
+ 
 
 
  

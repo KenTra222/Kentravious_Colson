@@ -9,7 +9,11 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Portfolio, currentProjectAtom } from './Portfolio/Portfolio'
 
 const BUTTONSTYLES = {
-
+  border: "none",
+  background: "none",
+  color: "white",
+  marginBottom: "-20px",
+  fontSize: "1.5rem",
 }
 
 
@@ -38,11 +42,11 @@ const App = () => {
       <About/>
       <Portfolio/>
 
-     <article>
+     <article className='projectBtn_div'>
       <button className='btn' onClick={prevProject}>
         prev
       </button>
-  
+  <span>Projects</span>
       <button className='btn' onClick={nextProject}>
         next
       </button>

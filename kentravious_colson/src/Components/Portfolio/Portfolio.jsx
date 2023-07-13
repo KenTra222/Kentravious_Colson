@@ -16,8 +16,6 @@ export const Portfolio = () => {
 
   const [currentProject] = useAtom(currentProjectAtom)
 
-
- 
   return (
     <section id='projects' className='section' >
         <h2 className='section_header'>.03<span>My Recent Projects!</span></h2>           

@@ -2,6 +2,7 @@ import React, {useRef, useState} from 'react';
 import './form.scss'
 import { Canvas } from '@react-three/fiber';
 import { Center, Html, OrbitControls, useGLTF, Text, Float } from '@react-three/drei';
+import { PointLight } from 'three';
 
 const WRAPPERSTYLES = {
   width: "17.4rem",
@@ -18,6 +19,7 @@ export default function Form(props) {
   return (
     
     <section id='contact' className='section' >
+        
 
     <article>
       <Canvas >
@@ -28,16 +30,16 @@ export default function Form(props) {
           Let's Chat
         </Text>
 
-        <Float>
 
       
-
+        <Float>
         <primitive 
             position={[8, -5, -15]}
             rotation={[Math.PI * 0.05, Math.PI * -0.3, 0]}
             object={scene}  
             {...props} 
             scale={4}>
+        <pointLight color="#57cbff" position={[8, -5, -15]} intensity={0.9}/>
 
           <Html
           position={[0 ,0.25, -1.05]}

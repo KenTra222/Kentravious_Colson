@@ -1,7 +1,7 @@
 {
-  "name": "kentravious_colson",
+  "name": "r3f-vite-starter",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,42 +9,26 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "-": "^0.0.1",
-    "@emailjs/browser": "^3.10.0",
-    "@react-three/drei": "^9.78.1",
-    "@react-three/fiber": "^8.13.5",
-    "framer-motion": "^10.12.18",
-    "framer-motion-3d": "^10.12.18",
-    "jotai": "^2.2.2",
+    "@emailjs/browser": "^3.11.0",
+    "@react-three/drei": "^9.68.6",
+    "@react-three/fiber": "^8.13.0",
+    "framer-motion": "^10.12.16",
+    "framer-motion-3d": "^10.12.16",
+    "gsap": "^3.12.0",
+    "jotai": "^2.1.1",
     "leva": "^0.9.34",
-    "r3f-perf": "^7.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.43.1",
-    "react-icons": "^4.7.1",
-    "react-router-dom": "^6.9.0",
-    "react-router-hash-link": "^2.4.3",
-    "react-toastify": "^9.1.1",
-    "react-use-mouse-position": "^1.0.4",
-    "sass": "^1.58.1",
-    "sort-by": "^1.2.0",
-    "three": "^0.149.0"
+    "react-hook-form": "^7.45.1",
+    "three": "^0.146.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2",
     "vite": "^4.1.0"
-  },
-  "tasks": [
-    {
-      "type": "npm",
-      "script": "install",
-      "path": "kentravious_colson",
-      "group": "clean",
-      "problemMatcher": [],
-      "label": "npm: install - kentravious_colson",
-      "detail": "install dependencies from package"
-    }
-  ]
+  }
 }

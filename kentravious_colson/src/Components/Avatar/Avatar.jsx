@@ -4,11 +4,18 @@ import { useFrame } from '@react-three/fiber'
 import { Camera } from 'three'
 import {useControls} from 'leva'
 import * as THREE from 'three'
+import { useThree } from '@react-three/fiber'
 
 
 
 
-export function Avatar(props) {
+export function Avatar(props,position, scale) {
+
+  const {viewport } = useThree()
+  
+
+  const isMobile = window.innerWidth < 768
+  const responsiveRatio = viewport.width / 12
 
   // const {headFollow, cursorFollow} = useControls({
   //   headFollow: false,
@@ -42,7 +49,7 @@ export function Avatar(props) {
 
 
   return (
-    <group {...props} dispose={null} ref={group} scale={1.85} position={[0, -3.39, 4]}>
+    <group {...props} dispose={null} ref={group} scale={isMobile? responsiveRatio : 1.85} position={[0, isMobile? -1: -3.39, 4]}>
       <primitive object={nodes.Hips} />
       <skinnedMesh geometry={nodes.Wolf3D_Avatar_Transparent.geometry} material={materials.Wolf3D_Avatar_Transparent} skeleton={nodes.Wolf3D_Avatar_Transparent.skeleton} />
       <skinnedMesh name="Wolf3D_Avatar" geometry={nodes.Wolf3D_Avatar.geometry} material={materials.Wolf3D_Avatar} skeleton={nodes.Wolf3D_Avatar.skeleton} morphTargetDictionary={nodes.Wolf3D_Avatar.morphTargetDictionary} morphTargetInfluences={nodes.Wolf3D_Avatar.morphTargetInfluences} />

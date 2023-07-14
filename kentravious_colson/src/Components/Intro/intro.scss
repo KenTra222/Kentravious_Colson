@@ -2,17 +2,18 @@ section{
     width: 100%;
     height: 100svh;
 
-    
+    margin-bottom: 2rem;
 
         
         .article_intro{
          
         width: 100%;
-        height: 100svh;
+    
         padding: 0;
-        background:  rgba(0, 0, 0, .65) url('public/pics/patrick-tomasso.jpg');
+         background:  rgba(0, 0, 0, .65) url('pics/patrick-tomasso.jpg');
         background-size: cover;
         background-blend-mode: darken;
+        
         
         
         
@@ -21,4 +22,9 @@ section{
             background: transparent;
         }
     }
+}
+
+@media (max-width:790px) {
+
+    
 }

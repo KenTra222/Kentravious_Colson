@@ -2,9 +2,15 @@ import {useRef}  from 'react'
 import { TextureLoader } from 'three';
 import { Center } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
+import { useThree } from '@react-three/fiber'
+
 
 
 const ImageCube = () => {
+
+  const {viewport } = useThree()
+  const isMobile = window.innerWidth < 768
+  const responsiveRatio = viewport.width / 12
 
     const groupPhotoref = useRef()
 
@@ -33,7 +39,7 @@ const ImageCube = () => {
     < >
     <Center>
 
-        <group scale={0.7} position={[0,0,-10]} ref={groupPhotoref}>
+        <group scale={isMobile? responsiveRatio : 0.7} position={[0 , isMobile? 0 : 0, isMobile? -11: -10]} ref={groupPhotoref}>
 
         <mesh scale={4}  position={[0, 0, 2]}>
         <planeGeometry/>

@@ -1,56 +1,59 @@
 import {useRef} from 'react'
-import { motion  } from "framer-motion"
+
 import './intro.scss'
  import {HiOutlineArrowSmDown } from 'react-icons/hi'
- import { Canvas } from '@react-three/fiber'
  import { Text, Float,  OrbitControls} from '@react-three/drei'
 import { Avatar } from '../Avatar/Avatar'
+import { useThree } from '@react-three/fiber'
+
 
 
 const Intro = (props) => {
 
+  const {viewport } = useThree()
   
 
-  return (
-    <section id='intro' className='section' >
-      <article className='article_intro'>
-        <Canvas  flat linear>
-        <ambientLight intensity={1} position={[0,4,0]}/>
-        {/* <OrbitControls/> */}
+  const isMobile = window.innerWidth < 768
+  const responsiveRatio = viewport.width / 12
 
-          <Text position={[-0, 2, -1]}>
+  return (
+    
+          <>
+        <ambientLight intensity={1} position={[0,4,0]}/>
+       
+
+          <Text position={[0, isMobile? 10:  2, isMobile? -20 : -1]}
+            fontSize={isMobile ? 2 : 1}>
             Kentravious Colson
           </Text>
 
-          <Text position={[0, 1, -2]}>
+          <Text position={[0, isMobile? 7.5:  1, isMobile? -18 :  -2]} fontSize={isMobile? 1.7 : 1}>
             Creative Developer
           </Text>
 
           <group>
 
-          <Text position={[-13, -4., -14]} >
+          <Text position={[isMobile ? -7 : -13, isMobile? 5: -4., isMobile ? -25:  -14]} >
             From ideation 
           </Text>
-          <Text position={[-12, -5.25, -14]} >
+          <Text position={[isMobile? -4 : -12,isMobile? 4: -5.25, isMobile? -25: -14]} >
             to implementaion 
           </Text>
           
-          <Text position={[6, -4, -14]}>
+          <Text position={[isMobile?4: 6,isMobile? 3: -4, isMobile? -25: -14]}>
             giving life 
           </Text>
          
-          <Text position={[8, -5.25, -14]}>
+          <Text position={[isMobile? 7.5: 8, isMobile? 2: -5.25,isMobile? -25: -14]}>
              to your creations 
           </Text>
-          </group>
+          </group>   
 
-      
-
-         <Avatar/>
+         <Avatar  />
+       
           
-        </Canvas>
-      </article>
-     </section>
+          </>
+    
   )
 }
 

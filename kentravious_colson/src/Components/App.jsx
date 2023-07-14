@@ -4,6 +4,7 @@ import Intro from './Intro/Intro'
 import About from './About/About'
 import Layout from './Layout/Layout'
 import portfolio from './data/portfolio'
+import { Canvas } from '@react-three/fiber'
 import React, {useRef, useState, useEffect } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Portfolio, currentProjectAtom } from './Portfolio/Portfolio'
@@ -36,8 +37,16 @@ const App = () => {
   return (
     <Router>
       <Layout>
+      <section id='intro' className='section' >
+
+      <article className='article_intro'>
+
+        <Canvas  flat linear>
 
       <Intro/>
+        </Canvas>
+      </article>
+      </section>
       
       <About/>
       <Portfolio/>

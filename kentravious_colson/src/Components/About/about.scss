@@ -3,16 +3,13 @@
         
         
         width: 100%;
-        height: 100svh;
+        height: 100dvh;
         display: flex;
         flex-direction: column;
-         margin-top: 4rem;
+    
 
         justify-content: space-evenly;
        h2{
-        margin-bottom: 40px;
-        margin-top: 12rem;
-
         position: relative;
         top: 0;
         left: 0;
@@ -20,24 +17,58 @@
 
         .canvas_bio_wrapper{
             width: 100%;
-            margin: 0 auto;
+            margin: 4rem auto;
             display: flex;
-            justify-content: center;
-  
+            justify-content: space-around;
+            align-items: center;
+        
+            
         }
     
         .AboutCanvasWrapper{
             
             width: 50%;
-        height: 80svh;
-        
+        height: 80dvh;
+    
 
 
         }
         .bioWrapper{
             width: 45%;
-        height: 100svh;
+        height: 80dvh;
         text-align: left;
         margin-top: 6rem;
+        margin-bottom: 6rem;
+
+         
         }
+    }
+
+    @media (max-width: 790px) {
+#about{
+    
+    
+}
+        h2{
+           
+            padding-bottom: 4rem;
+        
+           }
+
+           .aboutExperience{
+            margin-top: 5rem;
+            height: 40svh;
+           }
+        .canvas_bio_wrapper{
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100svh;
+
+            margin: 0 auto;
+        
+            }
+
+ 
     }

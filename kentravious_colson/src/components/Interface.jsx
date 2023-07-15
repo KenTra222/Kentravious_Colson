@@ -48,13 +48,13 @@ const AboutSection = (props) => {
   const { setSection } = props;
   return (
     <Section>
-      <h1 className="text-6xl font-extrabold leading-snug">
+      <h1 className="text-6xl font-extrabold leading-snug text-gray-300">
         Hi, I'm
         <br />
-        <span className="bg-white px-1 italic">Kentravious Colson</span>
+        <span className="bg-white px-1 italic text-gray-900">Kentravious Colson</span>
       </h1>
       <motion.p
-        className="text-lg text-gray-600 mt-4"
+        className="text-lg text-gray-200 mt-4"
         initial={{
           opacity: 0,
           y: 25,
@@ -319,7 +319,7 @@ const ContactSection = (e) => {
             id="message"
             className="h-32 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 p-3"
             {...register}/>
-          <button  type="submit" className="bg-indigo-600 text-white py-4 px-8 rounded-lg font-bold text-lg mt-16 hover:bg-black ">
+          <button  type="submit" className="bg-indigo-600 text-white py-4 px-8 rounded-lg font-bold text-lg mt-16 hover:bg-indigo-950 hover:text-gray-400 ">
             Submit
           </button>
         </form>

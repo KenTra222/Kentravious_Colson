@@ -27,15 +27,15 @@ export const projects = [
   },
   {
     title: "gigibite ",
-    url: "https://www.youtube.com/watch?v=zwNF1-lsia8",
-    image: "projects/kanagame.jpg",
+    url: "https://gigibite-landing-page.vercel.app/",
+    image: "projects/gigibite.png",
     description: "A practice website built using react-three-fiber and tailwind",
   },
   {
-    title: "Loader",
-    url: "https://www.youtube.com/watch?v=L12wIvuZTOY",
-    image: "projects/loader.jpg",
-    description: "Create a loading screen for your r3f projects",
+    title: "r3f-portal",
+    url: "https://r3-f-portal-scene.vercel.app/",
+    image: "projects/Portals.png",
+    description: "Created a portal scene from the three.js course",
   },
 ];
 

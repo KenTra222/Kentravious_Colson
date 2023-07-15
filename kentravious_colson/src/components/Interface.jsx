@@ -111,8 +111,7 @@ const skills = [
   {
     title: "Figma/Canva",
     level: 90,
-  },
-  
+  }, 
   {
     title: "3D Modeling",
     level: 70,
@@ -125,8 +124,8 @@ const languages = [
     level: 80,
   },
   {
-    title: "la Spanish",
-    level: 20,
+    title: "us Spanish",
+    level: 40,
   },
 ];
 

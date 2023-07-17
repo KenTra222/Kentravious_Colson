@@ -101,17 +101,17 @@ const skills = [
     level: 80,
   },
   {
-    title: "React / Typescript",
+    title: "React / Typescript/ Next",
     level: 90,
   },
+  {
+    title: "VueJs",
+    level: 90,
+  }, 
   {
     title: "Ux/Ui Design",
     level: 60,
   },
-  {
-    title: "Figma/Canva",
-    level: 90,
-  }, 
   {
     title: "3D Modeling",
     level: 70,

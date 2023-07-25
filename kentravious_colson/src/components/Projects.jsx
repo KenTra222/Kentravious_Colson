@@ -26,6 +26,12 @@ export const projects = [
     description: "this very portfolio I made using react-three-fiber",
   },
   {
+    title: "Rooms",
+    url: "https://rooms-homepage.vercel.app/",
+    image: "projects/rooms.png",
+    description: "A homepage for a funiture store with 3d elements",
+  },
+  {
     title: "gigibite ",
     url: "https://gigibite-landing-page.vercel.app/",
     image: "projects/gigibite.png",

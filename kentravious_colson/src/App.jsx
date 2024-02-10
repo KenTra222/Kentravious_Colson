@@ -9,42 +9,50 @@ import { Interface } from "./components/Interface";
 import { Menu } from "./components/Menu";
 import { ScrollManager } from "./components/ScrollManager";
 import { framerMotionConfig } from "./config";
-
+ 
 function App() {
-  const [section, setSection] = useState(0);
-  const [menuOpened, setMenuOpened] = useState(false);
+  // const [section, setSection] = useState(0);
+  // const [menuOpened, setMenuOpened] = useState(false);
 
-  useEffect(() => {
-    setMenuOpened(false);
-  }, [section]);
+  // useEffect(() => {
+  //   setMenuOpened(false);
+  // }, [section]);
 
   return (
     <>
-      <MotionConfig
-        transition={{
-          ...framerMotionConfig,
-        }}
-      >
-        <Canvas shadows camera={{ position: [0, 3, 10], fov: 42 }}>
-          <color attach="background" args={["#e6e7ff"]} />
-          <ScrollControls pages={4} damping={0.1}>
-            <ScrollManager section={section} onSectionChange={setSection} />
-            <Scroll>
-              <Experience section={section} menuOpened={menuOpened} />
-            </Scroll>
-            <Scroll html>
-              <Interface setSection={setSection} />
-            </Scroll>
-          </ScrollControls>
-        </Canvas>
-        <Menu
-          onSectionChange={setSection}
-          menuOpened={menuOpened}
-          setMenuOpened={setMenuOpened}
-        />
-        <Cursor />
-      </MotionConfig>
-      <Leva hidden />
+      <header>
+
+        <div>
+          <p>Logo</p>
+        </div>
+
+        <nav>
+          <div>
+            <a>about</a>
+          </div>
+          <div>
+            <a>work</a>
+          </div>
+          <div>
+            <a>contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+         <div>
+          <p> skill overview</p>
+         </div>
+         <div>
+          <p> skill overview</p>
+         </div>
+         <div>
+          <p> skill overview</p>
+         </div>
+      </main>
+      <footer>
+          footer
+      </footer>
     </>
   );
 }

@@ -20,40 +20,46 @@ function App() {
 
   return (
     <>
-      <header>
-
-        <div>
-          <p>Logo</p>
+      <header className="HEADER_WRAPPER">
+        <div className="LOGO_WRAPPER">
+          <p className="LOGO">Logo</p>
         </div>
 
-        <nav>
-          <div>
-            <a>about</a>
+        <nav className="NAV_WRAPPER">
+          <div className="NAV_ITEM">
+            <a className="NAV_LINK">ABOUT</a>
           </div>
-          <div>
-            <a>work</a>
+          <div className="NAV_ITEM">
+            <a className="NAV_LINK">WORK</a>
           </div>
-          <div>
-            <a>contact</a>
+          <div className="NAV_ITEM">
+            <a className="NAV_LINK">CONTACT</a>
           </div>
         </nav>
       </header>
 
       <main>
         <section className="HERO_WRAPPER">
+          <div className="ABOUT_WRAPPER">
+
          <div>
           <p> Creative Developer/Designer</p>
          </div>
+
          <div>
           <p>Kentravious Colson</p>
          </div>
+
          <div>
           <p> Strong passion for creating user strategies, content, designs and assets to make your businesses / project easier for you and your clients</p>
          </div>
-         <div>
-          <a> CONTACT</a>
+
+         <div className="BUTTON_WRAPPER">
+          <a className="CONTACT_BUTTON"> CONTACT</a>
          </div>
-         <div>
+         </div>
+
+         <div className="BIO_PIC_WRAPPER">
           <p>Visual</p>
          </div>
         </section>

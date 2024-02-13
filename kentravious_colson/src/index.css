@@ -10,3 +10,36 @@
 body {
   margin: 0;
 }
+
+.HEADER_WRAPPER{
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  padding: 2rem;
+}
+
+.NAV_WRAPPER{
+  width:16rem;
+  display: flex;
+  margin-right: 3rem;
+  justify-content: flex-evenly;
+}
+
+.NAV_WRAPPER > div,a{
+  margin-left: 1rem;
+}
+
+.NAV_LINK:hover{
+  text-decoration: underline;
+}
+
+.HERO_WRAPPER{
+  background: green;
+  display: flex;
+  align-items: center;
+}
+
+.ABOUT_WRAPPER{
+  display: flex;
+  flex-direction: column;
+}

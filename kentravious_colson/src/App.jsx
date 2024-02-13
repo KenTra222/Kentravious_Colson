@@ -79,7 +79,7 @@ function App() {
             <div className="SERVICE_PIC_WRAPPER">
               <p>image</p>
             </div>
-            <p>Title</p>
+            <h3>Title</h3>
             <p>description</p>
           </div>
 
@@ -87,7 +87,7 @@ function App() {
            <div className="SERVICE_PIC_WRAPPER">
               <p>image</p>
             </div>
-            <p>Title</p>
+            <h3>Title</h3>
             <p>description</p>
           </div>
 
@@ -95,7 +95,7 @@ function App() {
             <div className="SERVICE_PIC_WRAPPER">
               <p>image</p>
             </div>
-            <p>Title</p>
+            <h3>Title</h3>            
             <p>description</p>
           </div>
         </section>

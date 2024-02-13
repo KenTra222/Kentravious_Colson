@@ -22,7 +22,7 @@ function App() {
     <>
       <header className="HEADER_WRAPPER">
         <div className="LOGO_WRAPPER">
-          <p className="LOGO">Logo</p>
+          <p  className="LOGO">Logo</p>
         </div>
 
         <nav className="NAV_WRAPPER">
@@ -40,33 +40,31 @@ function App() {
 
       <main>
         <section className="HERO_WRAPPER">
+           
           <div className="ABOUT_WRAPPER">
 
-         <div>
-          <p> Creative Developer/Designer</p>
-         </div>
+         <div className="ABOUT_CONTENT_WRAPPER">
+          <p> Web Design/Developer, Creative Artist</p>
+         
+          <h1>Kentravious Colson</h1>
 
-         <div>
-          <p>Kentravious Colson</p>
-         </div>
+        
+          <small> Strong passion for creating user strategies, content, designs and assets <br/>
+          that make your businesses / project easier for you and your clients</small>
+        
 
-         <div>
-          <p> Strong passion for creating user strategies, content, designs and assets to make your businesses / project easier for you and your clients</p>
-         </div>
-
-         <div className="BUTTON_WRAPPER">
           <a className="CONTACT_BUTTON"> CONTACT</a>
+     
          </div>
          </div>
 
          <div className="BIO_PIC_WRAPPER">
-          <p>Visual</p>
+          <img className="BIO_PIC" src="../public/projects/ctc2.jpg"/>
          </div>
         </section>
 
         <section className="LANGUAGE_WRAPPER">
-          <div>
-            <ul>
+            <ul className="LANGUAGES_CONTAINER">
               <li>html</li>
               <li>css</li>
               <li>javascript</li>
@@ -74,24 +72,29 @@ function App() {
               <li>Figma</li>
               <li>Blender</li>
             </ul>
-          </div>
         </section>
 
         <section className="SKILLS_WRAPPER">
           <div>
-            <p>image</p>
+            <div className="SERVICE_PIC_WRAPPER">
+              <p>image</p>
+            </div>
             <p>Title</p>
             <p>description</p>
           </div>
 
           <div>
-            <p>image</p>
+           <div className="SERVICE_PIC_WRAPPER">
+              <p>image</p>
+            </div>
             <p>Title</p>
             <p>description</p>
           </div>
 
           <div>
-            <p>image</p>
+            <div className="SERVICE_PIC_WRAPPER">
+              <p>image</p>
+            </div>
             <p>Title</p>
             <p>description</p>
           </div>

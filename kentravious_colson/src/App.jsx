@@ -59,7 +59,7 @@ function App() {
          </div>
 
          <div className="BIO_PIC_WRAPPER">
-          <img className="BIO_PIC" src="../public/projects/ctc2.jpg"/>
+          <img className="BIO_PIC" src="../projects/ctc2.jpg"/>
          </div>
         </section>
 
@@ -74,33 +74,50 @@ function App() {
             </ul>
         </section>
 
+        <h2>Services</h2>
         <section className="SKILLS_WRAPPER">
-          <div>
+    
+
+      
+          <div className="SKILL">
             <div className="SERVICE_PIC_WRAPPER">
-              <p>image</p>
+          <img className="BIO_PIC" src="../projects/ctc2.jpg"/>
+              
             </div>
-            <h3>Title</h3>
-            <p>description</p>
+
+
+            <div className="SKILLS_TEXT_WRAPPER" >
+            <h3>Web Design</h3>
+            <p>whether you have no site or just want to redesign your old site<br/> I can create you a web home that <br/> will leave you pleased as well as have your clients trust you to deliver your a</p>
+            </div>
           </div>
 
-          <div>
-           <div className="SERVICE_PIC_WRAPPER">
-              <p>image</p>
+          <div className="SKILL">
+            <div className="SERVICE_PIC_WRAPPER">
+          <img className="BIO_PIC" src="../projects/ctc2.jpg"/>
+              
             </div>
-            <h3>Title</h3>
-            <p>description</p>
+            <div className="SKILLS_TEXT_WRAPPER" >
+            <h3>Product Modeling</h3>
+            <p>Have an idea you want to see come to life? Using 3D software like blender will allow me to take your product to the next level with accurate modeling</p>
+            </div>
           </div>
 
-          <div>
+          <div className="SKILL">
             <div className="SERVICE_PIC_WRAPPER">
-              <p>image</p>
+          <img className="BIO_PIC" src="../projects/ctc2.jpg"/>     
             </div>
-            <h3>Title</h3>            
-            <p>description</p>
+
+            <div className="SKILLS_TEXT_WRAPPER" >
+            <h3>Content Editing</h3>
+            <p>whether you have no site or just want to redesign your old site<br/> I can create you a web home that <br/> will leave you pleased as well as have your clients trust you to deliver your a</p>
+            </div>
           </div>
+
         </section>
         
         <section className="PROJECT_WRAPPER">
+          <h2>Latest Work</h2>
           <div>      
             <div>
              <p>Image</p>
@@ -159,11 +176,12 @@ function App() {
         
         <section className="TESTIMONIAL_WRAPPER">
             <div>
-              <p>testimony</p>
+              <p className="testimony">" HE SI A GREAT DEVELOPER"</p>
 
-              <div>
+              <div className="CLIENT_PIC_WRAPPER">
                 <p> image </p>
                 <div>
+
                   <p>rating</p>
                   <p>name</p>
                   <p>site</p>

@@ -2,13 +2,21 @@ import { Scroll, ScrollControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { MotionConfig } from "framer-motion";
 import { Leva } from "leva";
-import { useEffect, useState } from "react";
+import { FC, useCallback, useEffect, useRef, useState } from 'react';
+
 import { Cursor } from "./components/Cursor";
 import { Experience } from "./components/Experience";
 import { Interface } from "./components/Interface";
 import { Menu } from "./components/Menu";
 import { ScrollManager } from "./components/ScrollManager";
 import { framerMotionConfig } from "./config";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiFigma, SiBlender      } from "react-icons/si"
+import LightGallery from 'lightgallery/react';
+import lgZoom from 'lightgallery/plugins/zoom';
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+
+ 
+
  
 function App() {
   // const [section, setSection] = useState(0);
@@ -17,6 +25,8 @@ function App() {
   // useEffect(() => {
   //   setMenuOpened(false);
   // }, [section]);
+
+   
 
   return (
     <>
@@ -65,16 +75,15 @@ function App() {
 
         <section className="LANGUAGE_WRAPPER">
             <ul className="LANGUAGES_CONTAINER">
-              <li>html</li>
-              <li>css</li>
-              <li>javascript</li>
-              <li>React</li>
-              <li>Figma</li>
-              <li>Blender</li>
+              <li><SiHtml5/></li>
+              <li><SiCss3/></li>
+              <li><SiJavascript/></li>
+              <li><SiReact/></li>
+              <li><SiFigma/></li>
+              <li><SiBlender/></li>
             </ul>
         </section>
 
-        <h2>Services</h2>
         <section className="SKILLS_WRAPPER">
     
 
@@ -117,14 +126,9 @@ function App() {
         </section>
         
         <section className="PROJECT_WRAPPER">
+      
           <h2>Latest Work</h2>
-          <div>      
-            <div>
-             <p>Image</p>
-            </div>
-            <p>Title</p>
-            <p>category</p>
-          </div>
+          <article className="PROJECTS_CONTAINER">
 
           <div>      
             <div>
@@ -165,6 +169,15 @@ function App() {
             <p>Title</p>
             <p>category</p>
           </div>
+
+          <div>      
+            <div>
+             <p>Image</p>
+            </div>
+            <p>Title</p>
+            <p>category</p>
+          </div>
+          </article>
         </section>
 
         <section className="ARTWORK_WRAPPER">

@@ -30,7 +30,7 @@ body {
 }
 
 .NAV_LINK:hover{
-  text-decoration: underline;
+  border-bottom: solid black 3px;
 }
 
 .LOGO_WRAPPER{
@@ -112,6 +112,7 @@ h1{
   align-items: center;
   height: 6rem;
   margin-bottom: 2rem;
+  
 }
 
 .SKILLS_WRAPPER{
@@ -145,4 +146,10 @@ h3{
 
 .PROJECT_WRAPPER{
   background: green;
+}
+
+.inline-gallery-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 65%;
 }

@@ -8,6 +8,7 @@ import { Canvas } from '@react-three/fiber'
 import React, {useRef, useState, useEffect } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Portfolio, currentProjectAtom } from './Portfolio/Portfolio'
+import { OrbitControls } from '@react-three/drei'
 
 const BUTTONSTYLES = {
   border: "none",
@@ -22,49 +23,66 @@ const BUTTONSTYLES = {
 const App = () => {  
   
 
-  const [currentProject, setCurrentProject] = useAtom(currentProjectAtom)
+  // const [currentProject, setCurrentProject] = useAtom(currentProjectAtom)
   
-  const nextProject = () => {
-    setCurrentProject((currentProject + 1) % portfolio.length)
-  }
+  // const nextProject = () => {
+  //   setCurrentProject((currentProject + 1) % portfolio.length)
+  // }
 
-  const prevProject = () => {
-    setCurrentProject((currentProject - 1 + portfolio.length) % portfolio.length)
-  }
+  // const prevProject = () => {
+  //   setCurrentProject((currentProject - 1 + portfolio.length) % portfolio.length)
+  // }
 
 
 
   return (
-    <Router>
-      <Layout>
-      <section id='intro' className='section' >
+    <div className='Canvas_Container'>
 
-      <article className='article_intro'>
+    <Canvas flat linear> 
+    <OrbitControls/>
+      <pointLight position={[0,1,0]} intensity={1.5}/>
+      <pointLight position={[8,1,0]} intensity={1.5}/>
 
-        <Canvas  flat linear>
-
-      <Intro/>
-        </Canvas>
-      </article>
-      </section>
-      
-      <About/>
-      <Portfolio/>
-
-     <article className='projectBtn_div'>
-      <button className='btn' onClick={prevProject}>
-        prev
-      </button>
-  <span>Projects</span>
-      <button className='btn' onClick={nextProject}>
-        next
-      </button>
-     </article>
-
-
-      <Form/>
-      </Layout>
-    </Router>
+      <group>
+         <mesh position={[0,0,0]} scale={0.5}>
+           <sphereGeometry  />
+          <meshStandardMaterial color={'yellow'} />
+        </mesh>
+        <mesh position={[2,0,0]} scale={0.5}>
+          <sphereGeometry />
+          <meshStandardMaterial color={'red'} />
+        </mesh>
+        <mesh position={[4,0,0]} scale={0.5}>
+          <sphereGeometry  />
+          <meshStandardMaterial color={'blue'} />
+        </mesh>
+        <mesh position={[6,0,0]} scale={0.5}>
+          <sphereGeometry />
+          <meshStandardMaterial color={'pink'} />
+        </mesh>
+        <mesh position={[8,0,0]} scale={0.5}>
+          <sphereGeometry />
+          <meshStandardMaterial color={'lime'} />
+        </mesh>
+        <mesh position={[10,0,0]} scale={0.5}>
+          <sphereGeometry />
+          <meshStandardMaterial color={'teal'} />
+        </mesh>
+        <mesh position={[12,0,0]} scale={0.5}>
+          <sphereGeometry />
+          <meshStandardMaterial color={'purple'} />
+        </mesh>
+        <mesh position={[14,0,0]} scale={0.5}>
+          <sphereGeometry />
+          <meshStandardMaterial color={'green'} />
+        </mesh>
+        <mesh position={[16,0,0]} scale={0.5}>
+          <sphereGeometry />
+          <meshStandardMaterial color={'orange'} />
+        </mesh>
+      </group>
+    </Canvas>
+    </div>
   )
 }
 

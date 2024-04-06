@@ -1,87 +1,59 @@
-import Form from './Form/Form'
-import { useAtom } from 'jotai'
-import Intro from './Intro/Intro'
-import About from './About/About'
-import Layout from './Layout/Layout'
-import portfolio from './data/portfolio'
+
 import { Canvas } from '@react-three/fiber'
 import React, {useRef, useState, useEffect } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Portfolio, currentProjectAtom } from './Portfolio/Portfolio'
-import { OrbitControls } from '@react-three/drei'
-
-const BUTTONSTYLES = {
-  border: "none",
-  background: "none",
-  color: "white",
-  marginBottom: "-20px",
-  fontSize: "1.5rem",
-}
-
-
-
+    
 const App = () => {  
   
-
-  // const [currentProject, setCurrentProject] = useAtom(currentProjectAtom)
   
-  // const nextProject = () => {
-  //   setCurrentProject((currentProject + 1) % portfolio.length)
-  // }
-
-  // const prevProject = () => {
-  //   setCurrentProject((currentProject - 1 + portfolio.length) % portfolio.length)
-  // }
-
-
-
   return (
-    <div className='Canvas_Container'>
+    <div className='Container'>
+        <header className=''> 
+          <div className='title_wrapper'>
+            <div>ball</div>
+            <div><p><span><a>Kentravious Colson</a></span></p></div>
+          </div>
 
-    <Canvas flat linear> 
-    <OrbitControls/>
-      <pointLight position={[0,1,0]} intensity={1.5}/>
-      <pointLight position={[8,1,0]} intensity={1.5}/>
+          <div>
+            <ul>
+              <li><div><a><p>resume</p></a></div></li>
+              <li><div><a><p>projects</p></a></div></li>
+              <li><div><a><p>about</p></a></div></li>
+              <li><div><a><p>services</p></a></div></li>
+              <li><div><a><p>contact</p></a></div></li>
 
-      <group>
-         <mesh position={[0,0,0]} scale={0.5}>
-           <sphereGeometry  />
-          <meshStandardMaterial color={'yellow'} />
-        </mesh>
-        <mesh position={[2,0,0]} scale={0.5}>
-          <sphereGeometry />
-          <meshStandardMaterial color={'red'} />
-        </mesh>
-        <mesh position={[4,0,0]} scale={0.5}>
-          <sphereGeometry  />
-          <meshStandardMaterial color={'blue'} />
-        </mesh>
-        <mesh position={[6,0,0]} scale={0.5}>
-          <sphereGeometry />
-          <meshStandardMaterial color={'pink'} />
-        </mesh>
-        <mesh position={[8,0,0]} scale={0.5}>
-          <sphereGeometry />
-          <meshStandardMaterial color={'lime'} />
-        </mesh>
-        <mesh position={[10,0,0]} scale={0.5}>
-          <sphereGeometry />
-          <meshStandardMaterial color={'teal'} />
-        </mesh>
-        <mesh position={[12,0,0]} scale={0.5}>
-          <sphereGeometry />
-          <meshStandardMaterial color={'purple'} />
-        </mesh>
-        <mesh position={[14,0,0]} scale={0.5}>
-          <sphereGeometry />
-          <meshStandardMaterial color={'green'} />
-        </mesh>
-        <mesh position={[16,0,0]} scale={0.5}>
-          <sphereGeometry />
-          <meshStandardMaterial color={'orange'} />
-        </mesh>
-      </group>
-    </Canvas>
+            </ul>
+          </div>
+        </header>
+
+        <main>
+          <div className='homepage_container'>
+            <div className='image_div_Container'></div>
+            <div className='rich_text_containter'><h1>Hey There!</h1></div>
+            <div className='rich_text_containter'><p>Summary</p></div>
+            <div className='rich_text_containter'><p>As a Creative Frontend Web Dev with 4 years of freelancing experience, I use my knowledge and skills in UX/UI Design, Content Management, and Coding to ensure that my clients leave with products that are not only satisfying to look at but also reliable and useful.</p></div>
+
+            <div className='circle_btn'><p><a>Resume</a></p></div>
+            <div className='circle_btn'><p><a>Projects</a></p></div>
+            <div className='circle_btn'><p><a>Contact</a></p></div>
+
+
+          </div>
+        </main>
+
+        <footer>
+          <div>
+            Phone
+          </div>
+          <div>
+            Email
+          </div>
+          <div>
+            Social
+          </div>
+          <div>
+            Developed by Kentravious Colson @2023
+          </div>
+        </footer>
     </div>
   )
 }

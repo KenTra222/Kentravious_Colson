@@ -275,13 +275,70 @@ h2 {
   background: white;
 }
 
+// resume
+.page_title {
+  font-size: 2rem;
+}
+
+.info_section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 16px;
+}
+
+.work_section_div {
+  width: 100%;
+
+}
+
+.experience_content_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+
+
+  h4 {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  p {
+    font-size: 16px;
+
+  }
+
+  .experience_wrapper {
+    display: flex;
+    align-items: flex-start;
+    
+    width: 65%;
+  }
+}
+
+.year_title_container {
+  margin-top: .5rem;
+}
+
+.experience_text {
+  font-size: 16px;
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 0;
+}
+
+// projects
+
 //fooer
 footer {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-top: solid 1px rgb(17, 16, 16) ;
+  border-top: solid 1px rgb(17, 16, 16);
 }
 
 p {

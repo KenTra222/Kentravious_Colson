@@ -172,29 +172,32 @@ const App = () => {
       
 
         {/* Projects */}
-        <div>
-          <h2>Projects</h2>
+        {/* <div>
+           <h2 className='page_title'>Projects</h2>
         </div>
 
         <div className='project_wrapper'>
-          <div> <h3>title</h3> <p>description</p></div>
-          <div> <div> image link</div></div>
+          <div className='title_description_wrapper'> <h3>title</h3> <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla turpis. Nullam euismod metus in augue consectetur, a luctus nunc tincidunt. Nulla facilisi. Integer ac nunc at magna molestie efficitur.</p></div>
+           <div className='image_container'> <div className='box'></div> </div>
         </div>
 
         <div className='project_wrapper'>
-          <div> <h3>title</h3> <p>description</p></div>
-          <div> <div> image link</div></div>
+          <div className='title_description_wrapper'> <h3>title</h3> <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla turpis. Nullam euismod metus in augue consectetur, a luctus nunc tincidunt. Nulla facilisi. Integer ac nunc at magna molestie efficitur.</p></div>
+           <div className='image_container'> <div className='box'></div> </div>
         </div>
 
         <div className='project_wrapper'>
-          <div> <h3>title</h3> <p>description</p></div>
-          <div> <div> image link</div></div>
+          <div className='title_description_wrapper'> <h3>title</h3> <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla turpis. Nullam euismod metus in augue consectetur, a luctus nunc tincidunt. Nulla facilisi. Integer ac nunc at magna molestie efficitur.</p></div>
+           <div className='image_container'> <div className='box'></div> </div>
+        </div>
+ */}
+
+ {/* contact */}
+ <div className='project_wrapper'>
+          <div className='title_description_wrapper'> <h3>title</h3> <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla turpis. Nullam euismod metus in augue consectetur, a luctus nunc tincidunt. Nulla facilisi. Integer ac nunc at magna molestie efficitur.</p></div>
+           <div className='image_container'> <div className='box'></div> </div>
         </div>
 
-        <div className='project_wrapper'>
-          <div> <h3>title</h3> <p>description</p></div>
-          <div> <div> image link</div></div>
-        </div>
 
         </main>
 

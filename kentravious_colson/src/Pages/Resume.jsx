@@ -13,14 +13,15 @@ const Resume = () => {
       <div className='experience_wrapper'>
 
       <div  className='year_title_container'>
-        <p>present</p>
+        <p className='year'>2023</p>
       </div>
       
       
         <div > 
-          <h4> Developer DevButter</h4> 
+          <h4> Jr Developer - DevButter</h4> 
         
-          <p className='experience_text'>As a Creative Frontend Web Dev with 4 years of freelancing experience. I use my knowledge and skills in UX/UI Design, Content Management, and Coding to ensure that my clients leave with products that are not only satisfying to look at but also reliable and useful 
+          <p className='experience_text'> 
+            this is the text to edit
           </p>
       </div>
         
@@ -30,17 +31,19 @@ const Resume = () => {
 
 
         <div>
+
       <div className='experience_wrapper'>
 
-      <div  className='year_title_container'>
-        <p>present</p>
-      </div>
+      
+        <p className='year'>2020</p>
+      
       
       
         <div > 
-          <h4> Developer DevButter</h4> 
+          <h4> Freelance - Webdesigner</h4> 
         
-          <p className='experience_text'>As a Creative Frontend Web Dev with 4 years of freelancing experience. I use my knowledge and skills in UX/UI Design, Content Management, and Coding to ensure that my clients leave with products that are not only satisfying to look at but also reliable and useful 
+          <p className='experience_text'>
+             edit here
           </p>
       </div>
         
@@ -52,14 +55,15 @@ const Resume = () => {
       <div className='experience_wrapper'>
 
       <div  className='year_title_container'>
-        <p>present</p>
+        <p className='year'>2023</p>
       </div>
       
       
         <div > 
           <h4> Developer DevButter</h4> 
         
-          <p className='experience_text'>As a Creative Frontend Web Dev with 4 years of freelancing experience. I use my knowledge and skills in UX/UI Design, Content Management, and Coding to ensure that my clients leave with products that are not only satisfying to look at but also reliable and useful 
+          <p className='experience_text'>
+            edit her 
           </p>
       </div>
         
@@ -71,33 +75,62 @@ const Resume = () => {
 
     {/* education */}
      <section className='info_section'>
-    <div className='work_section_div'><h3> Education</h3></div>
+    <div className='work_section_div'><h3> Certification </h3></div>
 
     <div className='experience_content_container'>
-
-        <div>
+      
       <div className='experience_wrapper'>
+  
+      <ul className='skill_list'> 
+         
 
-      <div  className='year_title_container'>
-        <p>2014</p>
+          <li>
+            <p className='experience_text'>
+          <b>   Introduction to Cloud Engineering with HTML, CSS, and Javascript </b>  - IBM
+             </p>
+          </li>
+        
+          <li>
+            <p className='experience_text'>
+          <b>  Frontend Developers Path </b> - Scrimba 
+             </p>
+          </li>
+
+          <li>
+            <p className='experience_text'>
+          <b>  Tech Support Fundamentals</b> - Google Careers 
+
+             </p>
+          </li>
+
+          <li>
+            <p className='experience_text'>
+            <b>Foundations of Digital marketing and E-Commerces </b>- Google Careers
+
+             </p>
+          </li>
+
+          <li>
+            <p className='experience_text'>
+           <b> Attract and Engage Customers</b> - Google Careers
+             </p>
+          </li>
+          
+          <li>
+            <p className='experience_text'>
+              <b>Three.js Journey course completion</b> - Bruno Simon
+             </p>
+          </li>
+
+          
+          
+      </ul>
+        
+        
       </div>
-      
-      
-        <div > 
-          <h4> Southwest highschool </h4> 
-        <div>
-
-          <p className='education_text'>As a Creative Frontend Web Dev with 4 years of freelancing experience. I use my knowledge and skills in UX/UI Design, Content Management, and Coding to ensure that my clients leave with products that are not only satisfying to look at but also reliable and useful 
-          </p>
-        </div>
-      </div>
-        
-        
-        </div>
-        </div>
-
 
         
+         
     </div>
     </section>
 
@@ -111,7 +144,7 @@ const Resume = () => {
       <div className='experience_wrapper'>
 
       
-        <ul > 
+        <ul className='skill_list'> 
           <li>
             <p className='experience_text'>
             Proficient in HTML5, CSS3, JavaScript, and various frontend frameworks
@@ -141,6 +174,20 @@ const Resume = () => {
             Strong problem-solving and analytical skills with a keen eye for detail
              </p>
           </li>
+
+          <li>
+            <p className='experience_text'>
+            Resourceful with content creation tools and management systems
+             </p>
+          </li>
+          
+          <li>
+            <p className='experience_text'>
+              Efficient in visual storytelling and scripting/mapping
+             </p>
+          </li>
+
+          
           
       </ul>
         

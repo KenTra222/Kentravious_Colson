@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Services = () => {
   return (
@@ -16,12 +17,13 @@ const Services = () => {
         <div className='card_details'>
         <h4>Single Page Design</h4>
         <div className='service_description'> 
-        <p>$300</p>
+        <p>$350</p>
         <p>single page</p>
         </div>
         
         <div className='book_button'>
-        <a>book now</a>
+        <NavLink className='services_contact' to='contact'> Contact</NavLink>
+
         </div>
         </div>
         </div>
@@ -34,12 +36,13 @@ const Services = () => {
           <div className='card_details'>
             <h4>Multi Page Design</h4>
             <div className='service_description'> 
-              <p>$300</p>
+              <p>$800</p>
               <p>single page</p>
               </div>
               
               <div className='book_button'>
-              <a>book now</a>
+              <NavLink className='services_contact' to='contact'> Contact</NavLink>
+
               </div>
               </div>
               </div>
@@ -52,12 +55,13 @@ const Services = () => {
               <div className='card_details'>
               <h4>Visual Asset Creation</h4>
               <div className='service_description'> 
-              <p>$300</p>
+              <p>$600</p>
               <p>single page</p>
               </div>
               
               <div className='book_button'>
-              <a>book now</a>
+              <NavLink className='services_contact' to='contact'> Contact</NavLink>
+
               </div>
               </div>
               </div>

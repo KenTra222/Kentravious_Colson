@@ -134,11 +134,17 @@ h2 {
   background: orangered;
   border-radius: 50%;
   margin-right: .35rem;
-  margin-top: .25rem;
+  margin-top: .15rem;
 }
 
 .title {
   font-size: 1.25rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  .title:hover{
+    color: orangered;
+  }
 }
 
 .nav_bar {
@@ -162,8 +168,16 @@ h2 {
       border-right: black 1px solid;
       font-size: 1rem;
       list-style: none;
-      color: black;
     }
+    .nav_item{
+        color: black;
+        text-decoration: none;
+        transition: all 1s ease;
+      }
+     .nav_item:hover{
+        color: orangered;
+        transition: ease-out;
+      }
 
     :last-child {
       border: none;
@@ -179,12 +193,19 @@ h2 {
 
   width: 100%;
   height: 35rem;
-
+  
   .image_div_Container {
-    width: 25rem;
-    height: 25rem;
+    width: 22rem;
+    height: 22rem;
     background: orangered;
     border-radius: 50%;
+    margin-left: 2rem;
+    .hero_image{
+      width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    }
   }
 
   .hero_content_container {
@@ -198,13 +219,14 @@ h2 {
     .text_container {
       margin: 0;
       width: 70%;
+      margin-left: 2.25rem;
     }
 
     .rich_text_containter {
 
       left: 0;
       padding: 0;
-
+      margin-left: 2rem;
       h1 {
         width: 100%;
         margin-left: 0;
@@ -218,9 +240,9 @@ h2 {
     }
 
     .rich_text_subtitle {
-      font-size: 1;
+      font-size: 22px;
       letter-spacing: 1px;
-
+      color: orangered;
       font-weight: bold;
       margin-bottom: 0;
     }
@@ -228,6 +250,7 @@ h2 {
     .rich_text_summary {
       margin-top: 0;
       letter-spacing: 1px;
+      font-size: 16px;
     }
   }
 }
@@ -236,7 +259,8 @@ h2 {
   display: flex;
   justify-content: space-evenly;
 
-  width: 80%;
+  width: 90%;
+  
 }
 
 .circle_btn {
@@ -251,10 +275,14 @@ h2 {
   justify-content: center;
   font-size: 1.25rem;
   font-weight: 600;
+  
+  transition: all 1s ease;
+  
 }
 
 #blue_circle {
   background: #80d8da;
+ 
 }
 
 #yellow_circle {
@@ -263,12 +291,19 @@ h2 {
 
 #red_circle {
   background: #ff3b25;
+  
 }
 
 #blue_circle:hover,
 #yellow_circle:hover,
 #red_circle:hover {
   background: white;
+}
+
+.link_text{
+  text-decoration: none;
+  color: black;
+  font-size: $fz-xxl;
 }
 
 // resume
@@ -307,20 +342,22 @@ h2 {
 
   p {
     font-size: 16px;
-
   }
-
+    .year{
+      margin-top: 1.25rem;
+      font-size: 16px;
+    
+    }
+    
   .experience_wrapper {
     display: flex;
     align-items: flex-start;
-
-    width: 65%;
+    width: 75%;
+    
   }
 }
 
-.year_title_container {
-  margin-top: .5rem;
-}
+ 
 
 .experience_text {
   font-size: 16px;
@@ -331,6 +368,11 @@ h2 {
 
 .education_text{
   margin-left: 1rem;
+}
+
+.skill_list{
+  text-decoration: none;
+  list-style: none;
 }
 
 // projects
@@ -437,9 +479,9 @@ padding: 1.5rem;
 
 .services_container{
   display: flex;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-
+  margin-top: 4em;
+  margin-bottom: 5rem;
+  background: yellow;
 }
 
 .card{
@@ -480,7 +522,7 @@ padding: 1.5rem;
 
   .book_button{
     margin-top: 2rem;
-    a{
+    .services_contact{
       background: black;
       color: white;
       padding: .5rem .95rem;

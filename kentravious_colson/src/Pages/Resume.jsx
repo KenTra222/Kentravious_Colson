@@ -85,9 +85,11 @@ const Resume = () => {
       
         <div > 
           <h4> Southwest highschool </h4> 
-        
-          <p className='experience_text'>As a Creative Frontend Web Dev with 4 years of freelancing experience. I use my knowledge and skills in UX/UI Design, Content Management, and Coding to ensure that my clients leave with products that are not only satisfying to look at but also reliable and useful 
+        <div>
+
+          <p className='education_text'>As a Creative Frontend Web Dev with 4 years of freelancing experience. I use my knowledge and skills in UX/UI Design, Content Management, and Coding to ensure that my clients leave with products that are not only satisfying to look at but also reliable and useful 
           </p>
+        </div>
       </div>
         
         
@@ -109,12 +111,38 @@ const Resume = () => {
       <div className='experience_wrapper'>
 
       
-        <div > 
-         
+        <ul > 
+          <li>
+            <p className='experience_text'>
+            Proficient in HTML5, CSS3, JavaScript, and various frontend frameworks
+             </p>
+          </li>
+
+          <li>
+            <p className='experience_text'>
+              Skilled in UI/UX design, wireframing, and prototyping tools
+             </p>
+          </li>
         
-          <p className='experience_text'>As a Creative Frontend Web Dev with 4 years of freelancing experience. I use my knowledge and skills in UX/UI Design, Content Management, and Coding to ensure that my clients leave with products that are not only satisfying to look at but also reliable and useful 
-          </p>
-      </div>
+          <li>
+            <p className='experience_text'>
+            Familiar with version control systems and web performance optimization
+             </p>
+          </li>
+
+          <li>
+            <p className='experience_text'>
+            Proficient in HTML5, CSS3, JavaScript, and various frontend frameworks
+             </p>
+          </li>
+
+          <li>
+            <p className='experience_text'>
+            Strong problem-solving and analytical skills with a keen eye for detail
+             </p>
+          </li>
+          
+      </ul>
         
         
         </div>

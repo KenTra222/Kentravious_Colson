@@ -31,7 +31,7 @@ export const Footer = () => {
             </p>
           </div>
           <div>
-            Developed by Kentravious Colson @2023
+            Developed by <br/>Kentravious Colson @2023
           </div>
         
      </footer>

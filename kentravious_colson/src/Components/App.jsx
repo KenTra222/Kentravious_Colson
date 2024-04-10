@@ -236,37 +236,28 @@ const App = () => {
           </div> */}
 
           {/* gallery */}
-          {/* <section>
+          <section className='portfolio_wrapper'>
               <h2>Portfolio</h2>
 
-              <article classname='portfolio_grid'>
-                <div classname='box'>
-                
-                </div>
-                <div classname='box'>
-                
-                </div>
-                <div classname='box'>
-                
-                </div>
-                <div classname='box'>
-                
-                </div>
-                <div classname='box'>
-                
-                </div>
-                <div classname='box'>
-                
-                </div>
-                <div classname='box'>
-                
-                </div>
-              </article>
-              </section> */}
+              <div className="container">
+                <div className="box"> </div>
+                <div className="box2"></div>
+                <div className="box-3"></div>
+                <div className="box-4"></div>
+                <div className="box-5"></div>
+                <div className="box-6"></div>
+                <div className="box-7"></div>
+                <div className="box-8"></div>
+                <div className="box-9"></div>
+              </div>
+
+              </section>
 
         {/* Services */}
-        <div className='services Wrapper'>
+        {/* <div className='services Wrapper'>
             <h2>My Services</h2>
+
+          <section className='services_container'>
 
             <div className='card'>
               <div className='box'>
@@ -285,10 +276,47 @@ const App = () => {
                 </div>
               </div>
             </div>
-        </div>
+
+            <div className='card'>
+              <div className='box'>
+                <img className='service_image' src='/projects/cadet.jpg'/>
+              </div>
+
+              <div className='card_details'>
+                <h4>Multi Page Design</h4>
+                <div className='service_description'> 
+                  <p>$300</p>
+                  <p>single page</p>
+                </div>
+
+                <div className='book_button'>
+                  <a>book now</a>
+                </div>
+              </div>
+            </div>
+
+            <div className='card'>
+              <div className='box'>
+                <img className='service_image' src='/projects/cadet.jpg'/>
+              </div>
+
+              <div className='card_details'>
+                <h4>Visual Asset Creation</h4>
+                <div className='service_description'> 
+                  <p>$300</p>
+                  <p>single page</p>
+                </div>
+
+                <div className='book_button'>
+                  <a>book now</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div> */}
 
         {/* contact */}
-        <div className='wrapper' id='contact_wrapper'>
+        {/* <div className='wrapper' id='contact_wrapper'>
           <div>
             <h2>Contact</h2>
           </div>
@@ -309,7 +337,7 @@ const App = () => {
           <div>
             embedded code
           </div>
-        </div>
+        </div> */}
       
         </main>
 

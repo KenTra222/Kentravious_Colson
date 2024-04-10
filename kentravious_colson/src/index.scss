@@ -379,7 +379,67 @@ h2 {
 padding: 1.5rem;  
 }
 
+//portfolio
+
+  .portfolio_wrapper{
+    
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 4rem;
+    .container {  
+      background: green;
+      height: 20rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 15rem);
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "box box box2 box-3"
+        "box-4 box-5 box-6 box-6"
+        "box-7 box-7 box-8 box-9";
+    }
+    
+    .box {
+           grid-area: box; 
+           background: orange;
+           width: 100%;
+           height: 1005;
+          }
+    
+    .box2 { grid-area: box2; 
+           background: yellow;
+          }
+    
+    .box-3 { grid-area: box-3; 
+            background:black;}
+    
+    .box-4 { grid-area: box-4;
+            background: purple; }
+    
+    .box-5 { grid-area: box-5; 
+            background: orangered;}
+    
+    .box-6 { grid-area: box-6; 
+            background: pink;}
+    
+    .box-7 { grid-area: box-7;
+            background: white;}
+    
+    .box-8 { grid-area: box-8;
+            background: blue; }
+    
+    .box-9 { grid-area: box-9;
+            background: lime; }
+    
+  }
+
 //services
+
+.services_container{
+  display: flex;
+}
+
 .card{
   margin: 0 auto;
   border: 1px solid black;
@@ -387,7 +447,7 @@ padding: 1.5rem;
   min-height: 20rem;
   display: flex;
   flex-direction: column;
-  background:green;
+
   padding-bottom: 1rem;
   .box{
     width: 100%;

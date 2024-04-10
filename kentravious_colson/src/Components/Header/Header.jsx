@@ -1,50 +1,34 @@
-import './header.scss'
+ 
 import React, {useState, useEffect} from 'react'
-import NavItems from '../NavItems/NavItems';
-import Modal from '../Modal/Modal';
-import {CgMenuMotion} from 'react-icons/cg'
-import {motion} from 'framer-motion'
-
-
-const   HAMBURGER_BUTTON_STYLES = {
-  color: ' #64ffda',
-  border: 'none',
-  background: 'none',
-  }
-
-export const Header = (...props) => {
-    const [isOpen, setIsOpen] = useState(false) 
-    const toggleModal = ( ) => {
-        setIsOpen(!isOpen)
-    }
-       
-  return (
-    <div>      
-        <div className='header' >
-    <div className='header-items'>
-
-      <div className='header-left'>
-        
-
-        <span className='logo-text'>KColson</span>
-        <small>web Developer</small>
-      </div>
+ 
+ import { Link, NavLink } from 'react-router-dom'
 
  
-      <div className='header-right'>
-          <button className='hamburger_menu' style={HAMBURGER_BUTTON_STYLES} onClick={toggleModal}>
-            <CgMenuMotion />
-          </button>
-      <NavItems className='menu'/>
-      </div>
-      </div>
-       
-    </div>   
 
-      <Modal isOpen={isOpen} onClose={toggleModal}>
-  
-      </Modal>
-        </div>
+export const Header = (...props) => {
+    
+    
+       
+  return (
+    <header className='header'> 
+    {/* header */}
+    <div className='title_wrapper'>
+      <div className='title_ball'></div>
+      <div className=''><p><Link className='title' to='/'>Kentravious Colson</Link></p></div>
+    </div>    
+  {/* navbar */}
+    <nav className='nav_bar'>
+      <ul className='menu'>
+        
+          <li className='menu_item'><NavLink to='resume'>Resume</NavLink></li>
+          <li className='menu_item'><NavLink to='projects'>Projects</NavLink></li>
+          <li className='menu_item'><NavLink to='portfolio'>Gallery</NavLink></li>
+          <li className='menu_item'><NavLink to='services'>Services</NavLink></li>
+          <li className='menu_item'><NavLink to='contact'>Contact</NavLink></li>
+
+      </ul>
+    </nav>
+  </header>
         
   )
 }

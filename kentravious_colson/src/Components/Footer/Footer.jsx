@@ -1,20 +1,39 @@
 import React from 'react'
-import './footer.scss'
-import {FaLinkedin} from 'react-icons/fa'
-import {BsGithub} from 'react-icons/bs'
+ 
 
 export const Footer = () => {
   return (
-    <footer className="footer">
-    <div className="container">
-   
-      <p>&copy; {new Date().getFullYear()} Kentravious Colson</p>
-      <ul className="social-icons">
-        <li><a href="https://www.linkedin.com/in/kentravious-colson-33802a216" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a></li>
-        <li><a href="https://github.com/KenTra222" target="_blank" rel="noopener noreferrer"><BsGithub/></a></li>
-       
-      </ul>
-    </div>
-  </footer>
+    
+    <footer>
+       {/* footer */}
+          <div>
+            <p>
+            Phone
+            </p>
+            <p>
+            4787443006
+            </p>
+          </div>
+          <div>
+          <p>
+            Email
+            </p>
+            <p>
+            kentraviousc@gmail.com
+            </p>
+          </div>
+          <div>
+          <p>
+            social links
+            </p>
+            <p>
+            linkedin
+            </p>
+          </div>
+          <div>
+            Developed by Kentravious Colson @2023
+          </div>
+        
+     </footer>
   )
 }

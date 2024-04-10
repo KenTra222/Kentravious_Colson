@@ -16,7 +16,7 @@ const App = () => {
             <ul className='menu'>
                 <li className='menu_item'><a>resume </a></li>
                 <li className='menu_item'><a>projects</a></li>
-                <li className='menu_item'><a>about</a></li>
+                <li className='menu_item'><a>gallery</a></li>
                 <li className='menu_item'><a>services</a></li>
                 <li className='menu_item'><a>contact</a></li>
             </ul>
@@ -169,36 +169,148 @@ const App = () => {
         </div>
         </section>  */} 
 
+
+       
       
 
         {/* Projects */}
-        {/* <div>
-           <h2 className='page_title'>Projects</h2>
+          {/* <div className='project_wrapper'>
+        
+          <h2>Projects</h2>
+
+              <section className='project_content_container'>
+
+                <div className='title_description_wrapper'> 
+                  <h3>J Black Catering</h3> 
+                    <p>
+                      orem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Fusce vel fringilla turpis. Nullam euismod metus in augue consectetur, 
+                      a luctus nunc tincidunt. Nulla facilisi. Integer ac nunc at magna 
+                      molestie efficitur.
+                    </p>
+                  </div>
+
+                  <div className='image_container'> 
+                    <img className='image' src='/images/Jblack .png'/>  
+                  </div>
+              
+              </section>
+
+              <section className='project_content_container'>
+
+                <div className='title_description_wrapper'> 
+                  <h3>odmhnj</h3> 
+                    <p>
+                      Stands for "Oscar Devereaux Micheaux House" 
+                      Fusce vel fringilla turpis. Nullam euismod metus in augue consectetur, 
+                      a luctus nunc tincidunt. Nulla facilisi. Integer ac nunc at magna 
+                      molestie efficitur.
+                    </p>
+                  </div>
+
+                  <div className='image_container'> 
+                    <img className='image' src='/images/odmhj.png'/>  
+                  </div>
+              
+              </section>
+
+              <section className='project_content_container'>
+
+                <div className='title_description_wrapper'> 
+                  <h3>Copious Staffing Solutions</h3> 
+                    <p>
+                      orem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Fusce vel fringilla turpis. Nullam euismod metus in augue consectetur, 
+                      a luctus nunc tincidunt. Nulla facilisi. Integer ac nunc at magna 
+                      molestie efficitur.
+                    </p>
+                  </div>
+
+                  <div className='image_container'> 
+                    <img className='image' src='/images/copiousStaffing.png'/>  
+                  </div>
+              
+              </section>
+
+              
+          </div> */}
+
+          {/* gallery */}
+          {/* <section>
+              <h2>Portfolio</h2>
+
+              <article classname='portfolio_grid'>
+                <div classname='box'>
+                
+                </div>
+                <div classname='box'>
+                
+                </div>
+                <div classname='box'>
+                
+                </div>
+                <div classname='box'>
+                
+                </div>
+                <div classname='box'>
+                
+                </div>
+                <div classname='box'>
+                
+                </div>
+                <div classname='box'>
+                
+                </div>
+              </article>
+              </section> */}
+
+        {/* Services */}
+        <div className='services Wrapper'>
+            <h2>My Services</h2>
+
+            <div className='card'>
+              <div className='box'>
+                <img className='service_image' src='/projects/cadet.jpg'/>
+              </div>
+
+              <div className='card_details'>
+                <h4>Single Page Design</h4>
+                <div className='service_description'> 
+                  <p>$300</p>
+                  <p>single page</p>
+                </div>
+
+                <div className='book_button'>
+                  <a>book now</a>
+                </div>
+              </div>
+            </div>
         </div>
 
-        <div className='project_wrapper'>
-          <div className='title_description_wrapper'> <h3>title</h3> <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla turpis. Nullam euismod metus in augue consectetur, a luctus nunc tincidunt. Nulla facilisi. Integer ac nunc at magna molestie efficitur.</p></div>
-           <div className='image_container'> <div className='box'></div> </div>
+        {/* contact */}
+        <div className='wrapper' id='contact_wrapper'>
+          <div>
+            <h2>Contact</h2>
+          </div>
+
+          <div className='contact_info'>
+            <p>Get in Touch</p>
+            <div>
+              <p>Phone</p>
+              <p>4787443006</p>
+            </div>
+
+            <div>
+              <p>Email</p>
+              <p>kentraviousc@gmail</p>
+            </div>
+          </div>
+
+          <div>
+            embedded code
+          </div>
         </div>
-
-        <div className='project_wrapper'>
-          <div className='title_description_wrapper'> <h3>title</h3> <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla turpis. Nullam euismod metus in augue consectetur, a luctus nunc tincidunt. Nulla facilisi. Integer ac nunc at magna molestie efficitur.</p></div>
-           <div className='image_container'> <div className='box'></div> </div>
-        </div>
-
-        <div className='project_wrapper'>
-          <div className='title_description_wrapper'> <h3>title</h3> <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla turpis. Nullam euismod metus in augue consectetur, a luctus nunc tincidunt. Nulla facilisi. Integer ac nunc at magna molestie efficitur.</p></div>
-           <div className='image_container'> <div className='box'></div> </div>
-        </div>
- */}
-
- {/* contact */}
- <div className='project_wrapper'>
-          <div className='title_description_wrapper'> <h3>title</h3> <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla turpis. Nullam euismod metus in augue consectetur, a luctus nunc tincidunt. Nulla facilisi. Integer ac nunc at magna molestie efficitur.</p></div>
-           <div className='image_container'> <div className='box'></div> </div>
-        </div>
-
-
+      
         </main>
 
         {/* footer */}

@@ -1,0 +1,44 @@
+form{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20rem;
+    input, textarea{
+        text-decoration: none;
+        width: 100%;
+        background: transparent;
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 2.25rem;
+        margin-bottom: 1rem;
+    }
+
+    textarea{
+        height: 4.5rem;
+
+    }
+
+    input:last-child{
+        background: black;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        transition: all .5s ease-in;
+        width: 70%;
+        height: 3rem;
+        
+    }
+
+    label{
+        text-align: left;
+        color: black; font-size: 16px;
+        margin-bottom: .25rem;
+    }
+    
+    .submit_btn:hover{
+        border: 1px solid black;
+        background: transparent;
+        color: orangered;
+    }
+}

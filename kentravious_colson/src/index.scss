@@ -110,80 +110,7 @@ h2 {
 
 
 
-// Header
 
-.header {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  .title_wrapper {
-
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-
-    width: 25%;
-  }
-}
-
-.title_ball {
-  width: 1.25rem;
-  height: 1.25rem;
-  background: orangered;
-  border-radius: 50%;
-  margin-right: .35rem;
-  margin-top: .15rem;
-}
-
-.title {
-  font-size: 1.25rem;
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-  .title:hover{
-    color: orangered;
-  }
-}
-
-.nav_bar {
-  width: 45%;
-  height: 100%;
-
-  .menu {
-
-    height: 45px;
-    width: 100%;
-
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0;
-
-    .menu_item {
-      margin-right: 1rem;
-      padding-right: 1rem;
-      border-right: black 1px solid;
-      font-size: 1rem;
-      list-style: none;
-    }
-    .nav_item{
-        color: black;
-        text-decoration: none;
-        transition: all 1s ease;
-      }
-     .nav_item:hover{
-        color: orangered;
-        transition: ease-out;
-      }
-
-    :last-child {
-      border: none;
-    }
-  }
-}
 
 //main
 .homepage_container {
@@ -391,7 +318,7 @@ h2 {
   }
 
 .title_description_wrapper {
-  width: 35%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -405,6 +332,7 @@ h2 {
     
     margin-left: 0;
     margin-bottom: 1rem;
+    margin-top: 2.2rem;
   }
 
   P {
@@ -430,115 +358,71 @@ padding: 1.5rem;
   .portfolio_wrapper{
     
     width: 100%;
-    height: 100vh;
+     h2{ margin-bottom: 2rem;}
+  
     margin-bottom: 4rem;
-    .container {  
-      height: 20rem;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(3, 15rem);
-      gap: 1.5px ;
-      grid-auto-flow: row;
-      grid-template-areas:
-        "box box box2 box-3"
-        "box-4 box-5 box-6 box-6"
-        "box-7 box-7 box-8 box-9";
-    }
-    .portfolio_img{
-          width: 100%;
-           height: 100%;
-           object-fit: cover;
+    // .container {  
+    //   height: 20rem;
+    //   display: grid;
+    //   grid-template-columns: repeat(4, 1fr);
+    //   grid-template-rows: repeat(3, 15rem);
+    //   gap: 1.5px ;
+    //   grid-auto-flow: row;
+    //   grid-template-areas:
+    //     "box box box2 box-3"
+    //     "box-4 box-5 box-6 box-6"
+    //     "box-7 box-7 box-8 box-9";
+    // }
+    // .portfolio_img{
+    //       width: 100%;
+    //        height: 100%;
+    //        object-fit: cover;
 
            
-    }
-    .box {
-           grid-area: box; 
-          }
+    // }
+    // .box {
+    //        grid-area: box; 
+    //       }
     
-    .box2 { grid-area: box2;  }
+    // .box2 { grid-area: box2;  }
     
-    .box-3 { grid-area: box-3; }
+    // .box-3 { grid-area: box-3; }
     
-    .box-4 { grid-area: box-4;}
+    // .box-4 { grid-area: box-4;}
     
-    .box-5 { grid-area: box-5;}
+    // .box-5 { grid-area: box-5;}
     
-    .box-6 { grid-area: box-6;}
+    // .box-6 { grid-area: box-6;}
     
-    .box-7 { grid-area: box-7;}
+    // .box-7 { grid-area: box-7;}
     
-    .box-8 { grid-area: box-8; }
+    // .box-8 { grid-area: box-8; }
     
-    .box-9 { grid-area: box-9; }
+    // .box-9 { grid-area: box-9; }
     
 
             
   }
 
-//services
-
-.services_container{
-  display: flex;
-  margin-top: 4em;
-  margin-bottom: 5rem;
-  background: yellow;
-}
-
-.card{
-  margin: 0 auto;
-  border: 1px solid black;
-  width: 12rem;
-  min-height: 20rem;
-  display: flex;
-  flex-direction: column;
-
-  padding-bottom: 1rem;
-  .box{
-    width: 100%;
-    height: 8rem;
-
-    .service_image{
-      width: 100%;
-      height: 100%;
-      object-fit: fill;
-    }
-  }
-
-  h4{
-    text-align: left;
-    width: 100%;
-    margin-left: 1rem;
-  }
-
-  .service_description{
-    border-top: 1px solid black;
-  }
   
-  p{
-    text-align: left;
-    margin-left: 1rem;
-  }
-  
-
-  .book_button{
-    margin-top: 2rem;
-    .services_contact{
-      background: black;
-      color: white;
-      padding: .5rem .95rem;
-      text-decoration: inherit;
-    }
-    a:hover{
-      background: white;
-      color: black;
-    }
-  }
-}
+ 
 
 //contact
+.contact_section{ 
+  display: flex;
+  padding-top: 2rem;
+}
+
+.embedded_code{
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
 .contact_info{
-  
   width: 45%;
+  height: 25rem;
   display: flex;
   flex-direction: column;
 
@@ -554,6 +438,7 @@ padding: 1.5rem;
     margin-top: 0;
   }
 
+
 }
 
 a{
@@ -564,15 +449,7 @@ a{
   font-size: $fz-lg;
 }
 
-//foorer
-footer {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border-top: solid 1px rgb(17, 16, 16);
-  margin: 1rem;
-}
+
 
 p {
   color: black;

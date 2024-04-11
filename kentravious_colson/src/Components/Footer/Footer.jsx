@@ -1,39 +1,44 @@
 import React from 'react'
- 
+ import './footer.scss'
+ import { FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
   return (
     
     <footer>
        {/* footer */}
+       <section className='info_div'>  
+
           <div>
             <p>
             Phone
             </p>
-            <p>
+            <small>
             4787443006
-            </p>
+            </small>
           </div>
+
           <div>
           <p>
             Email
             </p>
-            <p>
+            <small>
             kentraviousc@gmail.com
-            </p>
+            </small>
           </div>
+
           <div>
-          <p>
-            social links
+             <p>
+            Social Links
             </p>
-            <p>
-            linkedin
-            </p>
+            <small>
+              <a href='https://www.linkedin.com/in/kentravious-colson-dev/'>
+                <FaLinkedin />
+              </a>
+            </small>
           </div>
-          <div>
-            Developed by <br/>Kentravious Colson @2023
-          </div>
-        
+       </section>
+     
      </footer>
   )
 }

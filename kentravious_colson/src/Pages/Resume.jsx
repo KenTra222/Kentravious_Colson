@@ -21,7 +21,7 @@ const Resume = () => {
           <h4> Jr Developer - DevButter</h4> 
         
           <p className='experience_text'> 
-            this is the text to edit
+          Devbutter is a collective of black enterprise level freelancers with years of experience in  web development that specializes in creating high quality digital services. At Dev Butter i am solely responsible for the development/redesign of client websites, creating scripts and videos for social media posts, and as well as creating 3d digital assets for the company. One of the best gigs I’ve ever had!
           </p>
       </div>
         
@@ -43,7 +43,7 @@ const Resume = () => {
           <h4> Freelance - Webdesigner</h4> 
         
           <p className='experience_text'>
-             edit here
+          As a freelance UX/UI designer and web developer, the individual focuses on empowering clients by assessing their digital needs and translating them into engaging interfaces. They transform designs into functional websites, mobile applications, and e-commerce platforms. Beyond technical skills, they believe in educating clients and creating a collaborative partnership. Their journey began in 2020, starting with oil changes but later shifting to digital asset creation. They have honed their skills and developed a strategic approach to project planning, successfully launching numerous small businesses. Their core belief is in the transformative power of technology to revolutionize businesses and connect people. They are committed to delivering exceptional freelance services that consistently exceed expectations.
           </p>
       </div>
         
@@ -63,7 +63,7 @@ const Resume = () => {
           <h4> Developer DevButter</h4> 
         
           <p className='experience_text'>
-            edit her 
+          As a trade customer service specialist I was entrusted with the tasks of gaining data, composing customer profiles, using said information to open strong communications to schedule goods and services for our clients needs. Using hospitality, active listening and time management to ensure daily and monthly metrics were meet on a consistent basis.
           </p>
       </div>
         

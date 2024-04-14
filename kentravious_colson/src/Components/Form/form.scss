@@ -42,3 +42,14 @@ form{
         color: orangered;
     }
 }
+
+@media (max-width: 960px) {
+    
+    form{
+        align-items: center;
+    }
+
+    input::placeholder, textarea::placeholder{
+        text-align: center;
+    }
+  }

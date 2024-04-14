@@ -3,9 +3,11 @@ import React from 'react'
 const Resume = () => {
   return (
     <div className='resume'>
+
     <div> <h2 className='page_title'>Resume</h2></div>
+
     <section className='info_section'>
-    <div className='work_section_div'><h3> Work <br/> Experience</h3></div>
+    <div className='work_section_div'><h3> Work <br className='break'/> Experience</h3></div>
 
     <div className='experience_content_container'>
 
@@ -60,7 +62,7 @@ const Resume = () => {
       
       
         <div > 
-          <h4> Developer DevButter</h4> 
+          <h4> Trade Customer Specialist</h4> 
         
           <p className='experience_text'>
           As a trade customer service specialist I was entrusted with the tasks of gaining data, composing customer profiles, using said information to open strong communications to schedule goods and services for our clients needs. Using hospitality, active listening and time management to ensure daily and monthly metrics were meet on a consistent basis.

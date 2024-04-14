@@ -1,7 +1,6 @@
 import React,{useState} from 'react'
 import { Gallery } from "react-grid-gallery";
-import Lightbox from 'react-image-lightbox'
-import "react-image-lightbox/style.css";
+
 import { images,  CustomGallery} from "../Components/data/Images";
 
 const Portfolio = () => {

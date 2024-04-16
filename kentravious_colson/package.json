@@ -19,8 +19,21 @@
     "leva": "^0.9.34",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
+    "react-grid-gallery": "^1.0.1-alpha.0",
+    "react-hook-form": "^7.51.3",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^6.9.0",
+    "react-router-hash-link": "^2.4.3",
+    "react-toastify": "^9.1.1",
+    "react-use-mouse-position": "^1.0.4",
+    "sass": "^1.58.1",
+    "sort-by": "^1.2.0",
+    "three": "^0.149.0"
+=======
     "react-hook-form": "^7.45.1",
     "three": "^0.146.0"
+>>>>>>> main
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

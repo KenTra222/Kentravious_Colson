@@ -1,0 +1,38 @@
+form{
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20rem;
+    
+
+    .submit_btn{
+        text-decoration: none;
+        background: black;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        transition: all .5s ease-in;
+        width: 70%;
+        height: 2rem;
+        padding-top: .95rem;
+        border-radius: 5px;
+    }
+    
+    .submit_btn:hover{
+        border: 1px solid black;
+        background: transparent;
+        color: orangered;
+    }
+}
+
+@media (max-width: 960px) {
+    
+    form{
+        align-items: center;
+    }
+
+    input::placeholder, textarea::placeholder{
+        text-align: center;
+    }
+  }

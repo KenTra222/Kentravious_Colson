@@ -1,0 +1,42 @@
+//footer
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    border-top: solid 1px rgb(17, 16, 16);
+    margin: 1rem;
+bottom: 0;
+position: relative;
+small{color: black;}
+FaLinkedin{
+  margin-top: rem;
+}
+
+.info_div{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+}
+
+small{
+
+  a{text-decoration: none;
+    font-size: 1.5rem;
+    color: black;}
+  }
+    
+
+@media (max-width: 788px) {
+  p{
+    font-size: 1rem;
+  }
+  small{
+    font-size: .85rem;
+  }
+  a{
+    font-size: 1rem;
+  }
+}

@@ -84,16 +84,16 @@
   @media (max-width: 720px){
 
     header{
-      justify-content: space-evenly;
+      justify-content: space-around;
     }
     .title_wrapper{
       justify-content: flex-start;
-      min-width: 50%;
+      min-width: 60%;
     }
     
     
     .title{
-      font-size: 18px;
+      font-size: 16px;
     }
     .nav_bar{
       display: none;

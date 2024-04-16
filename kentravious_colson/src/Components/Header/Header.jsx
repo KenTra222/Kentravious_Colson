@@ -29,7 +29,7 @@ export const Header = (...props) => {
     {/* header */}
     <div className='title_wrapper'>
       <div className='title_ball'></div>
-      <div className=''><Link className='title' to='/'>Kentravious Colson</Link></div>
+      <Link className='title' to='/'>Kentravious Colson</Link>
     </div>    
 
   {/* navbar */}

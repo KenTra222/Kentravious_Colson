@@ -294,10 +294,8 @@ a, input{
 .project_wrapper {
   width: 100%;
   padding: 0 auto;
-  
- 
-
 }
+
   .project_content_container{
     display: flex;
     flex-direction: row;
@@ -313,8 +311,6 @@ a, input{
   margin-left: 6rem;
   padding-right: 1rem;
   padding-left: 1rem;
-
- 
   h3 {
     font-size: 22px;
     
@@ -324,7 +320,6 @@ a, input{
   }
 
   P {
-
     margin-top: 0;
     font-size: 16px;
   }
@@ -333,22 +328,20 @@ a, input{
 .image_container {
   width: 25rem;
   height: 15rem;
+  padding: 1.5rem;  
   .image{
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-padding: 1.5rem;  
 }
 
 //portfolio
 
   .portfolio_wrapper{
-    
     width: 100%;
      h2{ margin-bottom: 2rem;}
-  
-    margin-bottom: 4rem;
+         margin-bottom: 4rem;
     // .container {  
     //   height: 20rem;
     //   display: grid;
@@ -365,35 +358,19 @@ padding: 1.5rem;
     //       width: 100%;
     //        height: 100%;
     //        object-fit: cover;
-
-           
     // }
     // .box {
     //        grid-area: box; 
     //       }
-    
     // .box2 { grid-area: box2;  }
-    
     // .box-3 { grid-area: box-3; }
-    
     // .box-4 { grid-area: box-4;}
-    
     // .box-5 { grid-area: box-5;}
-    
     // .box-6 { grid-area: box-6;}
-    
     // .box-7 { grid-area: box-7;}
-    
     // .box-8 { grid-area: box-8; }
-    
     // .box-9 { grid-area: box-9; }
-    
-
-            
   }
-
-  
- 
 
 //contact
 .contact_section{ 
@@ -425,8 +402,6 @@ padding: 1.5rem;
     font-size: $fz-sm;
     margin-top: 0;
   }
-
-
 }
 
 a{
@@ -437,56 +412,10 @@ a{
   font-size: $fz-lg;
 }
 
-
-
 p {
   color: black;
 }
-
-#about,
-#projects {
-  padding-bottom: 60px;
-  border-bottom: solid 1px $blue;
-}
-
-article {
-  width: 100%;
-  height: 90svh;
-}
  
-
-.projectBtn_div {
-  margin-top: -12rem;
-  margin-bottom: -10rem;
-
-  padding: 0;
-}
-
-.btn {
-  border: none;
-  background: none;
-  color: $white;
-  margin-left: 2rem;
-  margin-right: 2rem;
-
-  font-size: 1.25rem;
-  z-index: 150;
-}
-
-.btn:hover {
-  color: $green;
-  transform: scale(1.2);
-  cursor: 'pointer',
-}
-
-.Canvas_Container {
-  width: 100%;
-  height: 100svh;
-  left: 0;
-  top: 0;
-  background: transparent;
-}
-
  @media (max-width: 960px) {
   h3{
     color: orangered;
@@ -514,23 +443,16 @@ article {
       background: green;
     }
  
-  
-
-  .hero_content_container{
-  
+  .hero_content_container{ 
     height: 100%;
     min-width: 80%;
     max-width: 100%;
     margin-right: 4rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    
-    
-
   }
 
   .text_container{
-    
     min-width: 100%;
     padding: 0;
   }
@@ -541,13 +463,11 @@ article {
   #intro{
     font-size: 2rem;
     text-align: center;
-     
   }
   
   .links_container{
     min-width: 100%;
     margin-left: 2rem;
-    
   }
 
   .circle_btn{
@@ -565,7 +485,6 @@ article {
     align-items: center;
     .year{display: none;}
     h4{
-    
       text-align: center;
     }
     .experience_wrapper{
